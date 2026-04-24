@@ -1,0 +1,7179 @@
+Hazırladım:
+	•	Figma component inventory eklenmiş güncel doküman (.docx)
+
+Bu versiyona şunları ekledim:
+	•	Figma component inventory
+	•	core component groups tablosu
+	•	MVP / phase 2 / later önceliklendirmesi
+	•	component variant listesi
+	•	önerilen Figma component klasör yapısı
+	•	component handoff annotation kuralları
+
+İstersen bunun ardından bir de Figma component inventory’yi ayrı, tek sayfalık hızlı referans dokümanı olarak çıkarayım
+
+Hazırladım:
+	•	Figma component inventory – quick reference (.docx)
+
+Bu versiyon kısa ve hızlı referans için uygun. Erol ve tasarım tarafı bunu ana dokümana ek olarak kullanabilir.
+
+Hazırladım:
+	•	Güncellenmiş doküman – Figma grid notları eklenmiş (.docx)
+
+Bu versiyona şunları ekledim:
+	•	Figma file structure
+	•	önerilen grid sistemi ve breakpoint mantığı
+	•	spacing/sizing token önerileri
+	•	persona bazlı wireframe page set
+	•	component guidance
+	•	annotation rules
+	•	developer handoff checklist
+	•	önerilen Figma naming convention
+
+İstersen bir sonraki turda buna bir de Figma component inventory bölümü ekleyebilirim.
+
+Hazırladım:
+	•	Güncellenmiş persona bazlı ekran listesi + wireframe brief (.docx)
+
+Bu versiyona şunları ekledim:
+	•	daha görsel bir kapak sayfası
+	•	dashboard bazlı mockup sayfaları
+	•	Erol için teknik UI module checklist bölümü
+
+İstersen sonraki turda buna bir de:
+	•	daha kurumsal kapak tasarımı,
+	•	içindekiler sayfası,
+	•	veya Figma’ya aktarım için daha net wireframe grid notları
+ekleyebilirim.
+
+Hazırladım:
+	•	Persona bazlı ekran listesi + wireframe brief (.docx)
+
+İstersen bunun bir sonraki versiyonunda:
+	•	daha görsel bir kapak,
+	•	dashboard bazlı mockup sayfası,
+	•	veya Erol için daha teknik “UI module checklist” eki
+de ekleyebilirim.
+
+Evet. Erol için en faydalı yaklaşım, CRM’i tek tip ekranla değil, rol bazlı persona ekranları ile tasarlamak olur. Çünkü sizin yapıda herkes aynı veriyi, aynı derinlikte ve aynı amaçla kullanmayacak.
+
+Aşağıda bunu doğrudan ürün tasarım brifi gibi veriyorum.
+
+Temel yaklaşım
+
+Tek bir CRM yerine şu mantıkla düşünün:
+	•	aynı veri modeli
+	•	farklı persona dashboard’ları
+	•	rol bazlı menü ve görünürlük
+	•	aynı kayıt için farklı detay derinliği
+
+Yani örneğin bir opportunity kaydı:
+	•	governance tarafında conflict ve visibility ile görünür,
+	•	sales tarafında stage ve next step ile görünür,
+	•	delivery tarafında scope ve milestone ile görünür,
+	•	restricted partner tarafında sadece summary görünür.
+
+⸻
+
+Ana personelar
+
+Ben sizin yapı için 6 ana persona öneririm:
+	1.	Founding Orchestrator / Core Governance
+	2.	Partner Owner / Business Builder
+	3.	Solution Architect / Technical Partner
+	4.	Channel / Referral Partner
+	5.	Delivery Manager / PMO
+	6.	Restricted External / Advisor
+
+İstersen 7. olarak:
+7. Finance / Ops View
+sonradan eklenebilir.
+
+⸻
+
+1) Founding Orchestrator / Core Governance ekranı
+
+Bu persona sensin veya çekirdek yönetim halkası.
+
+Bu kişinin ana soruları
+	•	Kim neyin üstünde çalışıyor?
+	•	Nerede conflict var?
+	•	Hangi fırsatlar owner bekliyor?
+	•	Hangi partner aktif, hangisi pasif?
+	•	Hangi ürünler gerçekten ilerliyor?
+	•	Nerede visibility sorunu var?
+	•	Hangi işte ekonomik paylaşım net değil?
+
+Ana dashboard
+
+İlk açılış ekranında şunlar olmalı:
+
+Üst KPI kartları
+	•	Active opportunities
+	•	Conflict flagged items
+	•	Pending approvals
+	•	Protected leads expiring soon
+	•	Open projects
+	•	Agreements nearing expiry
+
+Orta bölüm
+	•	Opportunity heatmap
+	•	stage’e göre fırsatlar
+	•	ülkeye göre dağılım
+	•	ürün kategorisine göre dağılım
+	•	Conflict & visibility panel
+	•	conflict bekleyen kayıtlar
+	•	shared approval bekleyen erişimler
+	•	duplicate / overlap olabilecek hesaplar
+
+Sağ panel
+	•	son aktiviteler
+	•	son eklenen lead’ler
+	•	son karar bekleyen konular
+	•	son eklenen partner / ürün
+
+Ana menü
+	•	Dashboard
+	•	Opportunities
+	•	Partners
+	•	Products
+	•	Governance
+	•	Agreements
+	•	Risks & Compliance
+	•	Reports
+
+Detay ekranında vurgulanacak alanlar
+
+Bir opportunity açıldığında governance persona şunları ilk görmeli:
+	•	source owner
+	•	sponsor
+	•	visibility level
+	•	deal path
+	•	conflict flags
+	•	related products
+	•	proposed revenue split
+	•	billing entity
+	•	agreement status
+
+Bu persona için hızlı aksiyonlar
+	•	visibility değiştir
+	•	sponsor ata
+	•	conflict review başlat
+	•	partner access ver / kaldır
+	•	revenue split review iste
+	•	project room aç
+
+⸻
+
+2) Partner Owner / Business Builder ekranı
+
+Bu persona ürün sahibi, iş geliştiren veya kendi müşteri/kanal alanı olan partner.
+
+Ana soruları
+	•	Benim lead’lerim neler?
+	•	Hangi fırsatlarım ilerliyor?
+	•	Hangi ürünlerimi paylaşmışım?
+	•	Hangi görüşme / follow-up bekliyor?
+	•	Hangi partnerlerle birlikte çalışıyorum?
+	•	Gelir potansiyelim ne?
+
+Ana dashboard
+
+KPI kartları
+	•	My leads
+	•	My opportunities
+	•	Opportunities needing follow-up
+	•	Demo scheduled
+	•	Proposal pending
+	•	Expected revenue
+
+Ana liste blokları
+	•	My pipeline
+	•	My accounts
+	•	My products / capabilities
+	•	My active collaborations
+
+Sağ panel
+	•	next actions
+	•	upcoming meetings
+	•	open tasks
+	•	partner requests
+
+Ana menü
+	•	My Dashboard
+	•	My Leads
+	•	My Opportunities
+	•	My Accounts
+	•	My Products
+	•	Activities
+	•	Documents
+
+Opportunity detay ekranı
+
+Bu persona için ilk görünenler:
+	•	müşteri summary
+	•	next action
+	•	current stage
+	•	who is involved
+	•	requested support
+	•	proposal status
+	•	commercial owner
+	•	visibility summary
+
+Hızlı aksiyonlar
+	•	yeni lead ekle
+	•	meeting log gir
+	•	demo iste
+	•	teknik destek çağır
+	•	proposal talep et
+	•	collaborator ekle
+
+⸻
+
+3) Solution Architect / Technical Partner ekranı
+
+Bu Erol tipi persona.
+
+Ana soruları
+	•	Hangi fırsatta benden teknik katkı bekleniyor?
+	•	Hangi ürün / çözüm eşleşmesi var?
+	•	Nerede integration gerekiyor?
+	•	Hangi demo / PoC hazırlanmalı?
+	•	Hangi delivery riskleri var?
+	•	Hangi opportunity teknik açıdan kırmızı bayrak taşıyor?
+
+Ana dashboard
+
+KPI kartları
+	•	Technical reviews pending
+	•	Solutions matched
+	•	Demo requests
+	•	Active implementation items
+	•	Integration blockers
+	•	Delivery risks
+
+Ana bloklar
+	•	Needs technical review
+	•	Solution matching queue
+	•	PoC / demo queue
+	•	Integration / architecture notes
+	•	Implementation readiness
+
+Ana menü
+	•	Technical Dashboard
+	•	Opportunities Needing Review
+	•	Products & Architectures
+	•	Integrations
+	•	Projects
+	•	Risks
+	•	Notes / Docs
+
+Opportunity detay ekranı
+
+Bu persona için ilk görünenler:
+	•	use case summary
+	•	target industry
+	•	required integrations
+	•	compliance flags
+	•	candidate products
+	•	technical owner
+	•	scope assumptions
+	•	risks / blockers
+
+Ek sekmeler
+	•	Architecture Notes
+	•	Integration Map
+	•	Demo Scope
+	•	Dependencies
+	•	Delivery Risk
+
+Hızlı aksiyonlar
+	•	teknik uygun / uygun değil işaretle
+	•	product fit öner
+	•	demo scope oluştur
+	•	integration riski ekle
+	•	implementation estimate gir
+	•	DPA/security review trigger et
+
+⸻
+
+4) Channel / Referral Partner ekranı
+
+Bu persona çok detay istemez. Hızlı, hafif, mobil uyumlu olmalı.
+
+Ana soruları
+	•	Hangi lead’leri verdim?
+	•	Hangileri kabul edildi?
+	•	Hangi aşamadalar?
+	•	Komisyon doğacak mı?
+	•	Benden bir aksiyon bekleniyor mu?
+
+Ana dashboard
+
+KPI kartları
+	•	Submitted leads
+	•	Accepted leads
+	•	Active referrals
+	•	Closed won referrals
+	•	Estimated payout
+
+Ana bloklar
+	•	My submitted leads
+	•	Status tracker
+	•	Pending info requests
+	•	Payout summary
+
+Ana menü
+	•	My Referrals
+	•	Submit Lead
+	•	Status
+	•	Documents
+	•	Payouts
+
+Ekran karakteri
+
+Bu persona için ekran sade olmalı:
+	•	çok alan gösterme
+	•	teknik detay gösterme
+	•	visibility sınırlı olsun
+	•	sadece gerekli commercial summary ver
+
+Hızlı aksiyonlar
+	•	lead submit
+	•	lead update
+	•	additional info upload
+	•	intro meeting request
+	•	payout inquiry
+
+⸻
+
+5) Delivery Manager / PMO ekranı
+
+Bu persona Muhittin tipi veya proje koordinasyonundaki kişiler için.
+
+Ana soruları
+	•	Hangi iş delivery’ye döndü?
+	•	Scope net mi?
+	•	Kim neyi teslim edecek?
+	•	Milestone’lar ne durumda?
+	•	Hangi proje gecikiyor?
+	•	Hangi agreement / SOW eksik?
+
+Ana dashboard
+
+KPI kartları
+	•	Active projects
+	•	Milestones due this week
+	•	Delayed items
+	•	SOW missing
+	•	Acceptance pending
+	•	Support handoff pending
+
+Ana bloklar
+	•	Project status board
+	•	Milestone timeline
+	•	Scope & approvals
+	•	Resource / owner view
+	•	Delivery risks
+
+Ana menü
+	•	Delivery Dashboard
+	•	Projects
+	•	Milestones
+	•	SOW / Agreements
+	•	Risks
+	•	Resource View
+	•	Reports
+
+Project detay ekranı
+
+İlk görünmesi gerekenler:
+	•	project owner
+	•	delivery lead
+	•	technical lead
+	•	scope version
+	•	milestone list
+	•	client commitments
+	•	dependencies
+	•	handoff / support window
+
+Hızlı aksiyonlar
+	•	milestone ekle
+	•	blocker işaretle
+	•	scope change request aç
+	•	acceptance request gönder
+	•	support handoff başlat
+
+⸻
+
+6) Restricted External / Advisor ekranı
+
+Bu persona için çok hafif ve kontrollü erişim gerekir.
+
+Ana soruları
+	•	Bana açılan hangi kayıtlar var?
+	•	Nerede benden input isteniyor?
+	•	Hangi dokümana erişebilirim?
+	•	Hangi toplantıya davetliyim?
+
+Ana dashboard
+
+KPI kartları
+	•	Shared opportunities
+	•	Advisory requests
+	•	Open tasks
+	•	Upcoming sessions
+
+Ana bloklar
+	•	Shared with me
+	•	Review requests
+	•	Meeting notes
+	•	Documents available
+
+Ana menü
+	•	Shared Items
+	•	Tasks
+	•	Notes
+	•	Meetings
+
+Tasarım notu
+
+Bu persona için:
+	•	müşteri tam detay yok
+	•	fiyat tam detay yok
+	•	diğer partner kayıtları yok
+	•	sadece ilgili context summary var
+
+⸻
+
+Ortak ekran desenleri
+
+Roller farklı olsa da bazı ekran desenleri ortak olsun.
+
+A) Liste ekranları
+
+Her ana modülde ortak liste yapısı:
+	•	filtre çubuğu
+	•	saved views
+	•	visibility badge
+	•	owner badge
+	•	stage/status
+	•	next action
+	•	last updated
+
+Örnek filtreler:
+	•	owner
+	•	country
+	•	vertical
+	•	product
+	•	stage
+	•	visibility
+	•	conflict flag
+	•	deal path
+
+B) Kayıt detay ekranı
+
+Her ana kayıtta 5 sabit üst blok olsun:
+	•	Summary
+	•	Ownership
+	•	Visibility
+	•	Status / Stage
+	•	Next Action
+
+Alt sekmeler:
+	•	Notes
+	•	Activities
+	•	Documents
+	•	Risks
+	•	Agreements
+	•	Related items
+
+C) Hızlı kayıt oluşturma
+
+Kullanıcılar için hızlı create akışları:
+	•	New lead
+	•	New contact
+	•	New opportunity
+	•	New product
+	•	New note
+	•	New risk
+	•	New agreement link
+
+⸻
+
+Önerilen ana ekran mimarisi
+
+Sol menü
+
+Rol bazlı değişsin.
+
+Ama çekirdek yapı şu olabilir:
+	•	Home
+	•	Relationships
+	•	Leads
+	•	Opportunities
+	•	Products
+	•	Projects
+	•	Governance
+	•	Docs
+	•	Reports
+
+Üst bar
+	•	global search
+	•	create button
+	•	notifications
+	•	my tasks
+	•	role switcher
+	•	profile / access scope
+
+Sağ yardımcı panel
+
+Kayıt açıkken:
+	•	recent activity
+	•	related records
+	•	alerts
+	•	approvals pending
+
+⸻
+
+Persona bazlı widget önerileri
+
+Founding / Governance
+	•	conflict queue
+	•	access requests
+	•	protected leads expiring
+	•	cross-partner overlaps
+	•	agreements expiring
+
+Partner Owner
+	•	my pipeline
+	•	meetings due
+	•	proposals pending
+	•	active collaborations
+	•	estimated earnings
+
+Technical / Erol
+	•	opportunities needing architecture review
+	•	solution-product fit matrix
+	•	integration blockers
+	•	compliance flags
+	•	demo requests
+
+Referral Partner
+	•	my referrals
+	•	accepted / rejected
+	•	payout forecast
+	•	next required info
+
+PMO
+	•	active projects
+	•	milestone burn-down
+	•	delayed items
+	•	SOW missing
+	•	acceptance pending
+
+⸻
+
+Ekran seviyesinde görünürlük önerisi
+
+Aynı kaydın üç farklı görünümü olabilir.
+
+1. Summary View
+	•	restricted kullanıcılar için
+	•	müşteri adı gizlenebilir
+	•	sadece ihtiyaç tipi, ülke, stage, next action
+
+2. Working View
+	•	aktif partnerler için
+	•	daha fazla ticari detay
+	•	sınırlı doküman erişimi
+
+3. Governance View
+	•	çekirdek yönetim için
+	•	conflict, payout, visibility history, access decisions
+
+Bu ayrım çok iş görür.
+
+⸻
+
+Erol için tasarım tavsiyesi
+
+Erol’e özel olarak şunu öneririm:
+
+CRM ekranlarını şu mantıkla wireframe’lesin:
+
+Faz 1 – 6 ana dashboard
+	•	Governance dashboard
+	•	Partner dashboard
+	•	Technical dashboard
+	•	Referral dashboard
+	•	Delivery dashboard
+	•	Restricted dashboard
+
+Faz 2 – 4 kritik detay ekranı
+	•	Lead detail
+	•	Opportunity detail
+	•	Product detail
+	•	Project detail
+
+Faz 3 – 3 temel create flow
+	•	create lead
+	•	convert lead to opportunity
+	•	convert won opportunity to project
+
+⸻
+
+En kritik UX prensibi
+
+Bu sistemde başarı, çok veri göstermekten değil,
+doğru rol için doğru karar ekranını vermekten gelir.
+
+Yani:
+	•	Governance kişisi conflict görmeli
+	•	Sales kişisi follow-up görmeli
+	•	Teknik kişi integration görmeli
+	•	PM milestone görmeli
+	•	Restricted partner summary görmeli
+
+Hepsine aynı ekran verilirse sistem kısa sürede yorucu olur.
+
+İstersen bir sonraki adımda bunu Erol’e verebileceğin şekilde “persona bazlı ekran listesi + wireframe brief” formatında daha düzenli bir doküman haline getireyim.
+
+Hazırladım:
+	•	Annotated overview PNG
+	•	Annotated detailed ERD PNG
+	•	Combined PDF
+
+Bunlar artık ekip içinde anlatım için daha uygun. Overview görseli yönetim ve konsept anlatımı için, detaylı ERD ise Erol’ün teknik tasarım çalışması için daha uygun olur. 
+
+Hazırladım. İndirilebilir görseller ve kaynak dosya burada:
+	•	Overview diagram PNG
+	•	Overview diagram SVG
+	•	Detaylı ER diagram PNG
+	•	Detaylı ER diagram SVG
+	•	Mermaid kaynak dosyası (.mmd)
+
+Önerim:
+	•	overview görselini ekip sunumu ve hızlı anlatım için,
+	•	detaylı ER görselini Erol’ün teknik çalışma dokümanı için kullanman.
+
+İstersen bir sonraki adımda bunların üstüne kutu kutu açıklamalı, daha sunumluk bir annotated version da hazırlayayım.
+
+Hazır. İndirilebilir dosyaları oluşturdum:
+	•	Mermaid ER diagram dosyası (.mmd)
+	•	Kısa açıklama / README (.md)
+
+İstersen bir sonraki adımda bunun bir de:
+	•	daha sade “core tables only” versiyonunu
+	•	veya render edilmiş PNG/PDF görünümünü
+hazırlayayım.
+
+Tabii. Aşağıya ERD benzeri tablo ilişkileri listesini daha sistematik şekilde çıkarıyorum. Bunu Erol’e doğrudan verip teknik tasarım, database schema veya low-code entity modeline dönüştürebilirsiniz.
+
+⸻
+
+Alliance CRM – ERD Benzeri Tablo İlişkileri Listesi
+
+1. Kimlik ve yetki katmanı
+
+users
+
+Sistemdeki kullanıcılar.
+
+İlişkiler
+	•	users 1 — N user_role_assignments
+	•	users 1 — N organizations.owner_user_id
+	•	users 1 — N contacts.owner_user_id
+	•	users 1 — N relationship_links.known_by_user_id
+	•	users 1 — N relationship_links.intro_owner_user_id
+	•	users 1 — N user_capabilities
+	•	users 1 — N leads.source_owner_user_id
+	•	users 1 — N leads.sponsor_user_id
+	•	users 1 — N lead_assignments.assigned_user_id
+	•	users 1 — N opportunities.deal_owner_user_id
+	•	users 1 — N opportunities.source_owner_user_id
+	•	users 1 — N opportunities.sponsor_user_id
+	•	users 1 — N projects.project_owner_user_id
+	•	users 1 — N projects.delivery_manager_user_id
+	•	users 1 — N projects.technical_lead_user_id
+	•	users 1 — N project_milestones.owner_user_id
+	•	users 1 — N risks.owner_user_id
+	•	users 1 — N compliance_reviews.reviewer_user_id
+	•	users 1 — N activities.owner_user_id
+	•	users 1 — N notes.author_user_id
+	•	users 1 — N attachments.uploaded_by
+	•	users 1 — N kpi_contributions.user_id
+	•	users 1 — N audit_logs.actor_user_id
+
+⸻
+
+roles
+
+Sistem rol tanımları.
+
+İlişkiler
+	•	roles 1 — N user_role_assignments
+
+⸻
+
+user_role_assignments
+
+Kullanıcıya hangi rolün hangi kapsamda atandığını tutar.
+
+FK’ler
+	•	user_id → users.id
+	•	role_id → roles.id
+
+Opsiyonel kapsam
+	•	entity_scope_id → partner_entities.id veya başka bir scope tablosu
+
+⸻
+
+2. Organizasyon ve kişi katmanı
+
+organizations
+
+Şirket, müşteri kurumu, partner firma, alliance içi entity gibi kayıtlar.
+
+İlişkiler
+	•	organizations 1 — N contacts
+	•	organizations 1 — N leads
+	•	organizations 1 — N opportunities.account_org_id
+	•	organizations 1 — N partner_entities (isteğe bağlı, eğer organizations ile birleştirilmeyecekse ayrı tutulur)
+	•	organizations 1 — N agreements (dolaylı ilişki / related_type mantığı ile de olabilir)
+
+FK
+	•	owner_user_id → users.id
+
+⸻
+
+contacts
+
+Kişi kayıtları.
+
+İlişkiler
+	•	contacts N — 1 organizations
+	•	contacts 1 — N relationship_links
+	•	contacts 1 — N leads
+	•	contacts 1 — N activities (related_type = contact ise polimorfik)
+	•	contacts 1 — N notes
+	•	contacts 1 — N attachments
+
+FK’ler
+	•	organization_id → organizations.id
+	•	owner_user_id → users.id
+
+⸻
+
+relationship_links
+
+“Kim kimi tanıyor” ve ilişki gücü modeli.
+
+İlişkiler
+	•	relationship_links N — 1 contacts
+	•	relationship_links N — 1 users as known_by_user_id
+	•	relationship_links N — 1 users as intro_owner_user_id
+
+Bu tablo alliance içinde çok kritik. Çünkü “contact var” ile “o kişiye erişim hakkı var” farklı şeyler.
+
+⸻
+
+3. Partner ve capability katmanı
+
+partner_entities
+
+Alliance içindeki veya dışındaki ticari entity’ler.
+
+İlişkiler
+	•	partner_entities 1 — N products.owner_entity_id
+	•	partner_entities 1 — N opportunities.billing_entity_id
+	•	partner_entities 1 — N opportunity_revenue_shares.user_id_or_entity_id (entity bazlı pay varsa)
+	•	partner_entities 1 — N agreements (doğrudan ya da related_type ile)
+
+Bu tabloyu isterseniz organizations ile birleştirebilirsiniz. Ama pratikte partner / billing / alliance entity mantığı için ayrı tutmak faydalı olabilir.
+
+⸻
+
+capabilities
+
+Standart yetenek katalog tablosu.
+
+İlişkiler
+	•	capabilities 1 — N user_capabilities
+	•	capabilities 1 — N product_capabilities
+
+⸻
+
+user_capabilities
+
+Hangi kullanıcının hangi capability’ye sahip olduğunu gösterir.
+
+İlişkiler
+	•	user_capabilities N — 1 users
+	•	user_capabilities N — 1 capabilities
+
+⸻
+
+4. Ürün ve çözüm katmanı
+
+products
+
+Alliance içinde ele alınan ürün, servis paketi, white-label çözüm veya iç ürün kayıtları.
+
+İlişkiler
+	•	products N — 1 partner_entities as owner_entity_id
+	•	products N — 1 users as owner_user_id
+	•	products 1 — N product_capabilities
+	•	products 1 — N product_markets
+	•	products 1 — N opportunity_products
+	•	products 1 — N compliance_reviews (related_type ile de olabilir)
+	•	products 1 — N risks
+	•	products 1 — N agreements
+	•	products 1 — N notes
+	•	products 1 — N attachments
+
+⸻
+
+product_capabilities
+
+Bir ürünün hangi capability’lere dayandığını gösterir.
+
+İlişkiler
+	•	product_capabilities N — 1 products
+	•	product_capabilities N — 1 capabilities
+
+⸻
+
+product_markets
+
+Bir ürünün hedef coğrafya / sektör / segment tanımı.
+
+İlişkiler
+	•	product_markets N — 1 products
+
+⸻
+
+5. Lead ve opportunity katmanı
+
+leads
+
+İlk ticari fırsat kaydı.
+
+İlişkiler
+	•	leads N — 1 organizations
+	•	leads N — 1 contacts
+	•	leads N — 1 users as source_owner_user_id
+	•	leads N — 1 users as sponsor_user_id
+	•	leads 1 — N lead_assignments
+	•	leads 1 — N opportunities
+	•	leads 1 — N activities
+	•	leads 1 — N notes
+	•	leads 1 — N attachments
+	•	leads 1 — N risks
+	•	leads 1 — N compliance_reviews
+
+Not
+
+Lead ile Opportunity ayrımı korunmalı:
+	•	Lead = erken fırsat / potansiyel ihtiyaç
+	•	Opportunity = daha net sahiplenilmiş ve ticari sürece girmiş kayıt
+
+⸻
+
+lead_assignments
+
+Lead üzerinde çalışan kullanıcı atamaları.
+
+İlişkiler
+	•	lead_assignments N — 1 leads
+	•	lead_assignments N — 1 users
+
+⸻
+
+opportunities
+
+Satış / ticari iş birliği / deal seviyesindeki ana kayıt.
+
+İlişkiler
+	•	opportunities N — 1 leads
+	•	opportunities N — 1 organizations as account_org_id
+	•	opportunities N — 1 users as deal_owner_user_id
+	•	opportunities N — 1 users as source_owner_user_id
+	•	opportunities N — 1 users as sponsor_user_id
+	•	opportunities N — 1 partner_entities as billing_entity_id
+	•	opportunities N — 1 pipelines
+	•	opportunities N — 1 stages
+	•	opportunities 1 — N opportunity_products
+	•	opportunities 1 — N opportunity_paths
+	•	opportunities 1 — N proposals
+	•	opportunities 1 — N opportunity_revenue_shares
+	•	opportunities 1 — N projects
+	•	opportunities 1 — N activities
+	•	opportunities 1 — N notes
+	•	opportunities 1 — N attachments
+	•	opportunities 1 — N risks
+	•	opportunities 1 — N compliance_reviews
+	•	opportunities 1 — N agreements
+
+⸻
+
+pipelines
+
+Farklı iş tipleri için pipeline tanımları.
+
+İlişkiler
+	•	pipelines 1 — N stages
+	•	pipelines 1 — N opportunities
+
+Örnek:
+	•	Sales Pipeline
+	•	Partner Enablement Pipeline
+	•	White-label Evaluation Pipeline
+	•	Delivery Conversion Pipeline
+
+⸻
+
+stages
+
+Pipeline içindeki stage tanımları.
+
+İlişkiler
+	•	stages N — 1 pipelines
+	•	stages 1 — N opportunities
+
+⸻
+
+deal_paths
+
+Deal motion / işlem tipi kataloğu.
+
+Örnek değerler
+	•	referral
+	•	co-sell
+	•	reseller
+	•	implementation
+	•	white-label distribution
+	•	advisory-only
+	•	incubation
+
+İlişkiler
+	•	deal_paths 1 — N opportunity_paths
+
+⸻
+
+opportunity_paths
+
+Bir opportunity’nin hangi motion ile yürüdüğünü bağlar.
+
+İlişkiler
+	•	opportunity_paths N — 1 opportunities
+	•	opportunity_paths N — 1 deal_paths
+
+Bir opportunity birden fazla path’e sahip olabilir, ama biri primary olabilir.
+
+⸻
+
+opportunity_products
+
+Bir opportunity içinde hangi ürün(ler)in yer aldığını gösterir.
+
+İlişkiler
+	•	opportunity_products N — 1 opportunities
+	•	opportunity_products N — 1 products
+
+Bu tablo, tek fırsatta çoklu ürün / bundle / complementary solution modelini destekler.
+
+⸻
+
+6. Teklif ve ticari model katmanı
+
+proposals
+
+Teklif / quote / commercial draft kayıtları.
+
+İlişkiler
+	•	proposals N — 1 opportunities
+
+Bir opportunity için birden çok teklif versiyonu olabilir.
+
+⸻
+
+revenue_share_models
+
+Standart paylaşım model katalog tablosu.
+
+Örnek
+	•	Referral Model
+	•	Reseller Model
+	•	Delivery Split
+	•	IP Royalty Split
+	•	Hybrid Split
+
+İlişkiler
+	•	revenue_share_models 1 — N opportunity_revenue_shares (opsiyonel doğrudan bağlanabilir)
+
+⸻
+
+opportunity_revenue_shares
+
+Bir opportunity için ekonomik paylaşım kayıtları.
+
+İlişkiler
+	•	opportunity_revenue_shares N — 1 opportunities
+	•	opportunity_revenue_shares N — 1 users veya partner_entities
+
+Burada iki yaklaşım var:
+
+Yaklaşım A
+
+Aynı tabloda:
+	•	beneficiary_user_id
+	•	beneficiary_entity_id
+
+Yaklaşım B
+
+Ayrı beneficiary tablosu veya polymorphic yaklaşım
+
+İlk sürüm için A daha pratik.
+
+⸻
+
+7. Delivery / proje katmanı
+
+projects
+
+Won olmuş veya delivery’ye geçmiş işlerin proje kaydı.
+
+İlişkiler
+	•	projects N — 1 opportunities
+	•	projects N — 1 users as project_owner_user_id
+	•	projects N — 1 users as delivery_manager_user_id
+	•	projects N — 1 users as technical_lead_user_id
+	•	projects 1 — N project_milestones
+	•	projects 1 — N activities
+	•	projects 1 — N notes
+	•	projects 1 — N attachments
+	•	projects 1 — N risks
+	•	projects 1 — N agreements
+
+⸻
+
+project_milestones
+
+Proje teslimat ve milestone kayıtları.
+
+İlişkiler
+	•	project_milestones N — 1 projects
+	•	project_milestones N — 1 users as owner_user_id
+
+⸻
+
+8. Risk ve compliance katmanı
+
+risks
+
+Risk kayıtları.
+
+İlişkiler
+	•	risks N — 1 users as owner_user_id
+	•	risks polymorphic biçimde bağlanabilir:
+	•	lead
+	•	opportunity
+	•	project
+	•	product
+
+Yani:
+	•	related_type
+	•	related_id
+
+Bu model daha esnektir.
+
+⸻
+
+compliance_reviews
+
+Compliance, privacy, security, DPA, white-label ve IP review kayıtları.
+
+İlişkiler
+	•	compliance_reviews N — 1 users as reviewer_user_id
+	•	compliance_reviews polymorphic biçimde:
+	•	product
+	•	opportunity
+	•	project
+
+⸻
+
+9. Belge ve sözleşme katmanı
+
+agreements
+
+Sözleşme ve eklerin registry tablosu.
+
+İlişkiler
+	•	agreements polymorphic biçimde bağlanabilir:
+	•	organization
+	•	opportunity
+	•	project
+	•	product
+	•	partner_entity
+
+Örnek agreement type
+	•	NDA
+	•	MoU
+	•	Referral Agreement
+	•	Reseller Agreement
+	•	SOW
+	•	DPA
+	•	IP License
+	•	SLA
+
+Not
+
+Bu tabloyu polimorfik yapmak daha mantıklı. Çünkü aynı agreement farklı seviyelerde bağlanabilir.
+
+⸻
+
+10. Aktivite, not ve ekler
+
+activities
+
+Her varlığa bağlanabilen aktivite kaydı.
+
+İlişkiler
+	•	activities N — 1 users
+	•	activities polymorphic:
+	•	contact
+	•	organization
+	•	lead
+	•	opportunity
+	•	project
+	•	product
+
+⸻
+
+notes
+
+Not kayıtları.
+
+İlişkiler
+	•	notes N — 1 users as author_user_id
+	•	notes polymorphic:
+	•	contact
+	•	organization
+	•	lead
+	•	opportunity
+	•	project
+	•	product
+
+⸻
+
+attachments
+
+Dosya / link / attachment kayıtları.
+
+İlişkiler
+	•	attachments N — 1 users as uploaded_by
+	•	attachments polymorphic:
+	•	lead
+	•	opportunity
+	•	project
+	•	agreement
+	•	product
+	•	organization
+
+⸻
+
+11. KPI ve audit katmanı
+
+kpi_contributions
+
+Katkı takibi.
+
+İlişkiler
+	•	kpi_contributions N — 1 users
+	•	kpi_contributions polymorphic:
+	•	lead
+	•	opportunity
+	•	project
+	•	governance task
+
+Katkı tipi:
+	•	governance
+	•	commercial
+	•	delivery
+
+⸻
+
+audit_logs
+
+Sistem değişiklik günlüğü.
+
+İlişkiler
+	•	audit_logs N — 1 users
+	•	audit_logs polymorphic:
+	•	değişen her kayıt
+
+Bu tablo compliance ve anlaşmazlık çözümü için çok önemli.
+
+⸻
+
+12. Yüksek seviye ilişki akışı
+
+Aşağıdaki akış, sistemi zihinde netleştirir:
+
+A. İlişki / ağ tarafı
+
+users
+→ contacts
+→ relationship_links
+→ organizations
+
+B. Yetkinlik / çözüm tarafı
+
+users
+→ user_capabilities
+→ capabilities
+
+ve
+
+products
+→ product_capabilities
+→ capabilities
+
+C. Ticari akış
+
+contact / organization
+→ lead
+→ opportunity
+→ proposal
+→ project
+
+D. Ürün eşleşmesi
+
+opportunity
+→ opportunity_products
+→ products
+
+E. Gelir paylaşımı
+
+opportunity
+→ opportunity_revenue_shares
+→ users / partner_entities
+
+F. Risk / compliance
+
+product / opportunity / project
+→ risks
+→ compliance_reviews
+
+G. Sözleşme
+
+opportunity / project / product / organization
+→ agreements
+
+⸻
+
+13. Kardinalite özeti
+
+Kısa özetle:
+	•	Bir user birçok role sahip olabilir.
+	•	Bir organization birçok contact içerebilir.
+	•	Bir contact birden fazla relationship link ile farklı kullanıcılarca tanınıyor olabilir.
+	•	Bir lead bir organization ve/veya contact ile ilişkili olabilir.
+	•	Bir lead zaman içinde bir veya daha fazla opportunity yaratabilir.
+	•	Bir opportunity birden fazla product içerebilir.
+	•	Bir opportunity birden fazla deal path ile etiketlenebilir.
+	•	Bir opportunity için birden fazla proposal olabilir.
+	•	Bir opportunity için birden fazla revenue share kaydı olabilir.
+	•	Bir opportunity bir veya daha fazla project yaratabilir.
+	•	Bir project birden fazla milestone içerebilir.
+	•	risks / compliance_reviews / notes / activities / attachments / agreements çoklu varlıklara bağlanabilir.
+
+⸻
+
+14. Erol için pratik modelleme önerisi
+
+Benim önerim:
+
+Çekirdek relational tablolar
+	•	users
+	•	roles
+	•	user_role_assignments
+	•	organizations
+	•	contacts
+	•	relationship_links
+	•	capabilities
+	•	user_capabilities
+	•	products
+	•	product_capabilities
+	•	leads
+	•	opportunities
+	•	opportunity_products
+	•	proposals
+	•	opportunity_revenue_shares
+	•	projects
+	•	project_milestones
+
+Polymorphic tutulabilecek tablolar
+	•	activities
+	•	notes
+	•	attachments
+	•	risks
+	•	compliance_reviews
+	•	agreements
+	•	kpi_contributions
+	•	audit_logs
+
+Bu, ilk sürümde esneklik sağlar.
+
+⸻
+
+15. İstersen bir sonraki adımda şunu da çıkarayım
+
+Bunu bir seviye daha somutlaştırıp sana şu formatta verebilirim:
+
+A. SQL-benzeri DDL taslakları
+veya
+B. Mermaid ER diagram metni
+veya
+C. Notion / Airtable / Dataverse entity mapping tablosu
+
+En pratik sonraki çıktı bence: Mermaid ER diagram metni.
+
+Aşağıya Erol’ün teknik değerlendirme ve tasarım çalışmasında kullanabileceği şekilde, alliance yapısına uygun bir CRM gereksinim ve sistem tasarım dokümanı hazırladım.
+
+Bu doküman klasik satış CRM’i değil, sizin ihtiyaçlarınıza uygun bir Alliance Operating CRM mantığıyla yazıldı. İlham aldığı temel pratikler şunlar: Salesforce’un paylaşım modeli organizasyon varsayılanları, rol hiyerarşisi ve paylaşım kurallarını birlikte kullanır; Dataverse/Dynamics tarafında roller birikimli çalışır ve alan/kolon seviyesinde güvenlik desteklenir; HubSpot ise lifecycle stage, lead status ve deal stage kavramlarını ayırarak ilişki ve satış sürecini ayrı yönetir.  
+
+⸻
+
+Alliance CRM Requirements & System Design Document
+
+Draft v0.1
+
+1. Amaç
+
+Bu CRM altyapısının amacı, alliance içindeki kişi, ürün, hizmet, partner, lead, müşteri, fırsat, gelir paylaşımı ve görünürlük kurallarını tek yerde yönetmektir.
+
+Bu sistem sadece satış takibi için değil, aynı zamanda şu işlevler için tasarlanmalıdır:
+	•	alliance içindeki fırsatların kaydı
+	•	source owner / sponsor mantığı
+	•	visibility control
+	•	partner ve ürün eşleştirmesi
+	•	proposal / deal / ödeme takibi
+	•	conflict-of-interest işaretleme
+	•	kanal ve referral yönetimi
+	•	contribution ve KPI takibi
+	•	proje ve SOW bazlı execution takibi
+	•	audit ve karar izlenebilirliği
+
+Bu nedenle sistem, klasik contact CRM’den daha geniş düşünülmelidir.
+
+⸻
+
+2. Tasarım prensipleri
+
+Sistemin temel prensipleri:
+	•	Role-based access
+	•	Record-level visibility
+	•	Field-level sensitivity
+	•	Owner-driven collaboration
+	•	Project-first commercial model
+	•	Multi-entity support
+	•	Auditability
+	•	Extensibility
+
+Temel yaklaşım
+	•	Herkes her şeyi görmez.
+	•	Her kayıt bir owner’a bağlıdır.
+	•	Her fırsatın bir yaşam döngüsü vardır.
+	•	Her ticari ilişki referral, co-sell, reseller, implementation veya advisory-only gibi ayrı path’lerden biriyle yürür.
+	•	Her ürün aynı olgunluk seviyesinde değildir.
+	•	Her müşteri ve partner aynı paylaşım seviyesinde değildir.
+
+⸻
+
+3. Sistem kapsamı
+
+CRM aşağıdaki ana modülleri içermelidir:
+	•	Contact & Relationship Management
+	•	Account / Organization Management
+	•	Product & Capability Registry
+	•	Lead & Opportunity Management
+	•	Partner / Channel Management
+	•	Visibility & Access Control
+	•	Commercial Terms & Revenue Share
+	•	Project / Delivery Tracking
+	•	Compliance / Risk Registry
+	•	Activity / Meeting / Note Tracking
+	•	KPI / Contribution Tracking
+	•	Document Linkage / Agreement Registry
+	•	Reporting & Dashboarding
+
+⸻
+
+4. Ana kullanıcı rolleri
+
+Sistemde önerilen kullanıcı rolleri:
+
+4.1 Super Admin
+	•	sistem ayarları
+	•	rol tanımı
+	•	erişim politikaları
+	•	tablo / alan konfigürasyonu
+	•	audit erişimi
+
+4.2 Core Governance User
+	•	lead conflict çözebilir
+	•	visibility seviyesini değiştirebilir
+	•	partner statüsü belirleyebilir
+	•	kritik kayıtlarda override isteyebilir
+
+4.3 Partner Owner
+	•	kendi kayıtlarını yönetir
+	•	lead oluşturur
+	•	ürün / capability ekler
+	•	erişim isteği başlatır
+	•	kendi alanındaki ilişkileri yönetir
+
+4.4 Solution Partner
+	•	ürün, servis, delivery bilgisi yönetir
+	•	fırsata çözüm ortağı olarak eklenir
+	•	teknik not, demo, scope katkısı girer
+
+4.5 Channel / Referral Partner
+	•	lead girer
+	•	partner / kanal ilişkisi yönetir
+	•	visibility sınırlı olabilir
+
+4.6 Delivery Manager / PMO
+	•	project room yönetir
+	•	SOW, milestone, teslimat, status takibi yapar
+
+4.7 Restricted External User
+	•	sadece izin verilen kayıtları görür
+	•	full CRM görünürlüğü yoktur
+
+⸻
+
+5. Önerilen ana feature set
+
+5.1 Contact & Account Management
+	•	kişi kaydı
+	•	şirket / organization kaydı
+	•	contact-account ilişkilendirmesi
+	•	kişi kim tarafından tanınıyor alanı
+	•	güven seviyesi
+	•	sektör / bölge / ülke
+	•	rol / karar verici tipi
+	•	restricted / private işaretleri
+	•	son temas tarihi
+	•	notlar
+	•	doküman / link referansları
+
+5.2 Relationship Mapping
+	•	“kim kimi tanıyor” modeli
+	•	intro owner
+	•	sponsor partner
+	•	trusted relationship flag
+	•	first source / original connector
+	•	relationship strength score
+	•	sharing permission flag
+
+5.3 Product & Capability Registry
+
+Her ürün / servis için:
+	•	ürün adı
+	•	kategori
+	•	owner
+	•	olgunluk seviyesi
+	•	demo var mı
+	•	müşteri var mı
+	•	recurring model var mı
+	•	white-label uygun mu
+	•	reseller uygun mu
+	•	implementation gerekli mi
+	•	compliance riski
+	•	target geography
+	•	target vertical
+	•	partner status
+	•	IP ownership note
+
+5.4 Lead Management
+
+Lead management sistemi; capture, qualify, route ve nurture akışını desteklemelidir. Bu, yalnızca kayıt tutmaktan farklıdır.  
+
+Lead alanları:
+	•	lead başlığı
+	•	source owner
+	•	source type
+	•	lead origin
+	•	related contact/account
+	•	sektör
+	•	ülke
+	•	ihtiyaç tipi
+	•	estimated size
+	•	confidence level
+	•	assigned sponsor
+	•	visibility level
+	•	status
+	•	protected-until date
+	•	next action
+	•	conflict flag
+
+5.5 Opportunity / Deal Management
+
+HubSpot’un lifecycle stage ile deal stage’i ayırması gibi, burada da ilişki seviyesi ile satış süreci seviyesi ayrı tutulmalıdır. Lifecycle, kişi/şirketin ilişki konumunu; deal stage ise satış sürecindeki tamamlanmış adımları temsil eder.  
+
+Önerilen opportunity alanları:
+	•	opportunity adı
+	•	bağlı lead
+	•	source owner
+	•	deal owner
+	•	sponsor
+	•	related account
+	•	primary solution
+	•	co-solutions
+	•	deal type
+	•	pipeline
+	•	stage
+	•	estimated ARR / project value
+	•	expected close date
+	•	billing entity
+	•	country / region
+	•	referral / reseller / implementation / advisory type
+	•	visibility
+	•	win/loss reason
+	•	competition / overlap note
+	•	compliance review status
+
+5.6 Deal Path / Motion Types
+
+Her fırsat şu path’lerden biriyle işaretlenmeli:
+	•	referral
+	•	co-sell
+	•	reseller
+	•	implementation
+	•	white-label distribution
+	•	advisory-only
+	•	internal incubation
+	•	partner enablement
+
+5.7 Visibility & Access Control
+
+Önerilen görünürlük seviyeleri:
+	•	Hidden
+	•	Metadata only
+	•	Protected shared
+	•	Active deal room
+
+Ek alanlar:
+	•	owner-only fields
+	•	shared summary fields
+	•	restricted commercial fields
+	•	sensitive fields
+
+Erişim modeli
+
+Salesforce ve Dataverse örneklerinde olduğu gibi rol bazlı yetki + hiyerarşik görünürlük + ek paylaşım kuralları mantığı kullanılmalı; Dataverse tarafında roller birikimli çalışır, Salesforce tarafında paylaşım modeli rol hiyerarşisi ve sharing rules ile tamamlanır.  
+
+5.8 Conflict-of-Interest Management
+	•	conflict flag
+	•	conflict type
+	•	declared by
+	•	review required
+	•	reviewer
+	•	decision status
+	•	mitigation notes
+
+Conflict tipleri:
+	•	müşteri conflict
+	•	ürün conflict
+	•	coğrafya conflict
+	•	employer restriction
+	•	channel overlap
+	•	IP overlap
+
+5.9 Proposal / Quote / Commercial Tracking
+	•	teklif numarası
+	•	teklif tarihi
+	•	teklif sahibi
+	•	teklif tipi
+	•	para birimi
+	•	one-time fee
+	•	recurring fee
+	•	implementation fee
+	•	support fee
+	•	discount
+	•	term length
+	•	attached document link
+	•	approval status
+
+5.10 Revenue Share Engine
+
+Her işte paylaşım kategorileri ayrı tutulmalı:
+	•	source fee
+	•	lead qualification fee
+	•	channel fee
+	•	reseller margin
+	•	delivery fee
+	•	IP / royalty share
+	•	ops pool share
+	•	governance fee
+
+Kayıt bazında tutulacak alanlar
+	•	share model type
+	•	share calc basis
+	•	net / gross basis
+	•	payout status
+	•	payout owner
+	•	payout due date
+	•	payout notes
+
+5.11 Project / Delivery Tracking
+
+SOW başladıktan sonra:
+	•	project id
+	•	related opportunity
+	•	project owner
+	•	PM / delivery lead
+	•	technical lead
+	•	start date
+	•	target end date
+	•	milestone set
+	•	status
+	•	scope version
+	•	risk status
+	•	support period
+	•	handover completed flag
+
+5.12 Compliance / Risk Registry
+
+Her ürün ve her büyük opportunity için:
+	•	personal data involved?
+	•	call recording involved?
+	•	EU data involved?
+	•	security review required?
+	•	DPA required?
+	•	IP license required?
+	•	white-label restrictions?
+	•	guardrail requirement?
+	•	risk rating
+	•	reviewer
+	•	approval date
+
+5.13 Activities / Meetings / Notes
+	•	activity type
+	•	owner
+	•	related lead / account / opportunity / project
+	•	date
+	•	summary
+	•	action items
+	•	next step
+	•	shared or private note flag
+	•	attachment / link
+
+5.14 KPI / Contribution Tracking
+
+Üç katkı tipi ayrı tutulmalı:
+
+Governance contribution
+	•	meeting participation
+	•	rule drafting
+	•	coordination
+	•	review effort
+
+Commercial contribution
+	•	lead created
+	•	meetings opened
+	•	demos arranged
+	•	proposals advanced
+	•	deals won
+
+Delivery contribution
+	•	implementation hours
+	•	demos built
+	•	integrations completed
+	•	support actions
+	•	milestones delivered
+
+5.15 Agreements Registry
+
+Sözleşme / belge kayıtları:
+	•	NDA
+	•	MoU / Charter
+	•	Referral agreement
+	•	Reseller agreement
+	•	SOW
+	•	DPA
+	•	IP license
+	•	Support / SLA
+
+Her kayıt için:
+	•	agreement type
+	•	parties
+	•	start date
+	•	end date
+	•	status
+	•	linked deal/project
+	•	document URL
+	•	governing law
+	•	renewal reminder
+
+⸻
+
+6. Önerilen high-level system design
+
+6.1 Mimari yaklaşım
+
+İlk versiyon için önerim:
+	•	web tabanlı, role-based, modular monolith
+	•	ileride ihtiyaca göre servisleşebilir
+
+Katmanlar
+	1.	Presentation layer
+	2.	Application / business rules layer
+	3.	Data layer
+	4.	Integration layer
+	5.	Auth / access control layer
+	6.	Reporting / analytics layer
+	7.	Audit / logging layer
+
+6.2 Uygulama modülleri
+	•	Auth & Identity
+	•	CRM Core
+	•	Product Registry
+	•	Opportunity Engine
+	•	Revenue Share Module
+	•	Project Delivery Module
+	•	Compliance Module
+	•	Docs & Links Module
+	•	Notifications & Workflow Module
+	•	Reporting Module
+
+6.3 Önerilen teknoloji mantığı
+
+Erol ister low-code ister custom düşünür; ama mantık şu olmalı:
+	•	hızlı MVP için configurable model
+	•	record-level access desteği
+	•	workflow / automation
+	•	API-first
+	•	document linking
+	•	webhook / integration uyumu
+
+⸻
+
+7. Önerilen veri modeli / tablo yapıları
+
+Aşağıdaki yapı relational model için taslak niteliğindedir.
+
+7.1 users
+	•	id
+	•	full_name
+	•	email
+	•	status
+	•	timezone
+	•	default_role_id
+	•	created_at
+	•	updated_at
+
+7.2 roles
+	•	id
+	•	role_name
+	•	role_scope
+	•	description
+
+7.3 user_role_assignments
+	•	id
+	•	user_id
+	•	role_id
+	•	entity_scope_id
+	•	start_date
+	•	end_date
+
+7.4 organizations
+	•	id
+	•	org_name
+	•	org_type
+	•	country
+	•	website
+	•	owner_user_id
+	•	visibility_level
+	•	restricted_flag
+	•	notes
+
+7.5 contacts
+	•	id
+	•	first_name
+	•	last_name
+	•	title
+	•	email
+	•	phone
+	•	linkedin_url
+	•	organization_id
+	•	owner_user_id
+	•	trust_level
+	•	visibility_level
+	•	consent_status
+	•	notes
+
+7.6 relationship_links
+	•	id
+	•	contact_id
+	•	known_by_user_id
+	•	relationship_strength
+	•	intro_owner_user_id
+	•	sharing_permission
+	•	last_interaction_date
+	•	notes
+
+7.7 partner_entities
+	•	id
+	•	entity_name
+	•	entity_type
+	•	billing_capability
+	•	active_status
+	•	geography
+	•	notes
+
+7.8 capabilities
+	•	id
+	•	capability_name
+	•	category
+	•	description
+
+7.9 user_capabilities
+	•	id
+	•	user_id
+	•	capability_id
+	•	proficiency_level
+	•	availability_level
+	•	notes
+
+7.10 products
+	•	id
+	•	product_name
+	•	category
+	•	owner_entity_id
+	•	owner_user_id
+	•	maturity_level
+	•	demo_available
+	•	recurring_model
+	•	white_label_possible
+	•	reseller_possible
+	•	implementation_required
+	•	compliance_risk_level
+	•	status
+	•	notes
+
+7.11 product_capabilities
+	•	id
+	•	product_id
+	•	capability_id
+
+7.12 product_markets
+	•	id
+	•	product_id
+	•	geography
+	•	vertical
+	•	segment
+	•	active_flag
+
+7.13 leads
+	•	id
+	•	lead_name
+	•	source_type
+	•	source_owner_user_id
+	•	sponsor_user_id
+	•	organization_id
+	•	contact_id
+	•	geography
+	•	vertical
+	•	need_type
+	•	estimated_value
+	•	confidence_score
+	•	visibility_level
+	•	status
+	•	protected_until
+	•	conflict_flag
+	•	created_at
+
+7.14 lead_assignments
+	•	id
+	•	lead_id
+	•	assigned_user_id
+	•	assignment_type
+	•	assigned_at
+
+7.15 opportunities
+	•	id
+	•	opportunity_name
+	•	lead_id
+	•	account_org_id
+	•	deal_owner_user_id
+	•	source_owner_user_id
+	•	sponsor_user_id
+	•	pipeline_id
+	•	stage_id
+	•	deal_type
+	•	billing_entity_id
+	•	estimated_total_value
+	•	recurring_value
+	•	one_time_value
+	•	expected_close_date
+	•	visibility_level
+	•	compliance_review_status
+	•	win_probability
+	•	notes
+
+7.16 opportunity_products
+	•	id
+	•	opportunity_id
+	•	product_id
+	•	role_in_deal
+	•	primary_flag
+
+7.17 pipelines
+	•	id
+	•	pipeline_name
+	•	pipeline_type
+	•	active_flag
+
+7.18 stages
+	•	id
+	•	pipeline_id
+	•	stage_name
+	•	stage_order
+	•	is_closed_won
+	•	is_closed_lost
+	•	probability_default
+
+7.19 deal_paths
+	•	id
+	•	path_name
+	•	description
+
+7.20 opportunity_paths
+	•	id
+	•	opportunity_id
+	•	deal_path_id
+	•	primary_flag
+
+7.21 proposals
+	•	id
+	•	opportunity_id
+	•	proposal_number
+	•	proposal_date
+	•	currency
+	•	one_time_amount
+	•	recurring_amount
+	•	implementation_amount
+	•	support_amount
+	•	discount_amount
+	•	document_url
+	•	approval_status
+
+7.22 revenue_share_models
+	•	id
+	•	model_name
+	•	basis_type
+	•	description
+
+7.23 opportunity_revenue_shares
+	•	id
+	•	opportunity_id
+	•	user_id_or_entity_id
+	•	share_type
+	•	share_percent
+	•	share_basis
+	•	calc_amount
+	•	payout_status
+	•	due_date
+	•	notes
+
+7.24 projects
+	•	id
+	•	project_name
+	•	opportunity_id
+	•	project_owner_user_id
+	•	delivery_manager_user_id
+	•	technical_lead_user_id
+	•	start_date
+	•	target_end_date
+	•	status
+	•	scope_version
+	•	support_end_date
+
+7.25 project_milestones
+	•	id
+	•	project_id
+	•	milestone_name
+	•	due_date
+	•	status
+	•	owner_user_id
+	•	notes
+
+7.26 risks
+	•	id
+	•	related_type
+	•	related_id
+	•	risk_type
+	•	severity
+	•	status
+	•	owner_user_id
+	•	mitigation_notes
+
+7.27 compliance_reviews
+	•	id
+	•	related_type
+	•	related_id
+	•	personal_data_flag
+	•	recording_flag
+	•	eu_data_flag
+	•	dpa_required_flag
+	•	security_review_flag
+	•	ip_license_required_flag
+	•	reviewer_user_id
+	•	review_status
+	•	notes
+
+7.28 agreements
+	•	id
+	•	agreement_type
+	•	related_type
+	•	related_id
+	•	party_1
+	•	party_2
+	•	start_date
+	•	end_date
+	•	status
+	•	document_url
+	•	governing_law
+	•	renewal_date
+
+7.29 activities
+	•	id
+	•	related_type
+	•	related_id
+	•	activity_type
+	•	owner_user_id
+	•	activity_date
+	•	summary
+	•	next_step
+	•	private_flag
+
+7.30 notes
+	•	id
+	•	related_type
+	•	related_id
+	•	author_user_id
+	•	note_type
+	•	visibility_level
+	•	body
+	•	created_at
+
+7.31 attachments
+	•	id
+	•	related_type
+	•	related_id
+	•	file_name
+	•	file_url
+	•	uploaded_by
+	•	created_at
+
+7.32 kpi_contributions
+	•	id
+	•	user_id
+	•	contribution_type
+	•	related_type
+	•	related_id
+	•	metric_name
+	•	metric_value
+	•	period_start
+	•	period_end
+	•	notes
+
+7.33 audit_logs
+	•	id
+	•	actor_user_id
+	•	action_type
+	•	entity_type
+	•	entity_id
+	•	changed_fields_json
+	•	old_value_json
+	•	new_value_json
+	•	created_at
+	•	ip_address
+
+⸻
+
+8. Önerilen pipeline mantığı
+
+8.1 Lifecycle
+
+Contact / account ilişkisi için ayrı lifecycle tutulmalı:
+	•	New
+	•	Known
+	•	Qualified Relationship
+	•	Active Prospect
+	•	Customer
+	•	Partner
+	•	Dormant
+	•	Restricted
+
+8.2 Lead Status
+	•	New
+	•	Reviewing
+	•	Qualified
+	•	Needs Sponsor
+	•	Blocked
+	•	Rejected
+	•	Converted
+
+8.3 Opportunity Stage
+
+Öneri:
+	•	Registered
+	•	Discovery
+	•	Qualified
+	•	Solution Match
+	•	Demo / Workshop
+	•	Proposal Drafting
+	•	Proposal Sent
+	•	Commercial Negotiation
+	•	Legal / Compliance Review
+	•	Verbal Commit
+	•	Closed Won
+	•	Closed Lost
+	•	On Hold
+
+Önemli not: stage’ler yapılacak işi değil, tamamlanmış adımı göstermeli; bu yaklaşım HubSpot topluluk yanıtlarında da öneriliyor.  
+
+⸻
+
+9. Güvenlik modeli
+
+Önerilen güvenlik yapısı:
+	•	role-based security
+	•	record-level visibility
+	•	field-level masking
+	•	team / group based sharing
+	•	explicit approval workflow
+	•	audit trail
+
+Microsoft’un dokümantasyonunda güvenlik rollerinin ve field-level security’nin veri erişimini sınırlamak için kullanıldığı; Dataverse tarafında kullanıcıya birden çok rol atanabildiği ve yetkilerin birikimli olduğu açıkça belirtiliyor.  
+
+Hassas alan örnekleri
+	•	pricing
+	•	payout percentages
+	•	customer legal notes
+	•	employer restriction notes
+	•	IP ownership notes
+	•	personal phone/email
+	•	contract URLs
+
+⸻
+
+10. Workflow / automation önerileri
+
+İlk sürümde otomasyon kurulması gereken yerler:
+	•	lead created → source owner confirmation
+	•	duplicate account/contact warning
+	•	opportunity created → sponsor required check
+	•	high sensitivity record → approval required
+	•	stage moved to proposal → document checklist trigger
+	•	stage moved to won → project creation workflow
+	•	personal data flag true → DPA review required
+	•	white-label flag true → IP / compliance review required
+	•	protected_until expired → owner reminder
+	•	agreement expiry approaching → renewal alert
+
+⸻
+
+11. Raporlama ve dashboard’lar
+
+11.1 Governance dashboard
+	•	aktif partner sayısı
+	•	visibility by level
+	•	open conflicts
+	•	restricted records
+	•	expiring agreements
+
+11.2 Commercial dashboard
+	•	lead by source
+	•	opportunities by stage
+	•	pipeline by geography
+	•	pipeline by product
+	•	won/lost trends
+	•	revenue split forecast
+
+11.3 Delivery dashboard
+	•	active projects
+	•	milestone slippage
+	•	delivery by owner
+	•	support load
+	•	implementation revenue
+
+11.4 Contribution dashboard
+	•	governance contribution
+	•	commercial contribution
+	•	delivery contribution
+	•	shadow contribution totals
+
+⸻
+
+12. MVP kapsamı
+
+İlk sürümde mutlaka olması gerekenler:
+	•	users / roles
+	•	contacts / organizations
+	•	products / capabilities
+	•	leads
+	•	opportunities
+	•	visibility levels
+	•	source owner & sponsor fields
+	•	activities / notes
+	•	agreement links
+	•	basic revenue share fields
+	•	conflict flags
+	•	dashboard v1
+
+MVP dışında bırakılabilecekler
+	•	full payout engine
+	•	advanced analytics
+	•	AI recommendations
+	•	deep document generation
+	•	full project management
+	•	external portal
+	•	complex workflow engine
+
+⸻
+
+13. Fazlı geliştirme önerisi
+
+Faz 1 – CRM Core
+	•	contact / org
+	•	product registry
+	•	lead / opportunity
+	•	role-based access
+	•	notes / activities
+
+Faz 2 – Alliance Layer
+	•	source owner
+	•	visibility control
+	•	conflict registry
+	•	agreement registry
+	•	revenue share basics
+
+Faz 3 – Delivery Layer
+	•	projects
+	•	milestones
+	•	SOW linkage
+	•	support tracking
+
+Faz 4 – Compliance & Analytics
+	•	DPA / security review
+	•	risk registry
+	•	dashboards
+	•	audit enrichment
+
+⸻
+
+14. Erol için teknik değerlendirme checklist’i
+
+Erol bu doküman üzerinden şu kararları verebilir:
+	•	low-code mi, custom mı?
+	•	relational DB yeterli mi?
+	•	multi-tenant gerekir mi?
+	•	first release internal-only mi?
+	•	external restricted portal gerekir mi?
+	•	record-level security native mi geliştirilecek?
+	•	workflow engine platform’dan mı gelecek?
+	•	docs storage ayrı mı olacak?
+	•	analytics operational DB’den mi BI katmanından mı beslenecek?
+
+⸻
+
+15. Son öneri
+
+Bu CRM’i “satış aracı” gibi değil, şu şekilde tasarlayın:
+
+Alliance Relationship + Opportunity + Governance System
+
+Yani sistemin kalbi şu üçlü olsun:
+	•	Opportunity Registry
+	•	Rules of Engagement
+	•	Economics & Visibility Engine
+
+İstersen bir sonraki adımda bunu iki ek formatta çıkarayım:
+	1.	Erol’e gönderilecek daha kısa teknik özet
+	2.	ERD benzeri tablo ilişkileri listesi
+
+
+Tabii. Aşağıya kısa ve doğal bir WhatsApp mesajı bırakıyorum:
+
+Arkadaşlar merhaba,
+Bu yeni grubu, üzerinde konuştuğumuz alliance / iş birliği yapısını daha düzenli ilerletebilmek için açtım.
+
+İlk aşamada amacım herkesi tek bir modele zorlamak değil; ürün, hizmet, kanal, advisory katkıları, beklentiler, kısıtlar ve olası çalışma prensiplerini daha net görmek. Bu nedenle bir Google Drive klasörü hazırladım.
+
+Drive içinde:
+	•	kısa intro / README
+	•	Alliance Business Canvas template
+	•	bazı temel taslak dokümanlar
+
+yer alıyor.
+
+İlk ricam, mümkün olduğunda kendi klasörünüzdeki Alliance Business Canvas dokümanını gerçekçi ve açık şekilde doldurmanız. Bu aşamada uzun yazmanıza gerek yok; net olması yeterli. Özellikle:
+	•	ne katkı verebileceğiniz,
+	•	ne kadar komitment ayırabileceğiniz,
+	•	hangi kısıtlar / conflict alanları olduğu,
+	•	alliance içinde kendinizi hangi rolde gördüğünüz
+önemli.
+
+Sonrasında gelen cevapları toparlayıp bir sonraki adımı birlikte netleştiririz.
+
+Google Drive linki:
+[buraya link]
+
+Teşekkürler.
+
+İstersen buna bir de daha sıcak, daha kısa bir versiyon da yazayım.
+
+Tabii. Aşağıya 3 parçalı şekilde hazırladım:
+	1.	Kısa Executive Summary
+	2.	Google Drive’a koymalık temiz Final Draft giriş metni
+	3.	Intro için README
+
+⸻
+
+1) Executive Summary
+
+Alliance Operating Framework v1 – Kısa Yönetici Özeti
+
+Amaç
+
+Bu yapı, farklı kişi ve entitilerin ürün, hizmet, kanal, advisory ve delivery katkılarını tek bir klasik şirket modeline zorlamadan, ortak prensipler ve kontrollü görünürlük altında yönetmek için tasarlanmıştır.
+
+Ana model
+
+Önerilen üst yapı:
+	•	Core alliance / umbrella partnership
+	•	kontrollü erişimle çalışan bir business operating system
+	•	gerektiğinde farklı şirketlerin kullanılabildiği, ancak ortak kurallarla yönetilen bir yapı
+
+Bu yaklaşımda ilk hedef şirket kurmak değil, önce birlikte çalışma modelini netleştirmektir.
+
+Neden böyle bir yapı gerekiyor?
+
+Şu anki en büyük zorluklar:
+	•	portföy dağınıklığı
+	•	komitment belirsizliği
+	•	önceliklendirme eksikliği
+	•	ürün, servis, kanal ve network katkılarının karışması
+	•	müşteri, partner ve fırsat görünürlüğünün sistemsiz olması
+
+Temel çözüm yaklaşımı
+
+Alliance modeli 3 ana eksende çalışmalıdır:
+	1.	Başkalarının hazır ürünlerini satmak
+	2.	Bu ürünlerin etrafında servis üretmek
+	3.	Seçilmiş iç ürünleri büyütmek
+
+Yapının katmanları
+	•	Core Governance Circle
+Karar, conflict, görünürlük, lead ownership ve temel operating rules
+	•	Solution Partners
+Ürün, delivery, teknik entegrasyon ve channel enablement katkısı
+	•	External / Restricted Partners
+Sınırlı görünürlükle, referral veya proje bazlı çalışan dış ilişkiler
+	•	Venture / Incubation Lane
+Henüz olgunlaşmamış ama potansiyelli ürünler
+
+İlk öncelikli ticari odak
+
+İlk 60–90 gün için önerilen odak:
+	•	Voice AI
+	•	AI chatbot / website conversion
+	•	integration / implementation services
+	•	seçilmiş channel / reseller fırsatları
+
+Gelir modeli prensibi
+
+Tek oranlı eşit paylaşım yerine, her işte katkı bazlı dağılım gerekir:
+	•	lead sahibi payı
+	•	ürün / IP sahibi payı
+	•	delivery / implementation payı
+	•	ortak operasyon / platform payı
+
+Gerektiğinde:
+	•	source fee
+	•	orchestration fee
+	•	governance fee
+
+Görünürlük prensibi
+
+Herkes her bilgiye aynı düzeyde erişmemelidir.
+
+Önerilen seviyeler:
+	•	Private
+	•	Restricted
+	•	Shared with approval
+	•	Active project room
+
+Temel operating rules
+
+Yazılı hale getirilmesi gereken minimum kurallar:
+	•	lead registration
+	•	source owner mantığı
+	•	no side-dealing
+	•	protection window
+	•	conflict declaration
+	•	role-based access
+	•	proje bazlı owner / scope / faturalama / ekonomik paylaşım netliği
+
+Gerekli ilk belge seti
+
+İlk aşamada aşağıdaki belgeler yeterlidir:
+	•	Alliance Business Canvas
+	•	Mutual NDA
+	•	Alliance Charter / MoU
+	•	Conflict of Interest + Background IP Disclosure
+	•	gerekirse Data & Information Handling Rules
+
+İlk yapılacaklar
+	1.	Çekirdek ekipten canvas toplamak
+	2.	Kısa charter / operating memo üzerinde uzlaşmak
+	3.	Görünürlük ve lead ownership kurallarını netleştirmek
+	4.	İlk pilot fırsatı bu model üzerinde test etmek
+
+Yönetici özeti cümlesi
+
+Bu yapı bir community değil; kontrollü görünürlük, kayıtlı katkı ve yazılı ekonomik kurallarla çalışan bir business alliance’tır.
+
+⸻
+
+2) Google Drive’a koymalık temiz Final Draft giriş metni
+
+Alliance Operating Framework v1
+
+Giriş
+
+Bu doküman, muhtemel çekirdek ekip ve yakın iş ortakları arasında oluşabilecek ürün, hizmet, kanal, advisory ve proje bazlı iş birliklerini daha net, güvenli ve sürdürülebilir bir çerçevede değerlendirmek amacıyla hazırlanmıştır.
+
+Buradaki hedef, herkesi tek bir şirket yapısına veya tek bir iş modeline zorlamak değildir. Amaç, birlikte hareket etmenin hangi alanlarda anlamlı olduğunu, hangi katkıların hangi kurallarla paylaşılabileceğini ve hangi konuların baştan netleştirilmesi gerektiğini ortaya koymaktır.
+
+Bu çerçeve özellikle şu ihtiyaçlardan doğmuştur:
+	•	farklı kişilerin farklı ürün, hizmet ve network katkılarının olması
+	•	zaman, komitment ve görünürlük seviyelerinin farklılık göstermesi
+	•	bazı fırsatların ortak çalışmaya uygun, bazılarının ise kişisel veya restricted kalması
+	•	müşteri, lead, partner ve ürün bilgilerinin kontrolsüz paylaşılmasının risk yaratması
+	•	gelir paylaşımı, IP, conflict of interest ve proje sorumluluklarının baştan netleşmesi gereği
+
+Bu nedenle önerilen yaklaşım, klasik bir topluluk modeli değil; kontrollü erişim, yazılı prensipler ve proje bazlı sözleşmelerle çalışan bir alliance operating modelidir.
+
+Bu yapı kapsamında önce aşağıdaki başlıkların netleşmesi hedeflenmektedir:
+	•	amaç ve kapsam
+	•	partner statüleri
+	•	görünürlük seviyeleri
+	•	lead ownership
+	•	conflict yönetimi
+	•	ekonomik katkı türleri
+	•	IP ve veri kullanım sınırları
+	•	proje bazlı çalışma mantığı
+
+Bu doküman nihai hukuki sözleşme değildir. Öncelikli amacı, ortak zemini ve işletim mantığını tarif etmek, sonraki aşamada hazırlanacak NDA, Charter / MoU, referral/reseller agreement, SOW, DPA ve IP lisans eki gibi belgeler için temel oluşturmaktır.
+
+⸻
+
+3) Intro için README
+
+README – Alliance Core Team / Intro
+
+Bu klasör, muhtemel çekirdek ekip arasında ürün, hizmet, kanal, advisory ve proje bazlı iş birliklerini daha yapısal bir zeminde değerlendirmek amacıyla hazırlanmıştır.
+
+Bu çalışmanın amacı nedir?
+
+Amaç, herkesi tek bir şirket altında toplamak veya baştan bağlayıcı ortaklık kurmak değildir. İlk amaç, birlikte hareket etmenin hangi alanlarda anlamlı olduğunu görmek ve bunun için gerekli temel prensipleri yazılı hale getirmektir.
+
+Bu çalışma neden gerekli?
+
+İş birliklerinde en çok sorun çıkan alanlar şunlardır:
+	•	beklentilerin baştan net olmaması
+	•	kimin ne getirdiğinin belirsiz kalması
+	•	müşteri / lead / partner görünürlüğünün kontrolsüz olması
+	•	gelir ve katkı türlerinin karışması
+	•	conflict of interest ve IP sahipliğinin sonradan tartışma konusu olması
+
+Bu nedenle bu klasördeki dokümanlar, önce hizalanma, sonra yapılandırma, sonra proje bazlı uygulama mantığıyla hazırlanmıştır.
+
+Bu yapının temel prensibi nedir?
+
+Bu yapı bir community değil; kontrollü görünürlük, kayıtlı katkı ve yazılı ekonomik kurallarla çalışan bir business alliance yaklaşımıdır.
+
+İlk aşamada ne bekleniyor?
+
+İlk aşamada amaç sadece temel resmi görmek ve aşağıdaki sorulara dürüst cevap alabilmektir:
+	•	kim ne getiriyor?
+	•	hangi alanda katkı verebilir?
+	•	ne kadar zaman ayırabilir?
+	•	hangi ürün / hizmet / kanal / network katkısı var?
+	•	hangi kısıtları ve conflict alanları var?
+	•	hangi bilgileri shared, restricted veya private tutmak istiyor?
+
+Bu klasörde hangi belgeler var?
+	•	Alliance Business Canvas Template
+Her kişi / entitenin katkısını, odağını, kapasitesini ve beklentisini görmek için
+	•	Conflict of Interest + Background IP Disclosure Form
+Kısıtları, conflict alanlarını ve mevcut IP / asset durumunu yazılı hale getirmek için
+	•	Kısa Alliance Charter / MoU Taslağı
+Temel prensipleri, görünürlük mantığını, lead ownership ve conflict yönetimini çerçevelemek için
+	•	Mutual NDA Taslağı
+Detaylı bilgi paylaşımından önce gizlilik çerçevesi oluşturmak için
+	•	Referral / Reseller Agreement Taslağı
+Channel, referral ve reseller bazlı iş birlikleri için
+	•	SOW (Statement of Work) Taslağı
+Somut proje, pilot veya delivery işi başladığında scope ve teslimatları netleştirmek için
+	•	DPA Taslağı
+Kişisel veri veya müşteri verisi işlenecekse
+	•	IP Lisans Eki Taslağı
+Ürün, demo, marka, içerik veya teknik varlığın lisanslı kullanımı gerektiğinde
+
+Önerilen kullanım sırası
+	1.	Önce Alliance Business Canvas doldurulur
+	2.	Gerekirse detay paylaşımı öncesi NDA devreye alınır
+	3.	Çekirdek ekip için Alliance Charter / MoU netleştirilir
+	4.	Conflict + Background IP Disclosure toplanır
+	5.	Somut proje çıktığında gerekiyorsa:
+	•	Referral / Reseller Agreement
+	•	SOW
+	•	DPA
+	•	IP Lisans Eki
+kullanılır
+
+Bu klasör ne değildir?
+
+Bu klasör:
+	•	otomatik ortaklık kabulü değildir
+	•	hisse dağılımı belgesi değildir
+	•	herkesin her bilgiye eriştiği açık havuz değildir
+	•	nihai hukuki paket değildir
+
+Bu klasörün amacı:
+önce alignment, sonra governance, sonra proje bazlı execution.
+
+Katılımcılardan beklenen yaklaşım
+
+Lütfen belgeleri doldururken:
+	•	gerçekçi olun
+	•	kısa ama açık yazın
+	•	mevcut kısıtlarınızı saklamayın
+	•	görünmesini istemediğiniz alanları açıkça belirtin
+	•	ilk 90 günde gerçekten katkı verebileceğiniz alanlara odaklanın
+
+Son not
+
+Buradaki taslaklar başlangıç seviyesindedir. Somut projeye geçildiğinde, ilgili ülke / eyalet / şirket yapısına göre hukuk ve compliance açısından ayrıca gözden geçirilmelidir.
+
+⸻
+
+İstersen bir sonraki adımda bunları sana çok daha kısa, 1 sayfalık “00_Intro / README_Amac_ve_Surec” formatında da sadeleştireyim.
+
+Harika. Aşağıya bunu daha resmi, paylaşılabilir bir formatta “Alliance Operating Framework v1” olarak düzenledim.
+
+⸻
+
+Alliance Operating Framework v1
+
+Taslak Çerçeve Dokümanı
+Amaç: Çekirdek ekip ve yakın iş ortakları arasında ürün, hizmet, kanal, advisory ve proje bazlı iş birliklerini kontrollü, şeffaf ve sürdürülebilir bir işletim modeli altında toplamak.
+
+⸻
+
+1. Amaç ve yaklaşım
+
+Bu çerçevenin amacı, farklı kişi ve entitilerin sahip olduğu ürün, hizmet, kanal, network ve uzmanlık katkılarını tek bir klasik şirket modeli içine zorlamadan, ortak prensipler ve yazılı kurallar altında değerlendirmektir.
+
+Bu yapı:
+	•	tek bir ürün şirketi değildir
+	•	klasik bir topluluk yapısı değildir
+	•	kontrolsüz açık paylaşım ağı değildir
+	•	baştan tam şirketleşmeye zorlayan bir model değildir
+
+Bu yapı, kontrollü erişimle çalışan bir business alliance / umbrella partnership / operating system yaklaşımıdır.
+
+Temel hedefler:
+	•	birlikte hareket etmenin anlamlı ve makul olduğu alanları belirlemek
+	•	roller, katkılar ve beklentileri netleştirmek
+	•	görünürlük ve bilgi paylaşım kurallarını belirlemek
+	•	lead, partner, müşteri ve fırsat yönetimini disipline etmek
+	•	proje bazlı ticari iş birliklerini yazılı hale getirmek
+	•	gelecekte doğabilecek anlaşmazlıkları baştan azaltmak
+
+⸻
+
+2. Üst model
+
+Önerilen ana model:
+
+2.1 Core Alliance / Umbrella Partnership
+
+İlk günden tek şirket zorunlu değildir. Ancak aşağıdaki konuların baştan tanımlanması gerekir:
+	•	ortak çalışma prensibi
+	•	lead paylaşım prensibi
+	•	ürün ve IP sahipliği
+	•	gelir paylaşım mantığı
+	•	rol ve sorumluluk dağılımı
+	•	conflict-of-interest sınırları
+	•	hangi fırsat ortak havuza girer, hangisi kişisel kalır
+	•	hangi bilgilerin kim tarafından görülebileceği
+	•	proje bazında hangi entity’nin kullanılacağı
+
+Sonuç olarak, önce şirketten önce bir iş birliği işletim modeli kurulmalıdır.
+
+2.2 Alt çalışma hatları
+
+Bu yapı altında birden fazla gelir ve iş modeli birlikte çalışabilir:
+	•	reseller / channel partner işleri
+	•	implementation / consulting / integration işleri
+	•	kendi ürünleri / micro-SaaS ürünleri
+	•	venture building / product acceleration
+	•	advisory / mentoring / uzmanlık hizmetleri
+
+⸻
+
+3. Problem tanımı
+
+Şu anki temel zorluk teknik eksiklikten çok aşağıdaki konulardır:
+	•	portföy dağınıklığı
+	•	komitment belirsizliği
+	•	önceliklendirme eksikliği
+	•	ürün, servis, kanal ve network katkılarının karışması
+	•	herkesin aynı düzeyde erişime sahip olmaması gerektiği halde bunun sistemsel olarak yönetilememesi
+
+Bu nedenle ilk ihtiyaç, kişi ve entite bazlı net bir görünüm oluşturmaktır.
+
+İlk temel araç
+
+Capability + Product + Commitment Matrix
+
+Her kişi için aşağıdakiler netleştirilmelidir:
+	•	güçlü yan
+	•	ürün / asset
+	•	müsaitlik
+	•	gelir potansiyeli
+	•	risk
+	•	rol
+	•	conflict / kısıt alanı
+
+⸻
+
+4. Değer yaratma modeli
+
+Alliance’ın sürdürülebilir olması için üç ana eksende çalışması önerilir:
+
+4.1 Başkalarının hazır ürünlerini satmak
+	•	reseller
+	•	white-label
+	•	regional rep
+	•	sector rep
+
+4.2 Bu ürünlerin etrafında servis üretmek
+	•	setup
+	•	onboarding
+	•	integration
+	•	localization
+	•	optimization
+	•	support
+	•	reporting
+	•	managed service
+
+4.3 Seçilmiş iç ürünleri büyütmek
+	•	demo
+	•	pilot
+	•	müşteri geri bildirimi
+	•	GTM hazırlığı
+	•	yatırım hazırlığı
+
+⸻
+
+5. Alliance yapısının katmanları
+
+5.1 Core Governance Circle
+
+Sistemi yöneten çekirdek halka.
+
+Görevleri:
+	•	conflict çözümü
+	•	lead ownership yönetimi
+	•	görünürlük seviyelerinin belirlenmesi
+	•	yeni partner kabulü
+	•	ortak marka ve ana site kararı
+	•	ortak gider ve operasyon havuzu yönetimi
+	•	temel operating rules oluşturma
+
+5.2 Solution Partners
+
+Ürün, delivery, entegrasyon veya teknik katkı sağlayan kişiler.
+
+Bu gruptakiler:
+	•	ürün sahibi olabilir
+	•	entegrasyon yapabilir
+	•	delivery üstlenebilir
+	•	channel enablement sağlayabilir
+	•	teknik doğrulama yapabilir
+
+5.3 External / Restricted Partners
+
+Alliance içinde sınırlı görünürlükle çalışan dış çevre ilişkileridir.
+
+Özellikleri:
+	•	tam CRM erişimi yoktur
+	•	ortak müşteri havuzuna tam erişimi yoktur
+	•	governance’te oy hakkı olmayabilir
+	•	proje bazlı veya referral bazlı çalışabilir
+	•	compliance ve conflict incelemesi olmadan tam entegre edilmez
+
+5.4 Venture / Incubation Lane
+
+Henüz olgunlaşmamış ama potansiyelli ürünlerin tutulduğu ayrı hat.
+
+Buraya uygun alanlar:
+	•	demo seviyesindeki ürünler
+	•	co-founder veya yatırım ihtiyacı olan projeler
+	•	ayrı ekip gerektiren işler
+	•	ayrı coğrafyada operasyon gerektiren çözümler
+
+⸻
+
+6. Portföy önceliklendirmesi
+
+6.1 Tier 1 – İlk 60–90 gün önceliği
+
+Bunlar kısa vadede ticarileşebilecek alanlardır:
+	•	Voice AI / Contact Center / Agentic AI çözümleri
+	•	AI chatbot / website conversion çözümleri
+	•	AI integration & rescue services
+	•	teknik delivery / DevOps / API / deployment işleri
+	•	seçilmiş white-label güvenlik veya niş çözümler
+	•	alliance CRM / governance minimum altyapısı
+
+6.2 Tier 2 – Orta vadede paketlenecekler
+	•	retail / portal benzeri ürünler
+	•	scheduling / meeting tools
+	•	danışmanlık ve acceleration hizmetleri
+	•	AI coach / clone / advisory tabanlı çözümler
+	•	mentorluk, CV review, interview prep gibi mikro servisler
+
+6.3 Tier 3 – Yatırım veya ayrı ekip isteyenler
+	•	tam zamanlı ekip gerektiren ürünler
+	•	co-founder arayan girişimler
+	•	coğrafi operasyon gerektiren işler
+	•	traction almamış ama potansiyelli inkübasyon ürünleri
+
+⸻
+
+7. İlk ticari odak
+
+İlk odak aşağıdaki paket olmalıdır:
+
+Faz 1
+
+Voice AI + AI chatbot + integration services
+
+Sebep:
+	•	somut demo üretmek kolaydır
+	•	satışı anlatması kolaydır
+	•	recurring revenue potansiyeli vardır
+	•	dikey paketlere ayrılabilir
+	•	teknik ekip tarafından teslim edilebilir
+
+Faz 2
+
+Channel partner / regional representation
+	•	Türkiye
+	•	Kanada
+	•	Amerika
+	•	seçilmiş sektörler
+
+Faz 3
+
+İç ürünlerden traction alan 1–2 çözümü büyütmek
+
+⸻
+
+8. Gelir modeli
+
+8.1 Gelir türleri
+
+Alliance içinde aşağıdaki gelir türleri tanınmalıdır:
+	•	lisans / reseller komisyonu
+	•	kurulum ücreti
+	•	entegrasyon projesi
+	•	aylık bakım / support
+	•	success fee
+	•	lead referral fee
+	•	product royalty / IP fee
+	•	danışmanlık retainers
+	•	advisory ücretleri
+
+8.2 Gelir paylaşım prensibi
+
+Gelir tek oranla eşit paylaşılmamalıdır. Her işte aşağıdaki katkı türleri ayrı değerlendirilmelidir:
+	•	lead sahibi payı
+	•	ürün / IP sahibi payı
+	•	delivery / implementation payı
+	•	ortak operasyon / company pool payı
+
+Gerekiyorsa ek olarak:
+	•	source fee
+	•	orchestration fee
+	•	governance / platform share
+
+İş bazında cevaplanacak sorular
+	•	lead kimden geldi?
+	•	ürünü kim sağladı?
+	•	delivery’yi kim yaptı?
+	•	müşteri yönetimini kim üstlendi?
+	•	support’u kim verdi?
+	•	ilişkiyi kim kurdu ve taşıdı?
+
+⸻
+
+9. Gelir paylaşımında çalışma bantları
+
+Tek bir endüstri standardı yoktur. Oranlar rol ve katkı seviyesine göre değişir.
+
+Önerilen çalışma bantları:
+	•	sadece tanıştırma / intro: %3–5
+	•	lead source + qualification: %5–10
+	•	co-sell / active pursuit: %10–15
+	•	reseller / channel owner / account owner: %15–30
+	•	services / implementation / integration: ayrı ücretlendirilir
+
+Kritik ilke:
+Services geliri lisans komisyonunun içine eritilmemelidir.
+
+⸻
+
+10. Görünürlük ve erişim modeli
+
+Bu yapının en kritik unsuru, herkesin her bilgiye aynı düzeyde erişmemesidir.
+
+Önerilen görünürlük seviyeleri
+
+Seviye 0 – Hidden
+	•	sadece sahibi görür
+
+Seviye 1 – Metadata only
+	•	müşteri adı görünmez
+	•	yalnızca sektör, ülke, aşama, ihtiyaç tipi görünür
+
+Seviye 2 – Protected shared
+	•	müşteri / domain görünür
+	•	işlem yapmak için owner onayı gerekir
+
+Seviye 3 – Active deal room
+	•	aktif ortak çalışma vardır
+	•	ilgili ekip teklif, demo, teknik bilgi ve notları görebilir
+
+Alternatif isimlendirme:
+	•	Private
+	•	Restricted
+	•	Shared with approval
+	•	Active project room
+
+⸻
+
+11. Operating rules
+
+Aşağıdaki kurallar yazılı hale getirilmelidir:
+
+11.1 Lead Registration Rule
+
+Bir fırsatı sisteme ilk kaydeden kişi source owner olur.
+
+11.2 Sponsor Rule
+
+Source owner işi kendisi yürütemiyorsa delivery sponsor veya solution sponsor atar.
+
+11.3 No Side-Dealing Rule
+
+Owner’a haber vermeden alliance içinde görülen müşteri, lead, partner veya ürün ilişkisi üzerinden bağımsız ticari işlem yapılamaz.
+
+11.4 Protection Window
+
+Bir lead için sınırlı bir koruma süresi tanımlanır.
+Örnek:
+	•	60 gün aktif koruma
+	•	aktivite varsa uzatma
+	•	aktivite yoksa serbestleşme
+
+11.5 Conflict Declaration Rule
+
+Benzer ürün, müşteri veya kanal alanında çalışan herkes bunu önceden beyan eder.
+
+11.6 Role-Based Access Rule
+
+Bilgilere erişim rol bazlıdır; herkes aynı erişime sahip değildir.
+
+⸻
+
+12. CRM ve operating system ihtiyacı
+
+Bu yapı için klasik contact CRM yeterli değildir.
+
+CRM / portal tarafında en az şu alanlar bulunmalıdır:
+	•	lead / müşteri
+	•	partner / owner
+	•	ürün / çözüm
+	•	aşama / teklif / ödeme
+	•	görünürlük / yetki / conflict flag
+	•	owner / sponsor
+	•	relationship mapping
+	•	deal path
+	•	KPI logs
+	•	review streams
+
+Relationship mapping alanları
+	•	kişi adı
+	•	kim tanıyor
+	•	güven seviyesi
+	•	sektör
+	•	tanıştırma owner’ı
+	•	son temas tarihi
+	•	paylaşım izni
+
+⸻
+
+13. KPI ve katkı ölçümü
+
+Sadece toplantıya katılımı ölçmek yeterli değildir. Katkılar üç başlıkta izlenmelidir:
+
+13.1 Governance contribution
+	•	toplantı katılımı
+	•	karar süreçlerine katkı
+	•	dokümantasyon
+	•	sistem kurma desteği
+
+13.2 Commercial contribution
+	•	lead getirme
+	•	partner açma
+	•	müşteri görüşmesi
+	•	teklif takibi
+	•	closing desteği
+
+13.3 Delivery / product contribution
+	•	ürün sağlama
+	•	teknik entegrasyon
+	•	demo
+	•	implementasyon
+	•	support
+
+Not:
+Katılım puanı ile ekonomik hak aynı şey değildir.
+
+⸻
+
+14. Başlangıç maliyetleri ve uzun vadeli gelirler
+
+Aşağıdaki iki alan birbirinden ayrı tutulmalıdır:
+
+14.1 Kısa vadeli ortak giderler
+	•	domain
+	•	hosting
+	•	web sitesi
+	•	CRM
+	•	temel tooling
+	•	legal draft
+	•	admin giderler
+
+Karşılanma yöntemleri:
+	•	eşit katkı
+	•	gönüllü katkı
+	•	deferred contribution
+	•	şirkete / alana borç yazılan sanal katkı
+
+14.2 Uzun vadeli gelir paylaşımı
+
+Bu iş bazlı olmalıdır.
+
+Temel ilke:
+Ortak gider paylaşımı, ürün veya proje gelir paylaşımı ile karıştırılmamalıdır.
+
+⸻
+
+15. Gönüllü emek ve shadow contribution ledger
+
+“Şimdilik yapalım, sonra bakarız” yaklaşımı ileride sorun çıkarır.
+
+Bunun yerine bir Shadow Contribution Ledger tutulmalıdır.
+
+İzlenecek alanlar:
+	•	kim ne kadar zaman ayırdı
+	•	ne çıktı üretti
+	•	hangi riski aldı
+	•	cash equivalent değeri ne
+	•	ödeme mi, kredi mi, bonus mu
+	•	ileride equity’ye dönüşecek mi, dönüşmeyecek mi
+
+İlke:
+Başta her katkı hisseye çevrilmemeli, önce kayıt altına alınmalıdır.
+
+⸻
+
+16. Hukuki ve sözleşmesel mimari
+
+Tek sözleşmeyle her şeyi çözmeye çalışmak doğru değildir.
+
+16.1 Alliance layer
+	•	Mutual NDA
+	•	MoU / Alliance Charter
+	•	Conflict disclosure
+	•	Background IP schedule
+
+16.2 Commercial layer
+	•	Referral agreement
+	•	Reseller / channel agreement
+	•	White-label / distribution agreement
+
+16.3 Delivery layer
+	•	Master Collaboration Agreement
+	•	Statement of Work (SOW)
+	•	Support / SLA eki
+
+16.4 Protection layer
+	•	DPA
+	•	Security appendix
+	•	IP license / assignment deed
+	•	access rules
+
+⸻
+
+17. İlk aşamada gerekli belge seti
+
+İlk turda aşağıdaki belge seti yeterlidir:
+
+17.1 Alliance Business Canvas
+
+Her kişi / entity doldurur.
+
+İçeriği:
+	•	ürün / hizmet
+	•	value proposition
+	•	hedef müşteri
+	•	kanal
+	•	mevcut kaynaklar
+	•	gelir modeli
+	•	maliyet yapısı
+	•	beklenti
+	•	zaman / kapasite
+	•	conflict alanları
+	•	alliance içindeki istenen rol
+	•	mevcut IP / müşteri / kanal varlıkları
+
+17.2 Mutual NDA
+
+Detay paylaşmadan önce temel gizlilik koruması sağlar.
+
+17.3 Alliance Charter / MoU
+
+Birlikteliğin amacı, kapsamı, roller, görünürlük, lead ownership, conflict, IP ve proje mantığını tanımlar.
+
+17.4 Conflict of Interest + Background IP Disclosure
+
+Mevcut kısıtlar, conflict alanları, önceden sahip olunan IP ve restricted paylaşım tercihlerini toplar.
+
+17.5 Data & Information Handling Rules
+
+Kişisel veri veya müşteri verisi işlenecekse ayrıca DPA gerekip gerekmediğini tetikler.
+
+⸻
+
+18. Governance ve compliance minimum seti
+
+Üyelik seviyeleri
+	•	Core
+	•	Active partner
+	•	Restricted external
+	•	Advisor / specialist
+
+Karar mekanizması
+	•	stratejik kararlar: çekirdek grup
+	•	proje kararları: proje sahibi + ilgili partnerler
+	•	conflict: escalation mekanizması
+
+Proje başlatma kuralı
+
+Bir iş, şu dört unsur netleşmeden başlamamalıdır:
+	•	owner
+	•	faturalama entitesi
+	•	scope
+	•	ekonomik paylaşım
+
+Compliance minimumu
+	•	NDA olmadan detaylı bilgi paylaşımı yapılmaz
+	•	conflict disclosure zorunludur
+	•	müşteri verisi gelirse DPA / privacy eki gerekir
+	•	IP varsayılan olarak sahibinde kalır
+	•	proje çıktıları ayrıca tanımlanır
+
+⸻
+
+19. Marka ve web sitesi yaklaşımı
+
+Tek bir web sitesinde her şeyi anlatmaya çalışmak güven kaybına yol açabilir.
+
+Önerilen yapı
+
+Bir ana umbrella site ve altında üç ana çözüm alanı:
+	•	Voice AI & Customer Automation
+	•	AI Chatbots & Website Conversion
+	•	Integration, Delivery & Channel Partnership
+
+Ek bölüm:
+	•	Selected Venture Products
+
+Amaç:
+Ziyaretçinin ilk bakışta “bunlar ne yapıyor?” sorusuna net cevap alması.
+
+⸻
+
+20. Stratejik teknik odak
+
+Bu alliance için önerilen teknik odak:
+	•	foundation model geliştirme değil
+	•	orchestration
+	•	agentic workflow
+	•	vertical solutioning
+	•	CRM / ERP / voice / contact-center entegrasyonu
+	•	guardrail
+	•	compliance
+	•	deployment
+	•	channel-ready paketleme
+
+Kısa ifade:
+Biz foundation model yapmıyoruz; agentic orchestration, vertical workflow, realtime voice, enterprise integration ve channel-ready çözüm paketleri yapıyoruz.
+
+⸻
+
+21. White-label ve dış ürün değerlendirme çerçevesi
+
+Her ürün alliance içinde tam açık şekilde paylaşılmamalıdır. Gated değerlendirme uygulanmalıdır.
+
+İlk değerlendirme özeti
+	•	ürün ne yapıyor
+	•	hedef müşteri tipi
+	•	deployment modeli
+	•	veri / log tutuyor mu
+	•	support kimde
+	•	white-label mümkün mü
+	•	marj nedir
+	•	bölgesel kısıt var mı
+
+Due diligence minimumu
+	•	IP kimin
+	•	SLA var mı
+	•	support escalation kimde
+	•	müşteri sözleşmesindeki sorumluluk kimde
+	•	veri işleme ve loglama nerede
+	•	branding / fiyat / support sınırı ne
+
+⸻
+
+22. Risk & compliance layer
+
+Özellikle enterprise ve uluslararası açılım için her ürün için mini risk kartı gereklidir.
+
+Kontrol soruları:
+	•	kişisel veri işleniyor mu?
+	•	ses kaydı var mı?
+	•	contact center kaydı tutuluyor mu?
+	•	AB pazarı var mı?
+	•	enterprise müşteri hedefleniyor mu?
+	•	white-label çözümde güvenlik ve sorumluluk kimde?
+	•	guardrail gerekiyor mu?
+	•	data/privacy riski nedir?
+
+⸻
+
+23. Toplantı yapısı
+
+Tek toplantıda hem governance hem ürün demosu hem gelir paylaşımı konuşulmamalıdır.
+
+Dar toplantılar
+	•	governance
+	•	karar
+	•	revenue
+	•	conflict
+	•	visibility
+	•	sözleşme ve operating rules
+
+Geniş toplantılar
+	•	ürün tanıtımı
+	•	demo
+	•	networking
+	•	yeni kişi tanıtımı
+	•	pazar sohbeti
+	•	white-label fırsatlar
+
+Üç ana track
+	•	Governance Track
+	•	Product & Market Track
+	•	Compliance & Enterprise Readiness Track
+
+⸻
+
+24. Rol önerileri
+
+Sen
+	•	Alliance Founder
+	•	Strategy
+	•	Channel / sales orchestration
+	•	Partner relations
+	•	Packaging
+	•	Governance owner
+
+Yasin
+	•	UX/UI
+	•	Product experience lead
+	•	Chatbot / site conversion owner
+
+Erol
+	•	Chief solution architect
+	•	Integration / DevOps / AI implementation
+	•	Technical due diligence
+
+Muhittin
+	•	PMO
+	•	Alliance coordination
+	•	investor / channel / partner development
+
+İbrahim
+	•	Voice AI product partner
+	•	regional / vertical licensing
+	•	anchor opportunity owner
+
+Gökhan
+	•	Enterprise solutions & European channel bridge
+	•	white-label / reseller enabler
+	•	SAP-adjacent technical overlay
+	•	consulting / product / DevOps katkısı
+
+Michael
+	•	US market bridge
+	•	consulting delivery
+	•	opportunity partner
+
+Restricted dış çevre
+	•	referral bazlı
+	•	proje bazlı
+	•	sınırlı görünürlük
+
+⸻
+
+25. Aşamalı yol haritası
+
+Aşama 1 – Stratejik hizalanma
+
+Çıktı:
+	•	alliance concept note
+	•	amaç ve kapsam
+	•	çekirdek ekip doğrulaması
+
+Aşama 2 – Canvas toplama
+
+Çıktı:
+	•	kişi / entite bazlı Alliance Business Canvas
+	•	kapasite, beklenti, rol, kısıt görünürlüğü
+
+Aşama 3 – Ön anlaşmalar
+
+Çıktı:
+	•	NDA
+	•	MoU / Charter
+	•	conflict form
+	•	IP schedule
+
+Aşama 4 – Governance minimumu
+
+Çıktı:
+	•	görünürlük kuralları
+	•	karar mekanizması
+	•	proje başlatma kuralı
+	•	bilgi güvenliği minimumları
+
+Aşama 5 – Pilot ticari uygulama
+
+Çıktı:
+	•	owner
+	•	faturalama
+	•	rol dağılımı
+	•	ekonomik paylaşım
+	•	gerekiyorsa reseller / SOW / DPA / IP lisans eki
+
+⸻
+
+26. Yakın dönem deliverable’lar
+
+1. Partner Matrix
+	•	yetenek
+	•	ürün
+	•	zaman
+	•	hedef
+	•	risk
+	•	gelir tipi
+	•	uygun rol
+
+2. Product Portfolio Map
+	•	hazır mı
+	•	demo var mı
+	•	müşteri var mı
+	•	recurring mi
+	•	yatırım mı lazım
+	•	kim sahip
+	•	neden alliance için uygun
+
+3. Operating Model
+	•	fırsat yönetimi
+	•	gelir paylaşımı
+	•	IP
+	•	lead ownership
+	•	website / brand mantığı
+	•	visibility rules
+	•	conflict yönetimi
+
+4. 90 günlük GTM planı
+	•	hangi ürünlerle çıkılacak
+	•	hangi dikeye gidilecek
+	•	kim konuşacak
+	•	hangi demo hazırlanacak
+	•	hangi sayfalar açılacak
+
+⸻
+
+27. İlk paylaşım stratejisi
+
+İlk paylaşım için uygun çekirdek halka:
+	•	Muhittin
+	•	Erol
+	•	Gökhan
+	•	Yasin
+
+Neden?
+	•	yapılandırma
+	•	teknik gerçekçilik
+	•	ürün / kanal perspektifi
+	•	UX / servisleşme / kullanıcı tarafı
+aynı anda test edilmiş olur
+
+Önerilen paylaşım sırası
+	1.	kısa core concept note
+	2.	Alliance Business Canvas
+	3.	“Bu yapı sana mantıklı geliyor mu?” sorusu
+	4.	sonra gerekiyorsa NDA
+	5.	sonra MoU / Charter
+
+⸻
+
+28. Temel kültürel prensipler
+
+Aşağıdaki iki cümle bu alliance’ın kültürünü belirlemelidir:
+	•	Bu yapı bir community değil; kontrollü görünürlük, kayıtlı katkı ve yazılı ekonomik kurallarla çalışan bir business alliance’tır.
+	•	Bu ağdaki hiçbir müşteri, partner, lead veya ürün ilişkisi; source owner bilgisi ve role-based visibility kuralları dışında kullanılamaz.
+
+⸻
+
+29. En kısa yönetici özeti
+	•	İlk iş şirket kurmak değil, birlikte çalışmanın kurallarını yazmaktır.
+	•	İlk iş yüzde belirlemek değil, katkı tiplerini ve görünürlük seviyelerini tanımaktır.
+	•	İlk iş herkesi aynı sepete koymak değil, rol ve erişim düzeyini belirlemektir.
+	•	İlk iş ağır sözleşmeler yapmak değil, NDA + MoU / Charter + Conflict/IP disclosure ile zemini kurmaktır.
+	•	İlk somut fırsat, alliance operating modelini test edecek pilot olarak ele alınmalıdır.
+	•	Yapı ancak governance, visibility, contribution tracking ve economic clarity birlikte kurulursa sürdürülebilir olur.
+
+⸻
+
+İstersen bir sonraki adımda bunu sana iki formatta da çıkarayım:
+	1.	Daha kısa “Executive Summary” versiyonu
+	2.	Google Drive’a koymalık temiz “final draft” versiyonu
+
+Tabii. Aşağıda tüm içeriği tekrarları ayıklanmış, bilgileri korunmuş ve madde madde düzenlenmiş şekilde bir araya getirdim.
+
+⸻
+
+Alliance / Umbrella Partnership Konsept Dokümanı – Konsolide Taslak
+
+1. Ana stratejik çerçeve
+	•	Hedef, tek bir klasik ürün şirketi kurmak değil.
+	•	Doğru üst model:
+	•	core alliance / umbrella partnership
+	•	kontrollü erişimle çalışan bir business operating system
+	•	gerektiğinde birden fazla şirketin kullanılabildiği ama ortak prensiplerle yönetilen bir yapı
+
+Bu yapıda baştan netleşmesi gerekenler
+	•	ortak çalışma prensipleri
+	•	lead paylaşım prensibi
+	•	ürün / IP sahipliği
+	•	gelir paylaşım mantığı
+	•	kim hangi projede hangi rolde
+	•	mevcut işverenlerle conflict-of-interest sınırları
+	•	hangi fırsat ortak havuza girer, hangisi kişisel kalır
+	•	hangi bilgi kim tarafından görülebilir
+	•	proje bazında hangi entity faturalama yapar
+
+Temel fikir
+	•	Önce şirket değil, iş birliği işletim modeli kurulmalı.
+	•	Önce hisse ve şirket yapısı değil, roller, görünürlük, kurallar ve katkı tipleri netleşmeli.
+
+⸻
+
+2. En büyük problem tanımı
+
+Ana problem teknik değil:
+	•	portföy dağınıklığı
+	•	komitment belirsizliği
+	•	önceliklendirme eksikliği
+	•	ürün / hizmet / kanal / network katkılarının karışması
+	•	herkesin aynı görünürlük seviyesinde olmaması gerektiği halde bunu yönetecek sistemin olmaması
+
+Netleşmesi gereken kritik sorular
+	•	hangisi hemen satılabilir?
+	•	hangisi referans üretir?
+	•	hangisi sadece demo?
+	•	hangisi yatırım ister?
+	•	hangisi servisle beraber satılır?
+	•	hangisi kim olmadan ilerleyemez?
+	•	hangisi alliance içine, hangisi incubation tarafına konmalı?
+
+İlk ihtiyaç
+
+Capability + Product + Commitment Matrix
+
+Her kişi için şu başlıklar net olmalı:
+	•	güçlü yan
+	•	ürün / asset
+	•	müsaitlik
+	•	gelir potansiyeli
+	•	risk
+	•	rol
+	•	kısıt / conflict alanı
+
+⸻
+
+3. Önerilen iş modeli
+
+Ana tanım
+
+AI-enabled solutions alliance
+
+Üç temel çalışma hattı
+	1.	Başkalarının hazır ürünlerini satmak
+	•	reseller
+	•	white-label
+	•	regional rep
+	•	sector rep
+	2.	Bu ürünlerin etrafında servis paketi sunmak
+	•	setup
+	•	integration
+	•	localization
+	•	optimization
+	•	monthly support
+	•	onboarding
+	•	reporting
+	•	managed service
+	3.	Seçilmiş iç ürünleri büyütmek
+	•	demo
+	•	pilot
+	•	müşteri feedback
+	•	GTM hazırlığı
+	•	yatırım hazırlığı
+
+Alt gelir kolları
+	•	reseller / channel partner işleri
+	•	implementation / consulting / integration işleri
+	•	kendi ürünleriniz / micro-SaaS ürünler
+	•	venture building / product acceleration
+
+⸻
+
+4. Alliance yapısının katmanları
+
+A. Core Governance Circle
+
+Sistemi yöneten çekirdek halka.
+
+Görevleri
+	•	conflict çözmek
+	•	lead ownership kurallarını işletmek
+	•	kim neyi görebilir karar vermek
+	•	yeni partner kabulü
+	•	ortak marka / ana site kararı
+	•	masraf ve gelir havuzu yönetimi
+	•	temel operating rules belirlemek
+
+Buradaki temel rol
+
+Sen:
+	•	Founding Orchestrator
+	•	Network Steward
+	•	Opportunity Architect
+	•	Governance Owner
+
+Bunun anlamı
+	•	insanları tanıştıran sensin
+	•	capability bilen sensin
+	•	reputational risk sende
+	•	yanlış eşleşme olursa sorun sana dönüyor
+	•	dolayısıyla ekonomik hakkın sadece satıştan doğmamalı
+
+⸻
+
+B. Solution Partners
+
+Ürün veya delivery getiren partnerler.
+
+Bu katmandaki tipik roller
+	•	ürün sahibi
+	•	entegrasyon / implementation
+	•	technical overlay
+	•	delivery support
+	•	channel enablement
+
+Örnek konumlar
+	•	Yasin: UX/UI + product experience + chatbot/site conversion
+	•	Erol: chief solution architect + integration/devops/AI implementation
+	•	Gökhan: enterprise solution partner + European channel bridge + white-label/reseller enabler + SAP/AI overlay
+	•	İbrahim: flagship / anchor voice AI product partner
+	•	gerektiğinde başka ürün sahipleri
+
+⸻
+
+C. External / Restricted Partners
+
+Tam görünür olmayan, kontrollü çalışan kişiler.
+
+Özellikleri
+	•	ortak CRM’de full visibility yok
+	•	governance’te oy hakkı yok
+	•	core müşteri havuzuna erişim yok
+	•	proje bazlı veya referral bazlı çalışabilirler
+	•	compliance ve conflict incelemesi olmadan tam entegrasyon olmaz
+
+Örnek statü adı
+
+Restricted External Opportunity / Referral-Only
+veya
+Restricted Associate – No automatic access, no pooled rights, no implied partnership
+
+Bu katmandaki mantık
+	•	ilişki olabilir
+	•	referral olabilir
+	•	finder fee olabilir
+	•	ama çekirdek havuza sınırsız erişim olmaz
+
+⸻
+
+D. Venture / Incubation Lane
+
+Henüz olgunlaşmamış ama umut veren ürünler.
+
+Buraya giren örnekler
+	•	deneysel ürünler
+	•	co-founder ihtiyacı olan projeler
+	•	tam zamanlı ekip isteyen ürünler
+	•	demo seviyesinde kalan çözümler
+	•	coğrafi operasyon gerektiren işler
+
+⸻
+
+5. Portföy sınıflandırması
+
+Sepet / Tier 1 – Hemen paraya dönebilecekler
+
+İlk 60–90 günde öncelik.
+	•	Voice AI / Contact Center / Agentic AI çözümleri
+	•	website conversion / AI chatbot
+	•	AI integration & rescue services
+	•	technical delivery / DevOps / API / deployment işleri
+	•	seçilmiş white-label güvenlik çözümleri
+	•	channel development consulting
+	•	alliance CRM / governance minimum sistemi
+
+Sepet / Tier 2 – Orta vadede paketlenecekler
+	•	retail portal
+	•	scheduling / meeting tools
+	•	business consulting / stuck startup acceleration consulting
+	•	advisory servis paketleri
+	•	AI coach / clone çözümleri
+	•	mentorluk / CV review / interview prep / kısa danışmanlık
+	•	dikey sayfalar / consulting shells
+
+Sepet / Tier 3 – Yatırım veya ayrı ekip isteyenler
+	•	service marketplace işleri
+	•	programcı co-founder ihtiyacı olan ürünler
+	•	ayrı coğrafyada operasyon gerektiren işler
+	•	yarı olgun deneysel projeler
+	•	traction almamış ama potansiyelli venture’lar
+
+⸻
+
+6. Öncelikli ticari odak
+
+Faz 1
+
+Voice AI + AI chatbot + integration services
+
+Sebepler
+	•	somut demo kolay
+	•	satışı anlatması kolay
+	•	recurring revenue potansiyeli var
+	•	sektörel paket yapılabilir
+	•	teknik ekiple teslim edilebilir
+
+Faz 2
+
+Channel partner / regional representation
+	•	Türkiye
+	•	Kanada
+	•	Amerika
+	•	seçilmiş dikeyler
+
+Faz 3
+
+İç ürünlerden 1–2 tanesini büyütmek
+	•	sadece traction varsa
+	•	sadece pilot geri bildirimi pozitifse
+
+Anchor opportunity
+
+Şu anda en somut ilk pilot fırsat:
+	•	İbrahim’in Voice AI hattı
+
+Neden?
+	•	ürün somut
+	•	pazar sinyali var
+	•	yatırım hikayesi var
+	•	channel modeli kurulabilir
+	•	hızlı aksiyon alınabilir
+
+⸻
+
+7. Alliance içindeki değer türleri
+
+Bu ağ içinde en az 4 farklı değer türü var:
+	•	ürün
+	•	satış kanalı
+	•	teknik delivery
+	•	advisory / market access
+
+Risk
+
+Bu katkılar ayrılmazsa herkes sonradan “benim katkım daha büyüktü” der.
+
+Çözüm
+
+Ekonomik model katkı tipine göre kurulmalı.
+
+⸻
+
+8. Gelir modeli prensipleri
+
+Gelir türleri
+	•	lisans / reseller komisyonu
+	•	kurulum ücreti
+	•	entegrasyon projesi
+	•	aylık bakım / support
+	•	success fee
+	•	lead referral fee
+	•	product royalty / IP fee
+	•	danışmanlık retainers
+	•	advisory ücretleri
+
+Gelir paylaşım mantığı
+
+Her işte sabit tek oran yerine, gelir parçalanmalı:
+	•	lead sahibi payı
+	•	ürün / IP sahibi payı
+	•	delivery / implementation payı
+	•	ortak operasyon / company pool payı
+
+Gerektiğinde ek katman
+	•	source fee
+	•	orchestration fee
+	•	governance / platform share
+
+İş bazlı sorulacak sorular
+	•	lead kimden geldi?
+	•	ürünü kim sağlıyor?
+	•	teslimatı kim yapıyor?
+	•	müşteri yönetimini kim üstleniyor?
+	•	support kim veriyor?
+	•	relationship orchestration kimde?
+
+Temel uyarı
+
+Tek “eşit paylaşım” modeli genelde kavga çıkarır.
+
+⸻
+
+9. Gelir paylaşımında genel temayül
+
+Tek bir endüstri standardı yoktur. Oranlar role göre değişir.
+
+Önerilen bantlar
+	•	sadece tanıştırma / intro: %3 – %5
+	•	lead source + qualification: %5 – %10
+	•	co-sell / active pursuit: %10 – %15
+	•	reseller / channel owner / account owner: %15 – %30
+	•	services / implementation / integration: ayrı hesaplanmalı
+
+Kritik prensip
+
+Services gelirini lisans komisyonunun içine eritmeyin.
+
+⸻
+
+10. Somut örnek mantığı: channel / distributor / local seller
+
+Bir vendor size örneğin %15–20 kanal marjı veriyorsa, bu marjın içinden herkesin pay alması zor olabilir.
+
+Daha sağlıklı mantık
+
+Saf lisans gelirinde:
+	•	yerel kapatan partner: %8–12
+	•	master/channel orchestration layer: %4–7
+	•	ana sistem / ops pool: %1–3
+
+Asıl kârlılık nereden gelmeli?
+	•	onboarding
+	•	setup
+	•	call flow design
+	•	integration
+	•	reporting
+	•	optimization
+	•	monthly managed service
+
+Sonuç
+
+Lisans komisyonu kapıyı açan gelir olsun; gerçek kâr servislerden gelsin.
+
+⸻
+
+11. Görünürlük ve erişim modeli
+
+Bu yapının özü:
+visibility control
+
+Neden?
+	•	herkes her müşteriyi / partneri / kanalı / ürünü aynı düzeyde görmemeli
+	•	aksi halde hem conflict çıkar hem de sorumluluk dağılır
+
+Önerilen görünürlük seviyeleri
+
+Seviye 0 – Hidden
+	•	hiç görünmez
+	•	sadece sahibi görür
+
+Seviye 1 – Metadata only
+	•	müşteri adı görünmez
+	•	sektör, ülke, aşama, ihtiyaç tipi görünür
+
+Seviye 2 – Protected shared
+	•	müşteri / domain görünür
+	•	ama işlem için owner onayı gerekir
+	•	detay sınırlıdır
+
+Seviye 3 – Active deal room
+	•	aktif ortak çalışma açılmıştır
+	•	ilgili ekip teklif, demo, teknik bilgi ve notları görür
+
+Minimum görünürlük isimleri
+	•	Private
+	•	Restricted
+	•	Shared with approval
+	•	Active project room
+
+⸻
+
+12. Operating rules – temel kurallar
+
+Lead Registration Rule
+	•	Bir fırsatı sisteme ilk kaydeden kişi source owner olur.
+	•	Ama bu sınırsız hak vermez.
+
+Sponsor Rule
+	•	Fırsatı getiren kişi işi yapamayacaksa delivery sponsor veya solution sponsor atar.
+
+No Side-Dealing Rule
+	•	Owner’a haber vermeden sistemde görülen lead / müşteri / partner üzerinden yan iş yapılmaz.
+
+Cooling / Protection Window
+	•	Bir lead kaydedilince belirli süre koruma olur.
+	•	Örnek:
+	•	60 gün aktif çalışma koruması
+	•	aktivite varsa uzama
+	•	aktivite yoksa serbestleşme
+
+Conflict Declaration Rule
+	•	Benzer ürün çıkaran veya benzer müşteri alanına giden herkes bunu önceden bildirir.
+
+Role-Based Access Rule
+	•	Herkes aynı erişim seviyesinde olmaz.
+	•	Rolüne göre bilgi görür.
+
+⸻
+
+13. CRM / operating system gereksinimi
+
+Bu yapı için basit contact CRM yeterli değil.
+
+CRM’de tutulması gereken ana alanlar
+	•	lead / müşteri
+	•	partner / owner
+	•	ürün / çözüm
+	•	aşama / teklif / ödeme
+	•	görünürlük / yetki / conflict flag
+
+Önerilen modüller
+	•	lead registry
+	•	owner / sponsor fields
+	•	opportunity stages
+	•	proposal tracking
+	•	payment tracking
+	•	review streams
+	•	partner visibility
+	•	KPI logs
+	•	conflict flags
+	•	relationship mapping
+	•	source ownership
+	•	deal path
+
+Relationship mapping alanları
+	•	kişi adı
+	•	kim tanıyor
+	•	güven seviyesi
+	•	sektör
+	•	tanıştırma owner’ı
+	•	son temas tarihi
+	•	paylaşım izni
+
+⸻
+
+14. KPI ve katkı ölçümü
+
+Sadece toplantıya katılım yetmez. Sadece satış da yetmez.
+
+Üç ayrı katkı tipi ölçülmeli
+
+A. Governance contribution
+	•	toplantı katılımı
+	•	karar süreçleri
+	•	dokümantasyon
+	•	sistem kurma desteği
+
+B. Commercial contribution
+	•	lead getirme
+	•	partner açma
+	•	müşteri görüşmesi
+	•	teklif takibi
+	•	closing desteği
+
+C. Delivery / product contribution
+	•	ürün sağlama
+	•	teknik entegrasyon
+	•	demo
+	•	implementasyon
+	•	support
+
+Kritik nokta
+
+Katılım puanı ile ekonomik katkı puanı aynı şey değildir.
+
+⸻
+
+15. Başlangıç maliyetleri ve uzun vadeli gelirler
+
+Bu ikisi ayrı tutulmalı.
+
+Kısa vadeli ortak giderler
+	•	domain
+	•	hosting
+	•	web sitesi
+	•	CRM
+	•	temel tooling
+	•	legal draft
+	•	admin giderler
+
+Karşılanma şekli
+	•	eşit katkı
+	•	gönüllü katkı
+	•	sanal katkı / borç yazımı
+	•	deferred contribution
+
+Uzun vadeli gelir paylaşımı
+	•	iş bazlı olmalı
+	•	ürün bazlı olmalı
+	•	rol bazlı olmalı
+
+Temel eşitlik
+
+ortak gider paylaşımı ≠ ürün gelir paylaşımı
+
+⸻
+
+16. Gönüllü emek / shadow ledger yaklaşımı
+
+“Şimdilik gönüllü yap, sonra bakarız” modeli risklidir.
+
+Bunun yerine
+
+Shadow Contribution Ledger tutulmalı.
+
+İzlenecek kalemler
+	•	kim kaç saat katkı verdi
+	•	ne çıktı üretti
+	•	hangi riski aldı
+	•	cash equivalent değeri ne
+	•	bu katkı ödeme mi, kredi mi, bonus mu
+	•	ileride equity’ye dönüşür mü, dönüşmez mi
+
+İlk prensip
+
+Başta her katkıyı hisseye çevirmeyin. Önce kayıt altına alın.
+
+⸻
+
+17. Hukuki / işletimsel belge mimarisi
+
+Alliance layer
+	•	Mutual NDA
+	•	MoU / Alliance Charter
+	•	Conflict disclosure
+	•	Background IP schedule
+
+Commercial layer
+	•	Referral agreement
+	•	Reseller / channel agreement
+	•	White-label / distribution agreement
+
+Delivery layer
+	•	Master Collaboration Agreement
+	•	SOW
+	•	Support / SLA eki
+
+Protection layer
+	•	DPA
+	•	Security appendix
+	•	IP license / assignment deed
+	•	access rules
+
+Temel prensip
+
+Tek bir sözleşmeyle her şeyi çözmeye çalışmayın.
+
+⸻
+
+18. İlk aşamada gereken belge seti
+
+1. Alliance Business Canvas
+
+Her kişi / entity doldurmalı.
+
+İçermesi gerekenler
+	•	ürün / hizmet
+	•	value proposition
+	•	hedef müşteri
+	•	kanal
+	•	mevcut kaynaklar
+	•	gelir modeli
+	•	maliyet yapısı
+	•	beklenti
+	•	ne kadar zaman ayırabiliyor
+	•	kapasite / komitment
+	•	conflict alanları
+	•	alliance içindeki istenen rol
+	•	mevcut IP / müşteri / kanal varlıkları
+
+2. Mutual NDA
+
+Amacı:
+	•	gizli bilginin korunması
+	•	amaç dışı kullanılmaması
+	•	üçüncü kişilere izinsiz aktarılmaması
+	•	görüşme biterse iade / silme
+
+3. Non-Binding MoU / Alliance Charter
+
+Amacı:
+	•	birlikteliğin amacı
+	•	kapsam
+	•	üyelik tipleri
+	•	rol tipleri
+	•	görünürlük seviyeleri
+	•	lead ownership
+	•	no side-dealing
+	•	conflict disclosure
+	•	IP’nin varsayılan sahipliği
+	•	proje bazında ek sözleşme gerekliliği
+
+4. Conflict of Interest & Disclosure Form
+
+Amacı:
+	•	mevcut kısıtlar
+	•	müşteri / kanal conflict alanları
+	•	restricted görünmesini istenen alanlar
+	•	ürün bazlı riskler
+
+5. Background IP & Asset Schedule
+
+Amacı:
+	•	kim ne getiriyor
+	•	o varlık önceden mi vardı
+	•	lisans mı verilecek, temlik mi düşünülüyor
+	•	satış / demo / white-label kullanım sınırı ne
+
+6. Data & Information Handling Rules
+
+Trigger kuralı:
+	•	kişisel veri veya müşteri kaydı işlenecekse ayrıca DPA hazırlanmalı
+
+⸻
+
+19. Governance ve compliance minimum seti
+
+Üyelik seviyeleri
+	•	Core
+	•	Active partner
+	•	Restricted external
+	•	Advisor / specialist
+
+Karar mekanizması
+	•	stratejik kararlar: çekirdek grup
+	•	proje kararları: proje sahibi + ilgili partnerler
+	•	conflict: escalation noktası
+
+Proje başlatma kuralı
+
+Bir iş ancak şu 4 şey netse başlasın:
+	•	owner
+	•	faturalama entitesi
+	•	scope
+	•	ekonomik paylaşım
+
+Compliance minimumu
+	•	NDA olmadan detay paylaşma yok
+	•	conflict disclosure zorunlu
+	•	müşteri verisi gelirse DPA / privacy eki
+	•	IP varsayılanı sahibinde kalır
+	•	proje çıktıları ayrıca tanımlanır
+
+⸻
+
+20. Marka ve web sitesi yaklaşımı
+
+Tek siteyle her şeyi anlatmaya çalışmayın.
+
+Önerilen yapı
+
+Bir ana umbrella site ve altında 3 ana çözüm alanı:
+	•	Voice AI & Customer Automation
+	•	AI Chatbots & Website Conversion
+	•	Integration, Delivery & Channel Partnership
+
+Ek bölüm
+	•	Selected Venture Products
+
+Neden?
+	•	ziyaretçi ilk bakışta “ne yapıyorsunuz?” sorusuna cevap bulmalı
+	•	8–10 ürün aynı sayfada olursa güven azalır
+
+⸻
+
+21. Ürün / pazar odağı
+
+Teknik odak
+
+Model geliştirme değil:
+	•	orchestration
+	•	agentic workflow
+	•	vertical solutioning
+	•	integration
+	•	deployment
+	•	guardrail
+	•	compliance
+	•	channel-ready packaging
+
+Kısa ifade
+
+“Biz foundation model yapmıyoruz; agentic orchestration, vertical workflow, realtime voice, enterprise integration ve channel-ready çözüm paketleri yapıyoruz.”
+
+⸻
+
+22. White-label ve dış ürün değerlendirme prensibi
+
+Bir ürün white-label değerlendirilecekse full-open yaklaşım değil, gated review olmalı.
+
+Önce 1 sayfalık özet
+	•	ürün ne yapıyor
+	•	hangi müşteri tipi
+	•	deployment modeli
+	•	veri / log tutuyor mu
+	•	destek kim veriyor
+	•	white-label mümkün mü
+	•	marj nedir
+	•	bölgesel kısıt var mı
+
+Sonra kısa due diligence
+	•	IP kimin
+	•	SLA var mı
+	•	support escalation kimde
+	•	müşteri sözleşmesinde sorumluluk kimde
+	•	veri işleme ve loglama nerede
+	•	branding / fiyat / support sınırı ne
+
+Minimum şart
+	•	demo
+	•	mimari özeti
+	•	veri / sorumluluk çerçevesi
+	•	support modeli
+	•	bölge / sektör yetki tanımı
+	•	marj ve rev-share netliği
+
+⸻
+
+23. Risk & compliance layer
+
+İkinci toplantılarla birlikte bu katman netleşmiş durumda.
+
+Her ürün için mini risk kartı olmalı
+	•	kişisel veri işleniyor mu?
+	•	ses kaydı var mı?
+	•	contact center kayıtları tutuluyor mu?
+	•	AB pazarı var mı?
+	•	enterprise müşteriye gidiyor mu?
+	•	white-label üründe güvenlik ve sorumluluk kimde?
+	•	guardrail gerekiyor mu?
+	•	data/privacy riski var mı?
+
+⸻
+
+24. Meeting tracks – toplantıları ayırma
+
+Tek toplantıda her şeyi konuşmayın.
+
+Dar toplantı
+	•	governance
+	•	kararlar
+	•	revenue
+	•	conflict
+	•	visibility
+	•	sözleşme mantığı
+
+Geniş toplantı
+	•	ürün tanıtımı
+	•	demo
+	•	networking
+	•	yeni kişi tanıtımı
+	•	pazar sohbeti
+	•	white-label fırsatlar
+
+Üç ana çalışma izi
+	•	Governance Track
+	•	Product & Market Track
+	•	Compliance & Enterprise Readiness Track
+
+⸻
+
+25. Mevcut kişi bazlı rol önerileri
+
+Sen
+	•	Alliance Founder
+	•	Strategy
+	•	Channel / sales orchestration
+	•	Partner relations
+	•	Packaging
+	•	Governance owner
+
+Yasin
+	•	UX/UI
+	•	Product experience lead
+	•	Chatbot / site conversion product owner
+
+Erol
+	•	Chief solution architect
+	•	Integration / DevOps / AI implementation
+	•	Technical due diligence
+	•	Rescue / unblock rolü
+
+Muhittin
+	•	PMO
+	•	Alliance coordination
+	•	Investor / channel / partner development
+	•	Structuring support
+
+İbrahim
+	•	Voice AI product partner
+	•	Regional / vertical licensing
+	•	Anchor opportunity owner
+
+Gökhan
+	•	Enterprise solutions & European channel bridge
+	•	White-label / reseller enabler
+	•	SAP-adjacent technical overlay
+	•	Product owner / consulting / DevOps / AI implementation
+
+Michael
+	•	US market bridge
+	•	Consulting delivery
+	•	Opportunity partner
+	•	Business development overlay
+
+Archie
+	•	core partner değil
+	•	external commercial contact
+	•	referral / project-specific collaboration only
+
+⸻
+
+26. Hemen yapılacak işler
+
+Aşama 1 – Stratejik hizalanma
+
+Çıktılar:
+	•	alliance concept note
+	•	kimler gerçekten bu yapının içinde
+	•	amaç ve kapsam
+
+Aşama 2 – Canvas toplama
+
+Çıktılar:
+	•	her kişi / entite için Alliance Business Canvas
+	•	rol, kapasite, beklenti, kısıt görünürlüğü
+
+Aşama 3 – Ön anlaşmalar
+
+Çıktılar:
+	•	NDA
+	•	MoU / Charter
+	•	conflict form
+	•	IP schedule
+
+Aşama 4 – Governance minimumu
+
+Çıktılar:
+	•	görünürlük kuralları
+	•	karar mekanizması
+	•	proje başlatma kuralı
+	•	bilgi güvenliği minimumları
+
+Aşama 5 – Pilot ticari uygulama
+
+Çıktılar:
+	•	owner
+	•	faturalama
+	•	rol dağılımı
+	•	ekonomik paylaşım
+	•	gerekiyorsa reseller / SOW / DPA / IP lisans eki
+
+⸻
+
+27. Bundan sonraki 4 ana deliverable
+
+1. Partner Matrix
+
+Her kişi için:
+	•	yetenek
+	•	ürün
+	•	zaman
+	•	hedef
+	•	risk
+	•	gelir tipi
+	•	hangi projede rol alabilir
+
+2. Product Portfolio Map
+
+Her ürün için:
+	•	hazır mı
+	•	demo var mı
+	•	müşteri var mı
+	•	recurring mi
+	•	yatırım mı lazım
+	•	kim sahip
+	•	alliance için neden uygun
+
+3. Operating Model
+	•	fırsat yönetimi
+	•	gelir paylaşımı
+	•	IP
+	•	lead ownership
+	•	website / brand mantığı
+	•	visibility rules
+	•	conflict yönetimi
+
+4. 90 günlük GTM planı
+	•	hangi 2 ürünle çıkılacak
+	•	hangi dikeye gidilecek
+	•	kim konuşacak
+	•	hangi demo hazırlanacak
+	•	hangi web sayfaları açılacak
+
+⸻
+
+28. İlk paylaşım stratejisi
+
+Çekirdek ekip için ilk paylaşım uygun kişiler:
+	•	Muhittin
+	•	Erol
+	•	Gökhan
+	•	Yasin
+
+Neden?
+	•	yapılandırma
+	•	teknik uygulanabilirlik
+	•	ürün / kanal perspektifi
+	•	UX / servisleşme / kullanıcı deneyimi
+bir arada test edilir
+
+Paylaşım sırası
+	1.	kısa core concept note
+	2.	business canvas formu
+	3.	“bu yapı sana mantıklı geliyor mu?” sorusu
+	4.	sonra gerekiyorsa NDA
+	5.	sonra MoU / Charter
+
+İlk turda beklenenler
+	•	bu yapıda rolü ne olabilir
+	•	ne kadar komitment verebilir
+	•	ne getirebilir
+	•	hangi conflict / kısıt alanları var
+
+⸻
+
+29. En kritik kültürel cümleler
+	•	Bu yapı bir community değil; kontrollü görünürlük, kayıtlı katkı ve yazılı ekonomik kurallarla çalışan bir business alliance’tır.
+	•	Bu ağdaki hiçbir müşteri, partner, lead veya ürün ilişkisi; source owner bilgisi ve role-based visibility kuralları dışında kullanılamaz.
+
+⸻
+
+30. En kısa stratejik özet
+	•	İlk iş şirket kurmak değil, birlikte çalışmanın kurallarını yazmak.
+	•	İlk iş yüzde belirlemek değil, katkı tiplerini ve görünürlük seviyelerini tanımak.
+	•	İlk iş herkesi aynı sepete koymak değil, kim hangi rol ve erişim düzeyinde olacak bunu belirlemek.
+	•	İlk iş ağır sözleşme paketi yapmak değil, NDA + MoU / Charter + Conflict/IP disclosure ile zemini kurmak.
+	•	İlk somut pilot, alliance operating modelini test etmek için kullanılmalı.
+	•	Bu yapı ancak:
+	•	governance,
+	•	visibility,
+	•	contribution tracking,
+	•	economic clarity
+birlikte kurulursa sürdürülebilir olur.
+
+⸻
+
+İstersen bunu bir sonraki adımda sana “Alliance Operating Framework v1” adıyla daha resmi, arkadaşlarla paylaşılabilir bir dokümana çevireyim.
+
+Aşağıya email metnini, Drive klasör yapısını ve kısa doldurma talimatını hazırladım.
+
+Merhaba Muhittin, Erol, Gökhan ve Yasin,
+
+Bir süredir konuştuğumuz ürün, hizmet, partnerlik ve iş birliği konularını daha net ve yapısal bir zemine oturtmak için ilk bir çerçeve hazırlamaya başladım.
+
+Buradaki amacım herkesi tek bir şirkete veya tek bir modele zorlamak değil. Öncelikle birlikte hareket etmenin bizim için anlamlı ve makul olup olmadığını, beklentilerimizin ne kadar örtüştüğünü, kimlerin hangi rolde ve hangi seviyede katkı verebileceğini daha net görmek istiyorum.
+
+Bu nedenle ilk adım olarak sizlerle “Alliance Business Canvas Template” paylaşmak istedim. Rica etsem, kendi perspektifinizden bu şablonu gerçekçi ve açık bir şekilde doldurup ilgili klasöre yükler misiniz?
+
+Bu çalışmayla özellikle şu konularda ortak bir temel oluşturmayı hedefliyorum:
+	•	Bu birlikteliğin amacı ve kapsamı
+	•	Herkesin getirebileceği ürün, hizmet, network, channel veya advisory katkıları
+	•	Gerçekçi komitment ve kapasite seviyesi
+	•	Olası kısıtlar, conflict of interest alanları ve görünürlük tercihleri
+	•	İleride gerekebilecek NDA, MoU / Alliance Charter ve benzeri ön anlaşmalar için temel hazırlık
+
+Google Drive üzerinde herkes için ayrı klasör oluşturdum. İlk aşamada yalnızca canvas dokümanını doldurmanız yeterli olacak. Bu aşamada uzun veya çok resmi yazmanıza gerek yok; açık, net ve uygulanabilir olması benim için daha değerli.
+
+Canvas’lar geldikten sonra bunları değerlendirip:
+	•	ortak noktaları,
+	•	eksik alanları,
+	•	potansiyel riskleri,
+	•	ve bir sonraki aşamada gerekli olacak temel prensipleri
+beraber netleştirebiliriz.
+
+Mümkünse ilk geri dönüşleri [tarih ekle] tarihine kadar paylaşmanızı rica ederim.
+
+Katkınız ve samimi değerlendirmeniz için şimdiden teşekkür ederim.
+
+Selamlar,
+Fetih## Google Drive klasör yapısı
+
+Ana klasör adı:
+
+Alliance Core Team
+
+Alt klasörler:
+	•	00_Intro
+	•	01_Templates
+	•	02_Muhittin_Er
+	•	03_Erol_Akarsu
+	•	04_Gokhan_Tenekecioglu
+	•	05_Yasin_Celenk
+	•	06_Review_Notes
+	•	07_Drafts_Charter_NDA
+
+Her klasörde ne olsun
+
+00_Intro
+	•	README_Amac_ve_Surec
+	•	kısa açıklama notu
+
+01_Templates
+	•	Alliance Business Canvas Template
+	•	Canvas_Doldurma_Talimati
+
+02-05 kişi klasörleri
+	•	ilgili kişinin dolduracağı canvas dosyası
+	•	gerekiyorsa ek not / destekleyici döküman
+
+06_Review_Notes
+	•	sadece sende kalsın
+	•	değerlendirme notları
+	•	ortak noktalar / riskler
+
+07_Drafts_Charter_NDA
+	•	şimdilik boş kalabilir
+	•	ikinci aşamada kullanılacak
+
+Paylaşım ayarı önerisi
+	•	01_Templates: görüntüleme
+	•	kişi klasörleri: ilgili kişi + sen düzenleyebilir
+	•	06_Review_Notes: sadece sen
+	•	07_Drafts_Charter_NDA: şimdilik sadece sen
+
+Canvas doldurma talimatı
+
+Bunu README olarak koyabilirsin:
+
+Alliance Business Canvas – Kısa Doldurma Notu
+
+Lütfen bu dokümanı kendi mevcut durumunuza göre açık ve gerçekçi şekilde doldurun. Bu çalışma bir taahhüt veya bağlayıcı ortaklık belgesi değildir. Amaç, birlikte hareket etmenin hangi alanlarda anlamlı olabileceğini, hangi beklenti ve kısıtların baştan netleştirilmesi gerektiğini görmek.
+
+Doldururken özellikle şunlara dikkat edin:
+	•	Uzun yazmak zorunda değilsiniz; net ve dürüst olmak daha önemli
+	•	Ürün/hizmet kadar zaman ve komitment seviyenizi de belirtin
+	•	Mevcut iş, müşteri veya sözleşme kaynaklı kısıtlarınızı yazın
+	•	Görünmesini istemediğiniz müşteri, kanal veya ürün alanlarını belirtin
+	•	Alliance içinde kendinizi en çok hangi rolde gördüğünüzü yazın
+	•	İlk 90 günde gerçekçi olarak katkı verebileceğiniz alanları ekleyin
+
+Bu ilk turda yalnızca canvas’ın doldurulması yeterlidir. NDA, MoU / Charter ve diğer detaylı belgeler ikinci aşamada ele alınacaktır.
+
+İstersen bir sonraki adımda sana aynı içeriklerin daha kısa, daha sıcak bir versiyonunu da hazırlayayım; özellikle WhatsApp veya kısa email follow-up için uygun olur.
+
+Tabii. Aşağıya önce biraz daha düzgün ve kurumsal bir mesaj, altına da daha kısa/WhatsApp-vari bir versiyon koyuyorum.
+
+Ana mesaj taslağı
+
+Muhittin, Erol, Gökhan, Yasin merhaba,
+
+Bir süredir farklı ürünler, hizmetler, partnerlikler ve iş birlikleri üzerine yaptığımız görüşmeleri biraz daha net ve yapısal bir zemine oturtmak için bir çerçeve üzerinde çalışıyorum.
+
+Buradaki amaç, herkesi tek bir şirkete veya tek bir modele zorlamak değil. Daha çok, birlikte hareket etmenin anlamlı ve makul olduğu alanları, temel prensipleri, beklentileri, katkı şekillerini ve sınırları baştan netleştirmek. Özellikle şu başlıkları daha somut hale getirmek istiyorum:
+	•	Bu birlikteliğin amacı ve kapsamı
+	•	Kim hangi rolde ve ne seviyede katkı verebilir
+	•	Ürün, hizmet, kanal, network ve advisory katkılarının nasıl tanımlanacağı
+	•	Gizlilik, bilgi güvenliği, conflict of interest ve görünürlük kuralları
+	•	Lead, müşteri, partner ve fırsat paylaşımında temel prensipler
+	•	İleride gerekirse NDA, MoU / Alliance Charter ve benzeri ön anlaşmaların çerçevesi
+
+Benim düşüncem, ilk aşamada bunu hafif ama ciddi bir “business alliance / umbrella collaboration” mantığında ele almak. Yani önce ortak çalışma prensiplerinde fikir birliği oluşturalım; sonra ihtiyaç oldukça bunu daha somut dokümanlar ve proje bazlı anlaşmalarla ete kemiğe büründürelim.
+
+Bu nedenle bu ilk taslağı önce sizlerle, çekirdek ekip olarak paylaşmanın doğru olacağını düşündüm. Sizlerden bu aşamada özellikle şu konularda görüş almak isterim:
+	1.	Böyle bir yapı sizce anlamlı ve uygulanabilir mi?
+	2.	Siz bu yapıda kendinizi hangi rolde görüyorsunuz?
+	3.	Gerçekçi olarak ne seviyede katkı / komitment verebilirsiniz?
+	4.	Baştan netleştirmemiz gereken riskler, çekinceler veya conflict alanları neler?
+	5.	İlk aşamada hangi minimum kurallar ve prensipler mutlaka yazılı olmalı?
+
+Amacım konuyu gereksiz büyütmek değil; tam tersine, baştan bazı temel kuralları netleştirip ileride yanlış anlaşılmaları azaltmak.
+
+Uygun olursa, paylaşacağım kısa konsept notu / canvas taslağı üzerinden önce yazılı görüşlerinizi alalım, sonra küçük bir toplantıda üzerinden geçelim.
+
+Şimdiden katkınız ve samimi değerlendirmeniz için teşekkür ederim.
+
+Sevgiler,
+Fetih
+
+⸻
+
+Daha kısa versiyon
+
+Arkadaşlar merhaba,
+
+Bir süredir konuştuğumuz ürün, hizmet ve partnerlik konularını daha net ve yapısal bir zemine oturtmak için kısa bir çerçeve hazırlıyorum.
+
+Amacım herkesi tek bir modele zorlamak değil; birlikte hareket edeceksek bunun temel prensiplerini, beklentileri, rollerimizi, gizlilik/conflict kurallarını ve ileride gerekebilecek NDA / MoU gibi ön anlaşma çerçevelerini baştan netleştirmek.
+
+Bunu önce çekirdek ekip olarak sizlerle paylaşmak istedim. Özellikle şu konularda görüşünüz önemli:
+	•	Böyle bir yapı sizce mantıklı mı?
+	•	Siz hangi rolde katkı verebilirsiniz?
+	•	Gerçekçi komitment seviyeniz ne olur?
+	•	Başta netleştirmemiz gereken riskler / çekinceler neler?
+
+Önce kısa bir konsept notu paylaşayım, sonra isterseniz küçük bir toplantı yapalım.
+
+Sevgiler,
+Fetih
+
+İstersen bunu bir de daha sıcak, daha arkadaşça bir tonda yeniden yazayım.
+
+Evet, uygun olur. Hatta bence ilk paylaşım için en doğru çekirdek halka bu olabilir.
+
+Sebebi şu:
+	•	Muhittin: yapılandırma, iş geliştirme, koordinasyon
+	•	Erol: teknik gerçekçilik, entegrasyon, uygulanabilirlik
+	•	Gökhan: ürün/partnerlik/satış kanalı perspektifi
+	•	Yasin: ürün deneyimi, sunum, servisleşme ve kullanıcı tarafı
+
+Yani bu dört kişi, konsepti sadece dinleyecek değil, farklı açılardan test edecek bir kombinasyon oluşturuyor.
+
+Ama benim önerim, bunu tek seferde tam açmak yerine katmanlı paylaşman olur:
+
+1. İlk paylaşım:
+2-3 sayfalık kısa bir “core concept note”
+	•	amaç
+	•	neden böyle bir yapı lazım
+	•	kimler hangi tip katkı verebilir
+	•	temel prensipler
+	•	neyi çözmek istiyoruz
+	•	ilk aşamada ne bekleniyor
+
+2. Aynı anda isteyeceğin şey:
+Her birinden kısa cevap:
+	•	bu yapıda rolü ne olabilir
+	•	ne kadar komitment verebilir
+	•	ne getirebilir
+	•	hangi kısıtları/conflict alanları var
+
+3. Ondan sonra:
+Detaylı ürün, müşteri, kanal, IP, gelir modeli konuşulacaksa
+	•	en azından hafif bir mutual NDA
+	•	kısa bir alliance charter / MoU taslağı
+
+Bence şu aşamada hepsine tam detaylı draftları birden göndermek yerine önce:
+	•	kısa konsept notu
+	•	business canvas formu
+	•	“bu yapı sana mantıklı geliyor mu?” sorusu
+
+ile gitmek daha doğru.
+
+Yani net cevabım:
+Evet, bu dört kişiyle paylaşman uygun ve mantıklı.
+Ama paylaşım sırası şu olsun: önce konsept ve prensipler, sonra beklenti toplama, sonra detay ve taslak anlaşmalar.
+
+İstersen sana şimdi bu 4 kişiye gönderebileceğin kısa bir Türkçe paylaşım metni hazırlayayım.
+
+Aşağıya dört taslağı doğrudan kullanabileceğiniz şekilde koyuyorum. Bunlar ilk aşama için hafif tutuldu; amaç önce hizalanmak, sonra gerekirse hukuki dilini sertleştirmek. Business Model Canvas yaygın olarak 9 blokla kullanılıyor; gizli bilgi paylaşımı için NDA, kişisel veri/proje verisi işlenecekse ayrıca veri işleme eki mantığı, advisor ilişkilerinde de FAST benzeri standardizasyon yaklaşımı pratikte sık görülüyor.  
+
+1) Alliance Business Canvas Template
+
+Belge adı: Alliance Business Canvas – [Kişi / Şirket / Entite Adı]
+Versiyon: v0.1
+Tarih: [dd.mm.yyyy]
+
+A. Kimlik
+	•	Kişi / Şirket / Entite adı:
+	•	Temsilci kişi:
+	•	Ülke / Bölge:
+	•	Mevcut çalışma durumu:
+	•	Alliance içindeki hedef rolü:
+	•	Zaman ayırma seviyesi: [çok sınırlı / proje bazlı / aktif / çekirdek]
+
+B. Değer Önerisi
+	•	Bu yapıya getirdiğim ana değer:
+	•	Sağlayabildiğim ürün(ler):
+	•	Sağlayabildiğim hizmet(ler):
+	•	Sağlayabildiğim network / channel / partner katkısı:
+	•	Sağlayabildiğim advisory / mentoring katkısı:
+
+C. Hedef Müşteri ve Pazar
+	•	Hedef müşteri segmentleri:
+	•	Hedef sektörler:
+	•	Hedef coğrafyalar:
+	•	Hedef müşteri tipi: [SMB / enterprise / startup / public / nonprofit / diğer]
+
+D. Kanallar
+	•	Kullandığım satış kanalları:
+	•	Kullandığım partner / reseller kanalları:
+	•	Sahip olduğum doğrudan müşteri ilişkileri:
+	•	Alliance üzerinden açmak istediğim yeni kanallar:
+
+E. Müşteri İlişkisi Modeli
+	•	Nasıl satış yapıyorum: [referral / direct sale / channel / white-label / consulting / subscription]
+	•	Müşteriyle ilişki tipi: [tek seferlik / proje bazlı / aylık / yıllık / retainership]
+	•	Satış sonrası destek modeli:
+
+F. Gelir Modeli
+	•	Mevcut gelir modeli:
+	•	Alliance içinde beklenen gelir tipi:
+	•	Kabul edilebilir ekonomik rol: [lead fee / sales share / delivery fee / IP royalty / advisory fee / ops pool contribution]
+
+G. Ana Kaynaklar
+	•	Teknik kaynaklar:
+	•	Ürün / IP / demo / içerik varlıkları:
+	•	İnsan kaynağı:
+	•	Network / pazar erişimi:
+	•	Marka / alan adı / mevcut şirket yapısı:
+
+H. Ana Aktiviteler
+	•	Satış / BD
+	•	Entegrasyon / delivery
+	•	Ürün geliştirme
+	•	Destek / operasyon
+	•	Eğitim / advisory
+	•	Partner yönetimi
+
+I. Ana Partnerler
+	•	Mevcut kritik iş ortaklıkları:
+	•	Satışta kullandığım dış partnerler:
+	•	Alliance içinde birlikte çalışmak istediğim rol tipleri:
+
+J. Maliyet Yapısı
+	•	Alliance için katkı verebileceğim / beklediğim giderler:
+	•	Beklenen ortak gider kategorileri:
+	•	Kendi üstlenmek istemediğim maliyetler:
+
+K. Kısıtlar ve Conflict Alanları
+	•	Çalıştığım mevcut iş / müşteri kaynaklı kısıtlar:
+	•	Girmek istemediğim sektörler:
+	•	Görünmesini istemediğim müşteri / partner alanları:
+	•	Potansiyel conflict of interest alanları:
+
+L. Görünürlük Tercihi
+	•	Tam gizli kalacak bilgiler:
+	•	Sadece metadata görünür olacak bilgiler:
+	•	Onayla paylaşılabilecek bilgiler:
+	•	Aktif projede paylaşılabilecek bilgiler:
+
+M. Alliance Beklentisi
+	•	Bu yapıda benden beklenmesini istediğim şey:
+	•	Benim bu yapıdan beklediğim şey:
+	•	İlk 90 günde katkı verebileceğim alan:
+	•	İlk 90 günde öncelik vermek istediğim konu:
+
+⸻
+
+2) Kısa Alliance Charter / MoU Taslağı
+
+Belge adı: Alliance Charter / Memorandum of Understanding
+Taraflar: [İsimler / Şirketler / Entiteler]
+Tarih: [dd.mm.yyyy]
+
+1. Amaç
+
+Bu belge, tarafların ürün, hizmet, kanal, advisory ve proje bazlı iş birliği fırsatlarını düzenli, güvenli ve kontrollü bir çerçevede değerlendirmesi için temel prensipleri tanımlar.
+
+2. Kapsam
+
+Bu yapı:
+	•	ortak iş geliştirme,
+	•	referral ve channel iş birlikleri,
+	•	delivery ve entegrasyon projeleri,
+	•	advisory ve uzman desteği,
+	•	ürün ve hizmetlerin ortak değerlendirilmesi
+amacıyla oluşturulmuştur.
+
+3. Hukuki Niteliği
+
+Bu belge, aksi açıkça yazılmadıkça genel olarak bağlayıcı olmayan bir çerçeve belgedir.
+Ancak aşağıdaki maddeler bağlayıcı kabul edilebilir:
+	•	gizlilik,
+	•	bilgi güvenliği,
+	•	conflict disclosure,
+	•	yetkisiz kullanım yasağı,
+	•	no-side-dealing,
+	•	fikri mülkiyetin korunması.
+
+4. Temel Prensipler
+
+Taraflar aşağıdaki ilkeleri kabul eder:
+	•	Şeffaflık
+	•	İyi niyet
+	•	Rol netliği
+	•	Önceden bildirim
+	•	Gerektiği kadar erişim
+	•	Yazılı kayıt
+	•	Yetkisiz ticari kullanım yasağı
+
+5. Rol Tipleri
+
+Taraflar aşağıdaki rollerden biri veya birkaçı ile katkı sunabilir:
+	•	ürün sahibi
+	•	hizmet sağlayıcı
+	•	channel / reseller geliştirici
+	•	satış / BD katkısı
+	•	delivery / entegrasyon katkısı
+	•	advisor / specialist
+	•	operasyon / governance katkısı
+
+6. Görünürlük ve Erişim
+
+Her müşteri, ürün, partner, lead veya proje aşağıdaki görünürlük seviyelerinden biri ile yönetilir:
+	•	Private
+	•	Restricted
+	•	Shared with approval
+	•	Active project room
+
+Hiçbir taraf, başka bir tarafın paylaştığı müşteri, partner, ürün veya lead bilgisini izin verilen kapsam dışında kullanamaz.
+
+7. Lead Ownership ve İletişim Kuralı
+
+Bir fırsatı sisteme getiren taraf, o fırsatın ilk source owner’ı olarak kaydedilir.
+Ancak:
+	•	aktif takip yoksa koruma süresi sona erebilir,
+	•	ilgili owner bilgisi dışında doğrudan temas kurulamaz,
+	•	başka bir taraf aynı fırsat üzerinde çalışmak isterse önceden bilgi verir.
+
+8. No Side-Dealing
+
+Taraflar, alliance kapsamında paylaşılan müşteri, partner, kanal, ürün veya fırsatlar üzerinde, ilgili source owner veya yetkili tarafı bilgilendirmeden bağımsız ticari işlem yapmamayı kabul eder.
+
+9. Conflict of Interest Bildirimi
+
+Her taraf:
+	•	mevcut iş ilişkilerini,
+	•	kısıtlı alanlarını,
+	•	benzer ürün veya müşteri çatışmalarını,
+	•	çalışamayacağı veya görünmesini istemediği alanları
+makul ölçüde önceden bildirmeyi kabul eder.
+
+10. Fikri Mülkiyet ve Önceden Var Olan Varlıklar
+
+Tarafların alliance öncesinde sahip olduğu ürünler, içerikler, yazılımlar, müşteri ilişkileri, know-how, trade secret niteliğindeki varlıklar ve diğer IP unsurları, aksi yazılı olarak kararlaştırılmadıkça ilgili sahibinde kalır. Trade secret ve diğer gizli bilgi varlıkları lisanslanabilir; devredilecekse bunun ayrıca yazılı olması gerekir.  
+
+11. Ortak Çalışma Sonucu Oluşan Çıktılar
+
+Bir projede birlikte üretilen çıktıların sahipliği, kullanım hakkı, lisans modeli ve gelir paylaşımı ilgili proje eki veya SOW ile ayrıca belirlenir.
+
+12. Ekonomik Prensip
+
+Taraflar, ekonomik katkı türlerinin aşağıdaki kategorilerden biri veya birkaçı ile tanınabileceğini kabul eder:
+	•	intro / source fee
+	•	sales / channel fee
+	•	delivery / implementation fee
+	•	IP / product share
+	•	advisory fee
+	•	ops/admin contribution
+
+Kesin ekonomik paylaşım oranları proje bazında ayrıca belirlenir.
+
+13. Veri ve Bilgi İşleme
+
+Taraflar, kişisel veri, müşteri verisi veya hassas ticari bilgi işlenecek projelerde ayrıca uygun veri işleme, güvenlik ve erişim hükümlerinin yazılı olarak belirlenmesi gerektiğini kabul eder. Veri işleme sözleşmelerinde en azından işlem konusu ve süresi, amaç ve niteliği, veri türleri, veri sahibi kategorileri ve tarafların yükümlülükleri açıkça yazılır.  
+
+14. Yönetişim
+
+Taraflar, çekirdek kararlar için bir core group tanımlayabilir.
+Proje kararları ise ilgili proje owner’ları ve görevli partnerler tarafından yürütülür.
+
+15. Süre ve Sona Erme
+
+Bu belge imza tarihinde yürürlüğe girer ve taraflardan biri yazılı bildirimle ayrılana kadar yürürlükte kalır. Gizlilik, IP ve yetkisiz kullanım yasağına ilişkin hükümler ayrılıktan sonra da devam eder.
+
+16. Uyuşmazlık Yaklaşımı
+
+Taraflar önce dostane çözüm ve yönetim seviyesi görüşmeyi dener; gerekirse ayrı bağlayıcı sözleşmelere veya ilgili hukuk sistemine göre ilerlenir.
+
+İmzalar
+[İsim / tarih / imza]
+
+⸻
+
+3) Mutual NDA Başlık Yapısı ve Kısa Taslak
+
+Belge adı: Mutual Non-Disclosure Agreement
+Taraflar: [Taraf A] ve [Taraf B]
+İsterseniz bunu çok taraflı NDA formatına da çevirebilirsiniz.
+
+1. Amaç
+
+Taraflar, olası iş birliği, ürün değerlendirmesi, ticari görüşme, teknik inceleme ve ortak proje değerlendirmesi amacıyla belirli gizli bilgileri birbirleriyle paylaşabilir.
+
+2. Gizli Bilgi Tanımı
+
+“Gizli Bilgi”; sözlü, yazılı, görsel, dijital veya başka herhangi bir biçimde açıklanan ve ticari, teknik, finansal, operasyonel, müşteri, ürün, süreç, strateji, IP, kaynak kod, demo, plan, teklif, sözleşme, fiyatlandırma veya know-how niteliğindeki bilgileri kapsar.
+
+3. Hariç Tutulan Bilgiler
+
+Aşağıdakiler gizli bilgi sayılmaz:
+	•	kamuya açık hale gelmiş bilgiler,
+	•	açıklama tarihinde alıcı tarafın zaten hukuka uygun biçimde bildiği bilgiler,
+	•	üçüncü kişiden hukuka uygun elde edilen bilgiler,
+	•	bağımsız olarak geliştirilen bilgiler.
+
+4. Kullanım Sınırı
+
+Alıcı taraf, gizli bilgiyi yalnızca tanımlanan iş birliği değerlendirme amacı için kullanacaktır. Gizli bilgi, başka ticari amaçlarla veya rekabetçi amaçlarla kullanılamaz.
+
+5. Açıklama Sınırı
+
+Alıcı taraf, gizli bilgiyi yalnızca bilmesi gereken çalışan, danışman veya yetkilendirilmiş kişilere açıklayabilir; bu kişiler de en az eşdeğer gizlilik yükümlülüğü altında olmalıdır.
+
+6. Koruma Standardı
+
+Alıcı taraf, kendi benzer nitelikteki gizli bilgisine gösterdiği özen düzeyinden az olmamak üzere makul güvenlik önlemleri uygulamayı kabul eder.
+
+7. Mülkiyet ve Lisans Yokluğu
+
+Açıklanan gizli bilgi üzerindeki tüm haklar açıklayan tarafta kalır. Bu anlaşma, alıcı tarafa açık veya zımni herhangi bir lisans, temlik veya mülkiyet devri sağlamaz.
+
+8. İade / İmha
+
+Talep halinde veya görüşmelerin sona ermesi üzerine alıcı taraf, gizli bilgileri iade edecek veya imha edecektir; zorunlu saklama kayıtları hariç.
+
+9. Süre
+
+Bu anlaşma imza tarihinde yürürlüğe girer. Gizli bilgilerin korunmasına ilişkin yükümlülükler [2 / 3 / 5] yıl devam eder.
+
+10. İhlal
+
+Taraflar, gizlilik ihlalinin para ile tam telafisi zor olabilecek zarar doğurabileceğini kabul eder. Bu nedenle uygun hukuki ve hakkaniyet temelli başvuru yolları saklıdır.
+
+11. Uygulanacak Hukuk
+
+Bu anlaşma [eyalet / ülke] hukukuna tabidir.
+
+12. İmzalar
+
+[İsim / unvan / tarih / imza]
+
+WIPO, işbirliğinde NDA’lerin hem açık hem de esnek olması, ayrıca bilgiye kademeli erişim verilmesinin faydalı olabileceğini özellikle vurguluyor; bu sizin modelinize doğrudan uyuyor.  
+
+⸻
+
+4) Conflict of Interest + Background IP Disclosure Form
+
+Belge adı: Conflict of Interest and Background IP Disclosure Form
+Dolduran: [isim / şirket]
+Tarih: [dd.mm.yyyy]
+
+Bölüm 1 – Genel Bilgi
+	•	Ad / şirket:
+	•	Görev / unvan:
+	•	Ülke:
+	•	Alliance içindeki hedef rol:
+
+Bölüm 2 – Mevcut Profesyonel İlişkiler
+	•	Şu anda aktif olduğum iş / şirket / müşteri ilişkileri:
+	•	Sözleşmesel veya etik kısıtlarım:
+	•	Rekabet yasağı / moonlighting / approval gerektiren alanlar:
+	•	Giremediğim sektörler veya müşteri tipleri:
+
+Bölüm 3 – Conflict of Interest Beyanı
+
+Aşağıdaki alanlarda potansiyel conflict olabilir:
+	•	Ürün bazlı conflict:
+	•	Müşteri bazlı conflict:
+	•	Coğrafya bazlı conflict:
+	•	Channel / partner bazlı conflict:
+	•	Full-time işveren nedeniyle kısıtlı alanlar:
+
+Bölüm 4 – Görünürlük Tercihi
+
+Aşağıdaki bilgilerin alliance içinde görünmesini istemiyorum:
+	•	müşteri listesi:
+	•	partner listesi:
+	•	fiyatlandırma:
+	•	ürün yol haritası:
+	•	yatırım / finansal detay:
+	•	teknik detay / kod / mimari:
+
+Paylaşım tercihi:
+	•	Private
+	•	Restricted
+	•	Shared with approval
+	•	Project only
+
+Bölüm 5 – Background IP / Existing Assets
+
+Aşağıdaki varlıklar bana / şirketime aittir ve alliance öncesinde mevcuttur:
+	1.	Asset adı:
+	•	Türü: [ürün / demo / kod / domain / müşteri ilişkisi / içerik / marka / süreç / know-how / trade secret]
+	•	Sahibi:
+	•	Oluşum tarihi:
+	•	Satışa uygun mu:
+	•	Lisans verilebilir mi:
+	•	Temlik düşünüyor muyum:
+	•	Kısıtlar:
+	2.	Asset adı:
+	•	Türü:
+	•	Sahibi:
+	•	Oluşum tarihi:
+	•	Satışa uygun mu:
+	•	Lisans verilebilir mi:
+	•	Temlik düşünüyor muyum:
+	•	Kısıtlar:
+
+Bölüm 6 – Alliance İçinde Kullanım İzni
+
+Aşağıdaki varlıkların alliance içinde kullanımına izin veriyorum:
+	•	sadece tanıtım için
+	•	sadece demo için
+	•	sadece owner onayı ile satış görüşmesi için
+	•	sadece proje bazlı lisans ile
+	•	kullanım izni yok
+
+Bölüm 7 – Onay
+
+Burada verdiğim bilgilerin bildiğim kadarıyla doğru olduğunu ve yeni bir conflict veya değişiklik oluşursa makul süre içinde bildireceğimi kabul ederim.
+
+İsim / tarih / imza
+
+⸻
+
+Kullanım sırası
+
+Bence bunları şu sırayla kullanın:
+	1.	Canvas doldurtun
+	2.	Detay paylaşmadan önce NDA imzalayın
+	3.	Çekirdek grup için Alliance Charter / MoU üzerinde uzlaşın
+	4.	Herkesten Conflict + Background IP Formu toplayın
+	5.	İlk somut projede ayrıca gerekiyorsa:
+	•	referral/reseller agreement,
+	•	SOW,
+	•	DPA,
+	•	IP lisans eki
+ekleyin. DPA benzeri ekler, bir taraf diğer taraf adına kişisel veri işlediğinde özellikle önem kazanır.  
+
+Kısa not
+
+Bunlar ilk taslaklardır; imzaya girmeden önce ilgili ülke/eyalet ve şirket yapınıza göre hukukçu üzerinden son gözden geçirme gerekir.
+
+Bir sonraki adımda bunları sana daha resmi bir dille tek tek son hali gibi yazabilirim: önce MoU, sonra NDA, sonra conflict/IP formu.
+
+
+Anladım. Bundan sonra kişi ve ürün detaylarını, yalnızca gerçekten gerekli olduğunda kullanacağım.
+
+Şu an odak noktayı şöyle alıyorum:
+
+Konu 1: Bu birlikteliğin stratejik çerçevesi
+Konu 2: İlk aşamada hangi canvas, hangi ön anlaşma, hangi governance/compliance seti gerekli
+
+Luron hattını şimdilik ayrı bir iş akışı olarak tutup, bu cevapta sadece çatı konsept ve ilk belge seti üzerinde kalacağım.
+
+Genel yaklaşım
+
+Uluslararası iyi uygulamada sizin gibi yapılarda genelde tek bir ağır şirketleşme ile başlanmıyor. Önce ortak çalışma mantığı, roller, gizlilik, veri ve gelir prensipleri netleştiriliyor; sonra buna uygun ticari ve proje bazlı sözleşmeler ekleniyor. Business Model Canvas da yaygın olarak bir organizasyonun nasıl değer ürettiğini, sunduğunu ve gelir yarattığını dokuz blokta tarif etmek için kullanılıyor. NDA’ler gizli bilginin hangi amaçla paylaşılacağını tanımlayan temel koruma aracı; trade secret niteliğindeki bilgiler ise lisanslanabiliyor veya devredilebiliyor. Kişisel veri işlenecekse controller-processor veya benzeri veri işleme sözleşmeleri ayrıca kritik hale geliyor. Danışman/advisor ilişkilerinde de FAST gibi standartlaştırılmış yaklaşımlar, uzun pazarlıkları azaltmak için pratikte sık kullanılıyor.  
+
+Buna göre size önerdiğim model şu:
+
+1. Önce “şirket” değil, “çalışma sistemi” kurun
+
+İlk hedefiniz yeni bir cap table, hisse oranı veya herkesi tek entity altına toplamak olmamalı.
+
+İlk hedef şu olmalı:
+
+“Bu ağ hangi kurallarla birlikte hareket eder?”
+
+Bu çerçevede ilk aşamada cevaplanması gereken stratejik sorular:
+	•	Kimler çekirdek grupta, kimler dış çevrede?
+	•	Herkes ne getiriyor: ürün mü, servis mi, kanal mı, network mü?
+	•	Hangi bilgiler ortak görünür, hangileri sadece sahibinde kalır?
+	•	Bir fırsat sisteme girince owner kim olur?
+	•	Benzer ürünler arasında conflict nasıl yönetilir?
+	•	Proje bazında hangi şirket/entite faturalama yapar?
+	•	Gelir paylaşımı prensibi neye göre çalışır?
+	•	Hangi durumda NDA yeterli, hangi durumda ayrı sözleşme gerekir?
+
+Bunu netleştirmeden şirketleşmek, daha sonra sorun üretir.
+
+2. İlk işiniz: “Alliance Business Canvas” doldurmak
+
+Standart Business Model Canvas’ın 9 bloğu çok iyi bir başlangıçtır: value proposition, customer segments, channels, customer relationships, revenue streams, key resources, key activities, key partners, cost structure. Strategyzer’in kullandığı standart çerçeve de budur.  
+
+Ama sizin yapı tek bir startup olmadığı için, buna 4 ek alan koymanızı öneririm.
+
+A. Standart 9 blok
+
+Her kişi veya entite için:
+	•	Değer önerisi
+	•	Hedef müşteri segmenti
+	•	Kanal
+	•	Müşteri ilişkisi tipi
+	•	Gelir modeli
+	•	Ana kaynaklar
+	•	Ana aktiviteler
+	•	Ana partnerler
+	•	Maliyet yapısı
+
+B. Sizin yapıya özel 4 ek blok
+	•	Mevcut kapasite / komitment seviyesi
+	•	Önceden sahip olunan IP / ürün / müşteri / kanal varlıkları
+	•	Conflict of interest veya kısıtlı alanlar
+	•	Bu alliance içinde istenen rol
+
+Bu canvas’ın amacı herkesi aynı kalıba sokmak değil; aynı masaya koymak.
+
+Bu canvas size ne kazandırır?
+	•	Kim gerçekten ne sunuyor anlaşılır
+	•	Beklentiler görünür olur
+	•	Ortak zeminde kimler ilerleyebilir belli olur
+	•	Boş heyecan ile gerçek katkı ayrılır
+	•	Hangi sözleşmenin kime gerekli olduğu netleşir
+
+3. İlk aşamada gereken belge seti
+
+Bence ilk aşamada hepsini aynı anda değil, şu sırayla ilerlemelisiniz:
+
+3.1 Mutual NDA
+
+Bu ilk belgedir.
+
+Amacı:
+	•	paylaşılan gizli bilginin korunması
+	•	bilginin sadece belirli amaç için kullanılması
+	•	üçüncü kişilere izinsiz aktarılmaması
+	•	görüşme biterse iade/silme yükümlülüğü
+
+WIPO’nun trade secret rehberinde NDA’lerin taraflar arasında gizli ilişki kurduğu ve işbirliğinde gizli bilginin kapsamını açık ama gerektiğinde esnek tutmanın önemli olduğu özellikle vurgulanıyor.  
+
+NDA’da mutlaka olsun:
+	•	Amaç
+	•	Confidential Information tanımı
+	•	Hariç tutulan bilgiler
+	•	Allowed use / permitted purpose
+	•	Need-to-know erişim
+	•	Süre
+	•	Return / destroy
+	•	No license / no transfer hükmü
+	•	Governing law
+
+3.2 Non-Binding Memorandum of Understanding / Alliance Charter
+
+Bu ikinci belgedir.
+
+Bu belge tam sözleşme değil; ortak niyeti ve temel prensipleri yazar. Genelde bağlayıcı olmayan ama bazı maddeleri bağlayıcı olan bir çerçeve olarak kullanılabilir.
+
+Burada yazılması gerekenler:
+	•	Birlikteliğin amacı
+	•	Kapsam
+	•	Üyelik tipleri
+	•	Rol tipleri
+	•	Görünürlük seviyeleri
+	•	Lead ownership yaklaşımı
+	•	No side-dealing ilkesi
+	•	Conflict disclosure zorunluluğu
+	•	Faturalama entitesinin proje bazında belirleneceği
+	•	Gelir paylaşımının iş bazında ayrı belirleneceği
+	•	IP’nin varsayılan olarak sahibinde kalacağı
+	•	Proje bazında ek sözleşme gerektiği
+
+Bu belge sizin “community değil, business alliance” çizginizi kurar.
+
+3.3 Conflict of Interest & Disclosure Form
+
+Bu çok gerekli.
+
+Çünkü sizde:
+	•	farklı şirketler olabilir
+	•	benzer ürünler olabilir
+	•	aynı müşteri segmentine giden birden fazla kişi olabilir
+	•	bazı kişiler full-time bir yerde çalışıyor olabilir
+
+Formda şu sorular olmalı:
+	•	Hangi sektörlerde/kimlerle halihazırda çalışıyorsun?
+	•	Hangi alanlarda doğrudan satış kısıtın var?
+	•	Hangi ürün veya müşteri grubunda çatışma riski görüyorsun?
+	•	Bu alliance içinde görünmesini istemediğin müşteri/kanal var mı?
+	•	Hangi bilgileri restricted paylaşmak istiyorsun?
+
+3.4 Background IP & Asset Schedule
+
+Bu kritik.
+
+Çünkü insanlar ürün, müşteri, kod, demo, domain, kanal, süreç, know-how getiriyor olabilir.
+
+WIPO, trade secret ve benzeri gizli bilgi varlıklarının lisanslanabileceğini veya devredilebileceğini açıkça belirtiyor. Bu yüzden önce “kim ne getiriyor?” yazılmalı; sonra gerekiyorsa lisans veya temlik yapılmalı.  
+
+Bu ekte şu alanlar olsun:
+	•	Asset / ürün / içerik adı
+	•	Sahibi kim
+	•	Önceden mi vardı, bu alliance içinde mi oluştu
+	•	Kullanım izni var mı
+	•	Sadece demo mu, satış için mi, white-label mi
+	•	Lisans mı veriliyor, temlik mi düşünülüyor
+	•	Kısıtlar neler
+
+Burada önemli prensip:
+İlk aşamada temlikten çok lisans yaklaşımı daha güvenli olur.
+Temlik, gerçekten mülkiyet devri gerektiğinde kullanılmalı.
+
+3.5 Data & Information Handling Rules
+
+Bu ayrı kısa politika olmalı.
+
+Özellikle ileride:
+	•	müşteri verisi,
+	•	ses kaydı,
+	•	görüşme notu,
+	•	EU/Türkiye/ABD verisi,
+	•	CRM kayıtları
+
+işlenecekse, veri kategorisi ve erişim kuralı net olmalı.
+
+IAPP kaynaklarında veri işleme sözleşmelerinin, bir taraf diğer taraf adına veri işliyorsa temel kuralları koyduğu ve GDPR hazırlığı için kritik olduğu vurgulanıyor.  
+
+İlk aşamada ayrı DPA imzalamanız gerekmeyebilir; ama şu trigger kuralı yazılmalı:
+
+“Kişisel veri veya müşteri kayıtları proje kapsamında işlenecekse, ilgili proje başlamadan önce ayrı veri işleme eki hazırlanır.”
+
+4. Governance ve compliance’ı ilk günden hafif ama net kurun
+
+Ağır bürokrasi kurmayın. Ama belirsizlik de bırakmayın.
+
+Ben size minimum governance seti öneriyorum:
+
+A. Üyelik seviyeleri
+	•	Core
+	•	Active partner
+	•	Restricted external
+	•	Advisor / specialist
+
+B. Görünürlük seviyeleri
+	•	Private
+	•	Restricted
+	•	Shared with approval
+	•	Active project room
+
+C. Karar mekanizması
+	•	stratejik kararlar için çekirdek grup
+	•	proje kararları için proje sahibi + ilgili partnerler
+	•	conflict durumunda escalation noktası
+
+D. Proje başlatma kuralı
+
+Bir iş ancak şu dört şey netse başlasın:
+	•	owner
+	•	faturalama entitesi
+	•	scope
+	•	ekonomik paylaşım
+
+E. Compliance minimumu
+	•	NDA olmadan detay paylaşma yok
+	•	conflict disclosure zorunlu
+	•	müşteri verisi gelirse DPA / privacy eki
+	•	IP varsayılanı: sahibinde kalır
+	•	proje çıktıları ayrıca tanımlanır
+
+5. Gelir paylaşımını ilk aşamada “prensip” seviyesinde tanımlayın
+
+Şu aşamada kesin oranlara girmeyin.
+Önce kategori bazlı prensip belirleyin.
+
+Ben şu 5 kategoriyle başlardım:
+	•	Source / intro payı
+	•	Channel / partner management payı
+	•	Sales / closing payı
+	•	Delivery / implementation payı
+	•	IP / product owner payı
+
+İsterseniz altıncı katman olarak da:
+	•	Alliance ops/admin pool
+
+eklenebilir.
+
+Bu aşamada yapılacak iş, yüzde yazmak değil; hangi katkı türlerinin ekonomik olarak tanınacağını yazmaktır.
+
+Bu, ileride kavga çıkmasını ciddi azaltır.
+
+6. Sizin için doğru sözleşme mimarisi
+
+Tek bir sözleşme ile her şeyi çözmeye çalışmayın.
+
+Bence doğru yapı şu:
+
+Katman 1 — Alliance layer
+	•	Mutual NDA
+	•	MoU / Alliance Charter
+	•	Conflict disclosure
+	•	Background IP schedule
+
+Katman 2 — Commercial layer
+
+Gerektikçe:
+	•	Referral agreement
+	•	Reseller / channel agreement
+	•	White-label / distribution agreement
+
+Referral ve reseller ilişkileri pratikte ayrı sözleşme tipleri olarak yürütülür; reseller sözleşmeleri genelde bölge, fiyat, satış kuralları ve minimum yükümlülükleri tanımlar. Referral agreement’lar ise nitelikli lead yönlendirme karşılığı komisyon yapısını tanımlar.  
+
+Katman 3 — Delivery layer
+	•	Master Collaboration Agreement
+	•	Statement of Work
+	•	gerekiyorsa Support / SLA eki
+
+Katman 4 — Protection layer
+	•	DPA
+	•	Security appendix
+	•	IP license / assignment deed
+	•	access rules
+
+Bu çok daha temiz ve ölçeklenebilir olur.
+
+7. Sizin için en mantıklı aşamalı yol haritası
+
+Aşama 1 — Stratejik hizalanma
+
+Çıktı:
+	•	Alliance concept note
+	•	kimler gerçekten bu yapı içinde
+	•	amaç ve kapsam
+
+Aşama 2 — Canvas toplama
+
+Çıktı:
+	•	her kişi/entite için alliance business canvas
+	•	rol, kapasite, beklenti, kısıt görünürlüğü
+
+Aşama 3 — Ön anlaşmalar
+
+Çıktı:
+	•	NDA
+	•	MoU / charter
+	•	conflict form
+	•	IP schedule
+
+Aşama 4 — Governance minimumu
+
+Çıktı:
+	•	görünürlük kuralları
+	•	karar mekanizması
+	•	proje başlatma kuralı
+	•	bilgi güvenliği minimumları
+
+Aşama 5 — Pilot ticari uygulama
+
+Çıktı:
+	•	bir somut fırsat üzerinde
+	•	owner
+	•	faturalama
+	•	rol
+	•	ekonomik paylaşım
+	•	DPA / reseller / SOW gibi gerekli ekler
+
+Burada mevcut somut iş akışınızı ayrı pilot olarak ele almak mantıklı; ama doğru olan önce alliance altyapısını tarif edip sonra pilotu onun üzerinden işletmek.
+
+8. Şu anda hemen yapmanız gerekenler
+
+Bugün başlamak için bence yalnızca şu 4 şeyi üretin:
+
+1. Alliance Business Canvas şablonu
+
+Tek sayfalık, herkes dolduracak.
+
+2. 2-3 sayfalık Alliance Charter / MoU taslağı
+
+Amaç, üyelik, rol, görünürlük, lead, conflict, IP, proje mantığı.
+
+3. Mutual NDA taslağı
+
+Detay paylaşım öncesi.
+
+4. Conflict + Background IP disclosure formu
+
+Kim ne getiriyor, neyi paylaşmak istiyor, neyi restricted tutuyor.
+
+Bunlar çıkmadan detaylı gelir paylaşımı veya şirket formu konuşmak erken olur.
+
+En kısa stratejik özet
+
+Sizin ilk işiniz şirket kurmak değil,
+birlikte çalışmanın kurallarını yazmak.
+
+İlk işiniz yüzde belirlemek değil,
+katkı tiplerini ve görünürlük seviyelerini tanımak.
+
+İlk işiniz herkesi aynı sepete koymak değil,
+kim hangi rol ve hangi erişim düzeyinde olacak bunu belirlemek.
+
+İlk işiniz ağır sözleşme paketi yapmak değil,
+NDA + MoU/Charter + Conflict/IP disclosure ile zemini kurmak.
+
+İstersen bir sonraki adımda sana doğrudan şu 4 çıktıyı hazırlayayım:
+Alliance Business Canvas template, kısa MoU/Alliance Charter taslağı, Mutual NDA başlık yapısı ve Conflict/IP disclosure formu.
+
+Bu “Key Questions” seti aslında çok iyi; çünkü grubun hem teknik odağını hem de ticari yönetişimini test ediyor. Ben olsam bu sorulara aşağıdaki pozisyonla cevap veririm:
+
+1) “AI çalışmanızın hangi tarafına odaklanıyorsunuz; model, Agentic AI mı yoksa orkestrasyon mu?”
+
+Benim önerim: model geliştirme değil, orkestrasyon + agentic workflow + dikey çözümleme.
+Sebep basit: sizin ekipte araştırma lab’ı kuracak GPU/ML org yapısından çok, ürünleştirme, entegrasyon, satış kanalı, white-label, danışmanlık ve domain bilgisi var. Bu yüzden değer katmanız gereken yer:
+	•	use case tasarımı,
+	•	agent akışı,
+	•	tool calling / entegrasyon,
+	•	guardrail,
+	•	CRM/ERP/voice/contact-center bağlama,
+	•	deployment,
+	•	compliance,
+	•	channel satış.
+
+OpenAI’nin güncel dokümanlarında Realtime API düşük gecikmeli speech-to-speech ve multimodal giriş/çıkış için öneriliyor; browser tabanlı voice uygulamalarında başlangıç noktası olarak Agents SDK, istemci tarafında da WebRTC tavsiye ediliyor. Server tarafında ise WebSocket akışı ayrı bir seçenek olarak anlatılıyor. Bu da sizin “foundation model biz yapmayalım, uygulama ve orkestrasyon katmanında kazanalım” yaklaşımını destekliyor.  
+
+Toplantıda bunu şöyle söyleyebilirsiniz:
+“Biz foundation model yapmıyoruz; agentic orchestration, vertical workflow, realtime voice, enterprise integration ve channel-ready çözüm paketleri yapıyoruz.”
+
+2) “Cyber Security ürünü hakkında bu grupta detay paylaşımı yapabilir misiniz ve ürün White Label olarak değerlendirilmeli mi?”
+
+Benim önerim: evet, ama full-open değil; gated paylaşım.
+Yani ürünü gruba anlatabilirsiniz ama şu sırayla:
+
+Önce 1 sayfalık özet:
+	•	ürün ne yapıyor,
+	•	hangi müşteri tipi,
+	•	deployment modeli,
+	•	veri/log tutuyor mu,
+	•	destek kim veriyor,
+	•	white-label mümkün mü,
+	•	marj nedir,
+	•	bölgesel kısıt var mı.
+
+Sonra kısa due diligence:
+	•	IP kimin,
+	•	SLA var mı,
+	•	support escalation kimde,
+	•	müşteri sözleşmesinde sorumluluk kimde,
+	•	veri işleme ve loglama nerede,
+	•	white-label’de branding, fiyat ve support sınırı ne.
+
+White-label için benim minimum şartım şu olur:
+	•	demo,
+	•	teknik mimari özeti,
+	•	veri/sorumluluk çerçevesi,
+	•	support modeli,
+	•	bölge veya sektör yetki tanımı,
+	•	marj ve rev-share netliği.
+
+Yani cevap:
+“Evet paylaşılabilir; ama restricted paylaşım ve white-label due diligence olmadan alliance vitrini yapılmamalı.”
+
+3) “Open source olarak hangi görüntülü/avatar çözümlerinden bahsediyorsunuz?”
+
+Burada aslında 4 ayrı katman var; bunları karıştırmamak lazım:
+
+Avatar rendering / browser katmanı:
+TalkingHead, tarayıcı içinde çalışan, gerçek zamanlı konuşma ve lip-sync destekleyen 3D avatar sınıfı; GLB/Mixamo avatarları ve viseme/blend shape akışını kullanabiliyor.  
+
+Realtime voice / multimodal orchestration katmanı:
+Pipecat, ses ve multimodal agent’lar için açık kaynak bir Python framework; ses, video, taşıma katmanları ve pipeline orkestrasyonunu yönetiyor. LiveKit Agents da açık kaynak; voice/video/text, turn detection, orchestration, multi-agent handoff ve production orchestration özellikleri sunuyor.  
+
+Lip-sync / talking-face katmanı:
+MuseTalk gerçek zamanlı yüksek kaliteli lip-sync’e odaklanıyor; Wav2Lip ve realtimeWav2Lip de dudak senkronizasyonu tarafında sık geçen açık kaynak seçenekler.  
+
+Hazır ticari hızlandırıcı:
+Tavus CVI açık kaynak değil ama uçtan uca conversational video pipeline, gerçek zamanlı rendering, perception, turn-taking ve kendi LLM/voice/knowledge stack’inizi takabilme yaklaşımıyla hızlı pilot için güçlü bir ticari alternatif.  
+
+Toplantıda en temiz cevap şu olur:
+“Open-source tarafta orchestration için Pipecat/LiveKit, avatar/lip-sync için TalkingHead + MuseTalk/Wav2Lip çizgisinden bahsediyoruz; enterprise hızlı pilot için de Tavus benzeri ticari opsiyonlar var.”
+
+4) “Altyapıda WebRTC üzerinden doğrudan OpenAI’nin Speech-to-Speech modelini mi kullanıyorsunuz?”
+
+Teknik olarak evet, bu mimari mümkün ve güncel OpenAI dokümantasyonunda önerilen ana yollardan biri. OpenAI, browser veya mobil istemciden Realtime modele bağlanırken WebSocket yerine WebRTC’yi daha tutarlı performans için öneriyor. Ayrıca browser tabanlı speech-to-speech uygulamalarda önce Agents SDK ile başlamayı tavsiye ediyor. Dokümanlarda hem uygulama sunucunuz üzerinden session başlatma, hem de ephemeral key üretip browser’ın doğrudan WebRTC peer olarak bağlanması anlatılıyor.  
+
+Benim mimari önerim şu olur:
+	•	demo / PoC: browser ⇄ WebRTC ⇄ OpenAI Realtime
+	•	enterprise: client ⇄ sizin backend ⇄ session init / policy / auth ⇄ OpenAI
+
+Yani toplantıda verilecek doğru cevap:
+“Evet, browser tarafında WebRTC ile OpenAI Realtime kullanmak mantıklı; ama enterprise sürümde auth, policy, audit ve integration için kendi backend’imiz arada olmalı.”
+
+5) “Teksas’tan Ali İhsan Gökhan’ı tanıyor musun?”
+
+Bu teknik değil, relationship mapping sorusu.
+Burada benim önerim şu:
+
+Bu tür kişisel network sorularını toplantıda havada bırakmayın. CRM’de ayrı bir alan açın:
+	•	kişi adı,
+	•	kim tanıyor,
+	•	hangi güven seviyesinde,
+	•	hangi sektörden,
+	•	tanıştırma için owner kim,
+	•	son temas tarihi,
+	•	paylaşım izni var mı.
+
+Yani bu sorunun doğru işletimsel cevabı:
+“Tanıyan varsa owner olarak kendini yazsın; bu ilişki CRM’de contact + sponsor + visibility alanlarıyla kayda alınsın.”
+
+6) “Bu çalışmaları kurumsal yapısal bir ilişki zemininde toplayabiliyor muyuz?”
+
+Bence evet, ama tek şirket kurup her şeyi oraya doldurmak şeklinde değil.
+Doğru model şu:
+
+Alliance Operating Framework
+	•	partner statüleri,
+	•	görünürlük seviyeleri,
+	•	lead ownership,
+	•	conflict-of-interest,
+	•	product card,
+	•	deal path,
+	•	revenue split kategorileri,
+	•	restricted vs shared data kuralları.
+
+Bu sayede herkes aynı entity altında olmak zorunda kalmadan, aynı operating system altında çalışabilir.
+
+Ben minimum şu 5 dokümanı kurardım:
+	1.	Partner / Entity Canvas
+	2.	Product Card
+	3.	Opportunity / CRM Registry
+	4.	Rules of Engagement
+	5.	Revenue Sharing Framework
+
+Ek olarak güvenlik tarafı da artık zorunlu. OpenAI Agents SDK dokümanlarında guardrail’lerin input/output kontrolleri için ajanla birlikte veya blocking biçimde çalıştırılabildiği açıkça anlatılıyor; enterprise voice agent senaryolarında bu yaklaşım yerinde olur.  
+
+Bu soruya toplantıda verilecek en iyi kısa cevap bence şu:
+“Evet, bunu kurumsal zemine taşıyabiliriz; ama önce alliance operating rules, CRM visibility, deal ownership ve revenue framework yazılmalı.”
+
+Net sonuç
+
+Ben olsam bu 6 sorunun ardından gruba şu yönü veririm:
+
+Biz model şirketi değiliz; orchestration ve çözüm şirketiyiz.
+White-label fırsatları açığız; ama restricted review ve due diligence ile.
+Realtime voice için WebRTC + Realtime API mantıklı; enterprise için backend kontrollü mimari tercih edilmeli.
+Avatar tarafı ayrı katman; open-source ve commercial seçenekleri karıştırmadan seçmeliyiz.
+Network ilişkileri kişisel hafızada değil, CRM’de owner bazlı tutulmalı.
+Bütün bunlar community değil, yazılı kurallı bir business alliance olarak çalışmalı.
+
+Bir sonraki adımda bu 6 soruyu doğrudan toplantıda okunabilecek “resmi cevap/pozisyon metni” formatında da düzenleyebilirim.
+
+Bu ikinci toplantı notu da çok faydalı. İlk notlardan farklı olarak bu toplantı daha çok tanışma + vitrin + ürün keşfi olmuş. Yani:
+	•	Cumartesi notu daha çok işletim modeli, CRM, gelir paylaşımı, görünürlük, KPI ve sözleşme tarafına gidiyordu.
+	•	Cuma notu ise daha çok kim ne getiriyor, hangi ürünler masada, hangi partner nerede konumlanabilir, hangi riskler var tarafını açmış.
+
+İkisini birleştirince artık tablo daha net.
+
+Bu ikinci toplantıdan çıkan ana sonuç
+
+Sizin yapı üç katmanlı hale geliyor:
+
+1. Hemen ticarileşebilecek çözümler
+
+Bunlar kısa vadede para üretebilir:
+	•	İbrahim’in Voice / Contact Center / Agentic AI çözümü
+	•	Gökhan’ın SAP monitoring / automation ürünü
+	•	Gökhan’ın white-label satabileceği cyber security çözümü
+	•	AI coach / clone / conversational assistant türü dikey çözümler
+	•	Erol’ün entegrasyon ve ayağa kaldırma desteği
+	•	Michael’ın ABD pazar açılımı ve consulting/sales desteği
+
+2. Enterprise / channel / advisory katmanı
+
+Bunlar doğrudan ürün değil ama satış ve büyümeyi taşır:
+	•	senin network ve konumlandırma gücün
+	•	Muhittin’in PMO / alliance / ilişkiler tarafı
+	•	Michael’ın ABD business development ve consulting arka planı
+	•	Gökhan’ın Avrupa ve SAP tarafı
+	•	mevcut partner ve reseller ilişkileri
+
+3. Deneysel / vitrin / inkübasyon alanı
+
+Bunlar değerli ama çekirdek gelir motoru yapmadan önce doğrulanmalı:
+	•	AI coach / avatar / clone örnekleri
+	•	white-label fırsatların detaylı taranması
+	•	genç yetenek / co-founder desteğiyle büyüyecek yarı olgun çözümler
+	•	daha çok demo seviyesindeki ürünler
+
+⸻
+
+Cuma toplantısının karakteri ne?
+
+Bu toplantı bana şunu söylüyor:
+
+Güçlü yanları
+	•	grupta ürün gerçekten var
+	•	farklı coğrafyalarda ilişki var
+	•	white-label ve channel modeli için malzeme var
+	•	sadece fikir konuşulmuyor, somut ürün gösteriliyor
+	•	teknik derinlik de var, ticari bağlantı da var
+
+Zayıf yanları
+	•	toplantı kalabalık olunca odak genişliyor
+	•	ürün gösterimi ile işletim modeli birbirine karışıyor
+	•	herkes potansiyel anlatıyor ama önceliklendirme az
+	•	governance ve conflict-of-interest konusu daha arka planda kalıyor
+	•	“kim ne zaman ne kadar commit olacak” yine tam net değil
+
+Yani bu toplantı pipeline genişletmiş, ama sistemi henüz daraltmamış.
+
+⸻
+
+Bu notlardan sonra kişiler nasıl konumlanıyor?
+
+Sen
+
+Rolün daha da netleşmiş:
+Alliance kurucusu / orchestrator / network sahibi / governance başlatıcısı
+
+Sen:
+	•	çerçeveyi kuruyorsun
+	•	insanları bir araya getiriyorsun
+	•	ortak zemini tarif ediyorsun
+	•	ürünleri bağlayacak stratejik dili kuruyorsun
+
+Bu çok kritik bir rol.
+
+İbrahim
+
+Şu anda en somut “anchor opportunity” yine o.
+
+Rolü:
+Flagship product partner
+
+Neden?
+	•	ürün anlatısı net
+	•	Kanada uygulaması var
+	•	yatırım modeli var
+	•	mühendis ihtiyacı net
+	•	demo sözü verilmiş
+	•	ürünün pazara çıkmışlığı var
+
+Bu alliance’ın ilk pilot ticari test alanı olmaya en yakın aday yine bu.
+
+Gökhan
+
+Bu toplantıdan sonra rolü genişledi.
+
+Bence rolü:
+Enterprise solution partner + white-label bridge + SAP/AI overlay
+
+Gökhan’ın elinde:
+	•	SAP monitoring/automation ürünü
+	•	Agentic AI hedefi
+	•	white-label cyber security ilişkisi
+	•	AI coach / clone demo yeteneği
+
+Bu değerli ama burada ürünleri ayırmak lazım. Çünkü hepsi aynı olgunlukta değil.
+
+Gökhan için 3 ayrı sepet lazım:
+	1.	satılabilir mevcut SAP çözümü
+	2.	white-label taşınabilecek siber güvenlik çözümü
+	3.	deneysel AI coach/clone ürünleri
+
+Michael
+
+Michael ilginç bir profil.
+Doğrudan teknik kurucu gibi değil ama:
+	•	Agile / Scrum / delivery yönetimi
+	•	danışmanlık
+	•	ABD pazarı
+	•	digital transformation tecrübesi
+	•	kendi consulting entity’leri
+	•	white-label alma ilgisi
+
+Rolü bence:
+US market bridge + consulting delivery + opportunity partner
+
+Ama burada da dikkat:
+Michael’ın gücü “hemen partner yaptık, her şeye dahil oldu” şeklinde değil;
+daha çok fırsat bazlı ticari açılım tarafında.
+
+Muhittin
+
+Önceki okuma değişmiyor:
+PMO / alliance coordination / partner-development / investor-relations
+
+Erol
+
+Önceki okuma değişmiyor:
+Chief solution architect / integration rescue / technical due diligence
+
+⸻
+
+Bu toplantıdan sonra yeni önemli tema: güvenlik ve regülasyon
+
+Bu çok önemli. Çünkü ilk toplantılarda daha çok:
+	•	gelir modeli
+	•	CRM
+	•	görünürlük
+	•	ortaklık
+
+konuşuluyordu.
+
+Bu toplantıda ise:
+	•	GDPR
+	•	guardrail
+	•	OpenAI agent builder
+	•	enterprise güvenlik
+	•	veri toplama riski
+
+öne çıkmış.
+
+Bu şu anlama geliyor:
+Sizin alliance modelinde artık sadece ticari ve yönetsel değil, bir de şu başlık olmalı:
+
+Risk & Compliance Layer
+
+Özellikle ürün listesinde şu alanlar için:
+	•	kişisel veri işleniyor mu?
+	•	ses kaydı var mı?
+	•	contact center kayıtları tutuluyor mu?
+	•	AB pazarı var mı?
+	•	enterprise müşteriye gidecek mi?
+	•	white-label alınan üründe güvenlik ve sorumluluk kimde?
+
+Bu yüzden artık her ürün için bir mini “risk kartı” gerekli.
+
+⸻
+
+Cuma ve Cumartesi notlarını birleştirince ortaya çıkan yeni yapı
+
+Ben artık bunu şöyle görüyorum:
+
+A. Governance Track
+
+Burada konuşulacaklar:
+	•	operating memo
+	•	görünürlük seviyeleri
+	•	lead ownership
+	•	conflict-of-interest
+	•	KPI / participation
+	•	gelir paylaşımı
+	•	faturalama modeli
+
+Bu, cumartesi toplantısının ağırlığıydı.
+
+B. Product & Market Track
+
+Burada konuşulacaklar:
+	•	ürün demoları
+	•	white-label fırsatlar
+	•	hangi dikeyde ne satılır
+	•	partner hangi pazara gider
+	•	kim kiminle müşteri görüşmesine girer
+
+Bu da cuma toplantısının ağırlığıydı.
+
+C. Compliance & Enterprise Readiness Track
+
+Burada konuşulacaklar:
+	•	guardrails
+	•	GDPR
+	•	data/privacy
+	•	white-label sorumluluk sınırları
+	•	enterprise readiness checklist
+
+Bu, ikinci toplantıyla netleşen yeni alan.
+
+Bu 3 track’i ayırmazsanız toplantılar çok kalabalıklaşır ve dağılır.
+
+⸻
+
+En önemli stratejik çıkarım
+
+Şu anda sizde çok sayıda ürün ve temas var.
+Ama hepsi aynı anda yürütülürse sistem dağılır.
+
+Bence artık portföy şu şekilde önceliklendirilmeli:
+
+Tier 1 — İlk 60-90 günde öncelik
+	•	İbrahim Voice AI
+	•	Gökhan SAP monitoring/automation
+	•	seçilmiş 1 white-label security fırsatı
+	•	alliance CRM / governance minimum sistemi
+
+Tier 2 — Sonraki dalga
+	•	AI coach / clone çözümleri
+	•	channel partner ağı genişletme
+	•	danışmanlık / advisory servis paketleri
+	•	mentorluk / CV / prep gibi hızlı nakit servisler
+
+Tier 3 — İnkübasyon
+	•	henüz olgunlaşmamış deneysel ürünler
+	•	co-founder arayan ama net GTM olmayan projeler
+	•	demo aşamasında kalan ürünler
+
+⸻
+
+Bu toplantıdan sonra değişen en önemli şey
+
+Önceki konuşmalarda alliance modeli daha çok “teorik” görünüyordu.
+Bu toplantıdan sonra artık şu net:
+
+Bu ağın içinde gerçekten 4 tür değer var
+	1.	ürün
+	2.	satış kanalı
+	3.	teknik delivery
+	4.	advisory / market access
+
+Bu iyi haber. Çünkü model boş değil.
+
+Ama kötü haber şu:
+Bu tür ağlarda en çok sorun, değer türleri karıştığında çıkar.
+
+Örnek:
+	•	biri ürünü getirir
+	•	biri müşteriyi getirir
+	•	biri teknik işi yapar
+	•	biri toplantıları organize eder
+	•	biri sadece vitrin sağlar
+
+Sonra herkes “benim katkım daha büyüktü” der.
+
+O yüzden artık revenue modelinizde katkı tipi ayrılmalı.
+
+⸻
+
+Bu toplantı notlarından sonra sana önerdiğim yeni çerçeve
+
+1. Partner statülerini netleştir
+
+Artık sadece “ortak / değil” yetmez.
+
+Bence en az şu statüler olsun:
+	•	Core governance partner
+	•	Solution partner
+	•	Market/channel partner
+	•	Advisory partner
+	•	External restricted associate
+	•	Incubation venture owner
+
+2. Her ürün için bir “Product Card” oluştur
+
+Alanlar:
+	•	ürün adı
+	•	owner
+	•	kategori
+	•	hazır olma seviyesi
+	•	hedef pazar
+	•	white-label mi
+	•	entegrasyon ihtiyacı
+	•	regülasyon riski
+	•	satış kanalı
+	•	alliance içindeki statüsü
+
+3. Her fırsat için bir “Deal Path” tanımla
+
+Özellikle şu türler ayrı olmalı:
+	•	referral
+	•	co-sell
+	•	reseller
+	•	implementation
+	•	white-label distribution
+	•	advisory-only
+
+4. Toplantıları ikiye böl
+
+Artık tek toplantıda her şeyi konuşmayın.
+
+Dar toplantı
+	•	governance
+	•	karar
+	•	revenue
+	•	conflict
+	•	visibility
+
+Geniş toplantı
+	•	ürün tanıtımı
+	•	demo
+	•	networking
+	•	yeni kişi tanıtımı
+	•	pazar sohbeti
+
+Bu çok fark yaratır.
+
+⸻
+
+Bu notlardan sonra senin elindeki en önemli avantaj
+
+Sen sadece insanları toplamadın.
+Artık elinde şu var:
+	•	bir governance ihtiyacı
+	•	bir ürün portföyü
+	•	bir channel ağı ihtimali
+	•	bir ilk anchor fırsat
+	•	bir CRM gereksinim listesi
+	•	bir rol dağılımı temeli
+
+Yani artık bu konuşmalar “grup sohbeti” olmaktan çıkıp tasarıma hazır malzeme haline geldi.
+
+⸻
+
+Benim sana net önerim
+
+Şu anda en doğru sonraki doküman şu olur:
+
+Alliance Operating Framework + Product Portfolio Matrix
+
+İçinde iki bölüm olur:
+
+Bölüm 1 — Operating Framework
+	•	partner statüleri
+	•	görünürlük seviyeleri
+	•	lead ownership
+	•	conflict yönetimi
+	•	gelir paylaşım kategorileri
+	•	meeting tracks
+
+Bölüm 2 — Portfolio Matrix
+	•	İbrahim
+	•	Gökhan
+	•	Erol
+	•	Muhittin
+	•	Michael
+	•	Yasin
+	•	senin Livo/IP/network katkın
+
+ve her biri için:
+	•	rol
+	•	ürün
+	•	pazar
+	•	hazır olma seviyesi
+	•	risk
+	•	alliance içindeki yeri
+
+Bu artık sizin gerçek çalışma belgeniz olur.
+
+İstersen bir sonraki mesajda bunu sana doğrudan tablo halinde, doldurulmuş ilk versiyon olarak çıkarayım.
+
+Bu notlar çok değerli. Çünkü artık konuşma seviyesi “fikir alışverişi”nden çıkıp işletim modeli, yönetişim, CRM ve gelir paylaşımı seviyesine gelmiş. Ayrıca Read.ai özetinde tekrar eden kısımlar var ama ana mesaj çok net.
+
+Ben bu notlardan şu sonucu çıkarıyorum:
+
+Ana resim
+
+Siz aslında şunu kurmaya çalışıyorsunuz:
+
+Tek bir ürün şirketi değil, kontrollü erişimle çalışan bir partner alliance / venture studio / channel-sales ağı.
+
+Bu toplantı notları da bunu destekliyor. Çünkü notlarda tekrar tekrar şu başlıklar var:
+	•	her partnerin kendi business canvas’ı
+	•	görünürlük ve gizlilik kuralları
+	•	CRM ve teklif/ödeme takibi
+	•	KPI ve katılım bazlı haklar
+	•	başlangıç maliyet paylaşımı
+	•	gelir paylaşımı
+	•	sözleşme olmadan işleme başlamama
+	•	öncelikli fırsat olarak Voice AI
+
+Bu çok önemli. Çünkü artık elinizde “soyut niyet” değil, taslağa dönüşebilecek işletim gereksinimleri var.
+
+⸻
+
+Bu notlardan çıkan 8 temel karar teması
+
+1. Herkes önce kendi iş modelini beyan etmeli
+
+Bu çok doğru.
+
+Yani her kişi/entiti için en az şu alanlar zorunlu olmalı:
+	•	ürün/hizmet
+	•	value proposition
+	•	hedef müşteri
+	•	kanal
+	•	mevcut kaynaklar
+	•	gelir modeli
+	•	maliyet yapısı
+	•	ne bekliyor
+	•	ne kadar zaman ayırabiliyor
+
+Bu olmadan ortak yapı kurulmaz.
+
+Bu nedenle ilk zorunlu belge:
+
+Partner / Entity Business Canvas Template
+
+⸻
+
+2. Yazılı kural olmadan partner işlemi başlamamalı
+
+Notlarda geçen en kritik cümlelerden biri bu.
+
+Bu sizin önceki konuşmalarla da birebir örtüşüyor:
+	•	sorumluluk
+	•	teslimat
+	•	karşılıklılık
+	•	yaptırım
+	•	gizlilik
+	•	görünürlük
+	•	güven
+
+Burada “MDA” geçiyor ama bu kısım isim olarak net değil. Toplantı bağlamında MDA şu anlamlardan biri olabilir:
+	•	Master Distribution Agreement
+	•	Mutual Development Agreement
+	•	ya da sizin içeride başka kullandığınız özel bir kısaltma
+
+Bence burada isimden çok işlev önemli.
+
+Ben sizin için bunun üst başlığını şöyle koyarım:
+
+Alliance Operating Agreement
+
+ve içinde alt ekler:
+	•	NDA / confidentiality
+	•	lead ownership
+	•	visibility rules
+	•	conflict-of-interest
+	•	revenue sharing principles
+	•	project engagement rules
+
+⸻
+
+3. CRM, bu yapının kalbi olacak
+
+Toplantı notlarında CRM sadece “müşteri takip aracı” olarak değil, neredeyse bütün sistemin omurgası gibi duruyor.
+
+Özellikle geçen maddeler çok doğru:
+	•	teklif aşamaları
+	•	ödeme takibi
+	•	review streams
+	•	ortak KPI’ler
+	•	katılım bazlı hak yönetimi
+
+Yani sizin CRM ihtiyacınız standart satış CRM’den biraz daha geniş.
+
+Sizde CRM şu 5 şeyi tutmalı:
+	1.	Lead / müşteri
+	2.	Partner / owner
+	3.	Ürün / çözüm
+	4.	Aşama / teklif / ödeme
+	5.	Görünürlük / yetki / conflict flag
+
+Bu yüzden size klasik basit bir “contact CRM” yetmez.
+
+⸻
+
+4. Görünürlük ve gizlilik kuralları sistemsel olmalı
+
+Bu, sizin modelinizin en kritik konusu.
+
+Toplantı notları da bunu doğruluyor:
+	•	bazı bilgiler gizli kalabilir
+	•	bazı paylaşımlar izinli olmalı
+	•	bazı şeyler owner onayıyla görünmeli
+
+Bunu ben daha önce anlattığım visibility modeline bağlarım:
+
+Önerilen görünürlük seviyeleri
+	•	Private: sadece owner görür
+	•	Restricted: sınırlı meta bilgi görünür
+	•	Shared with approval: isim görünür ama işlem için izin gerekir
+	•	Active collaboration: proje ekibi tam görür
+
+Bu teknik değil, kültürel bir ihtiyaç.
+Sizin güven problemini bununla çözebilirsiniz.
+
+⸻
+
+5. KPI ve katılım bazlı hak konusu çok hassas
+
+Notlarda “katılım sıklığına göre hak ve pay dağılımı” geçmesi çok önemli.
+
+Bu mantıklı ama dikkatli tasarlanmalı.
+
+Çünkü iki farklı şey var:
+	•	toplantıya katılmak
+	•	gerçek ticari katkı sunmak
+
+Sadece katılıma göre pay verilirse adil olmaz.
+Sadece satışa göre verilirse de alliance yönetimi görünmez kalır.
+
+Bu yüzden ben 3 ayrı katkı puanı öneririm:
+
+A. Governance contribution
+	•	toplantı katılımı
+	•	karar süreçleri
+	•	dokümantasyon
+	•	sistem kurma desteği
+
+B. Commercial contribution
+	•	lead getirme
+	•	partner açma
+	•	müşteri görüşmesi
+	•	teklif takibi
+
+C. Delivery / product contribution
+	•	ürün sağlama
+	•	teknik entegrasyon
+	•	demo
+	•	implementasyon
+	•	support
+
+Bu üç katkı ayrı ölçülmeli.
+
+⸻
+
+6. Başlangıç maliyet paylaşımı ve uzun vadeli yüzdelik model ayrı şeylerdir
+
+Toplantı notlarında bu ikisi biraz iç içe konuşulmuş görünüyor.
+
+Ama pratikte bunları ayırmanız lazım:
+
+Kısa vadeli ortak giderler
+	•	domain
+	•	hosting
+	•	web sitesi
+	•	CRM
+	•	basic tooling
+	•	legal draft
+	•	admin giderler
+
+Bunlar için:
+	•	eşit katkı
+	•	gönüllü katkı
+	•	ya da şirkete/alana borç yazılan sanal katkı
+
+olabilir.
+
+Uzun vadeli gelir paylaşımı
+
+Bu ise iş bazlı olmalı.
+
+Yani:
+	•	ortak gider paylaşımı ≠ ürün gelir paylaşımı
+
+Bu ikisini aynı potada eritmeyin.
+
+⸻
+
+7. Mentorluk, CV review, birebir danışmanlık da ürünleştirilebilir
+
+Bu çok önemli bir nokta ve çoğu ekip bunu küçümsüyor.
+
+Notlarda geçen:
+	•	birebir mentorluk
+	•	CV inceleme
+	•	interview prep
+	•	kısa danışmanlık
+	•	feedback
+
+Bunlar aslında düşük maliyetli ama hızlı gelir getirebilecek servisler.
+
+Bunu ayrı bir kategoriye koyabilirsiniz:
+
+Expert Advisory Services
+	•	30 dakikalık mentoring
+	•	resume review
+	•	interview prep
+	•	architecture advisory
+	•	AI/product sanity check
+	•	channel advisory
+
+Bunların tazmin modeli ayrı olabilir:
+	•	sabit ücret
+	•	revenue share değil
+	•	gerekiyorsa advisor credit
+
+Bu tür mikro hizmetler alliance’ın ilk nakit akışını başlatabilir.
+
+⸻
+
+8. Öncelikli fırsat: İbrahim’in Voice AI işi
+
+Toplantı notları bunu açıkça önceliklendirmiş.
+
+Bu, önceki konuşmamızla da birebir uyumlu.
+
+Çünkü burada:
+	•	ürün somut
+	•	pazar sinyali var
+	•	yatırım hikayesi var
+	•	channel modeli kurulabilir
+	•	hızlı aksiyon alınabilir
+
+Yani bu şu anda sizin için:
+
+Anchor opportunity
+
+gibi duruyor.
+
+Bence doğru yaklaşım şu olmalı:
+	•	bunu alliance’ın ilk pilot ticari modeli yapın
+	•	hem channel share modelini
+	•	hem CRM takip modelini
+	•	hem visibility modelini
+	•	hem revenue split’i
+ilk bu fırsat üzerinde test edin
+
+⸻
+
+Toplantı notlarını temizlenmiş karar setine çevirirsek
+
+Aşağıdaki gibi okunmalı:
+
+Alınmış / yönü belirlenmiş kararlar
+	•	Yapı ortak partner ağı mantığında ilerleyecek
+	•	Her partner önce business canvas paylaşacak
+	•	Yazılı anlaşma olmadan ileri iş akışı başlamayacak
+	•	Ortak CRM/requirement takibi gerekli
+	•	Görünürlük ve gizlilik yetki bazlı olacak
+	•	Katılım ve katkı bir şekilde ölçülecek
+	•	Başlangıç maliyetleri için model gerekecek
+	•	Voice AI ilk öncelikli fırsatlardan biri
+
+Açık kalan konular
+	•	MDA tam olarak ne olacak?
+	•	Ana entity var mı, yoksa ilk aşamada alliance memo mu?
+	•	F platformu tam olarak hangi sistem?
+	•	KPI ağırlıkları nasıl belirlenecek?
+	•	Katılım mı, ticari katkı mı, delivery mi daha çok puan getirecek?
+	•	Gider katkıları equity’ye/sanal krediye dönüşecek mi?
+	•	Faturalama hangi entity üzerinden yapılacak?
+	•	Gelir paylaşımında baz ürün mü, net gelir mi, brüt mü esas alınacak?
+
+⸻
+
+Bu notlardan sonra sana önerdiğim 6 doküman
+
+Bu toplantı notları artık dokümana dönüştürülmeli. Ben olsam şu 6 belgeyi sırayla çıkarırım:
+
+1. Alliance Operating Memo
+
+Bu üst seviye belge olur.
+
+İçerik:
+	•	amaç
+	•	kapsam
+	•	partner tipleri
+	•	görünürlük seviyesi
+	•	no-side-dealing kuralı
+	•	conflict yönetimi
+	•	karar mekanizması
+
+2. Partner / Entity Business Canvas Form
+
+Her kişi doldurur.
+
+Alanlar:
+	•	kişi / entity adı
+	•	ürünler
+	•	servisler
+	•	hedef müşteri
+	•	kanallar
+	•	teknik yetkinlik
+	•	kapasite
+	•	beklenti
+	•	gelir modeli
+	•	conflict alanları
+
+3. CRM Requirements Document
+
+Bunu toplantı notlarından doğrudan çıkarabilirsiniz.
+
+Örnek modüller:
+	•	lead registry
+	•	owner/sponsor fields
+	•	opportunity stages
+	•	proposal tracking
+	•	payment tracking
+	•	review streams
+	•	partner visibility
+	•	KPI logs
+	•	conflict flags
+
+4. Revenue Sharing Framework
+
+Bu çok net yazılmalı.
+
+En azından şu kategorilerle:
+	•	referral fee
+	•	sourced lead fee
+	•	co-sell share
+	•	reseller share
+	•	services share
+	•	IP royalty
+	•	ops/admin pool
+	•	deferred contribution ledger
+
+5. KPI & Participation Policy
+
+Ama burada sadece toplantıya katılım değil:
+	•	governance
+	•	commercial
+	•	delivery
+puanları olmalı.
+
+6. Anchor Opportunity Sheet
+
+İbrahim’in Voice AI örneği için:
+	•	ürün
+	•	hedef pazar
+	•	distribütör modeli
+	•	reseller marjı
+	•	sizin payınız
+	•	yerel partner payı
+	•	onboarding/service geliri
+	•	takip planı
+
+⸻
+
+Sana özel yorum: toplantıda senin rolün zaten ortaya çıkmış
+
+Bu notlarda senin rolün çok net görünüyor:
+	•	sistemi tarif eden
+	•	sözleşme ihtiyacını dillendiren
+	•	CRM ihtiyacını tarif eden
+	•	görünürlük ve güven kuralını savunan
+	•	partnerleri bir arada tutan
+	•	ilk taslakları hazırlaması beklenen kişi
+
+Yani sen fiilen:
+
+Alliance Founder / Orchestrator / Governance Owner
+
+rolündesin.
+
+Bu önemli. Çünkü senin katkın sadece satış veya teknik delivery değil.
+Senin katkın:
+	•	yapı kurmak
+	•	doğru kişiyi bir araya getirmek
+	•	güven mekanizması oluşturmak
+	•	reputational risk almak
+
+Bu yüzden senin ekonomik hakkın da sadece “iş gelirse pay alırım” olmamalı.
+Bunu ileride revenue framework’te ayrıca tanımlamak gerekecek.
+
+⸻
+
+Bu notlardan çıkan en kritik uyarı
+
+Toplantı iyi geçmiş ama risk şu:
+çok fazla konu aynı anda açılmış, ama karar seviyesinde henüz yeterince daraltılmamış.
+
+Bu tip gruplarda tehlike şudur:
+	•	herkes heyecanlanır
+	•	herkes kendi örneğini anlatır
+	•	aksiyon listesi büyür
+	•	ama somut ilk pilot seçilmezse dağılır
+
+O yüzden şimdi yapılması gereken şey:
+
+konuşmayı “çerçeve”den “pilot işletim”e geçirmek.
+
+Yani şu sırayı öneririm:
+
+Faz 1
+	•	partner canvas’ları topla
+
+Faz 2
+	•	operating memo taslağını çıkar
+
+Faz 3
+	•	CRM minimum alanlarını tanımla
+
+Faz 4
+	•	Voice AI fırsatını pilot use case yap
+
+Faz 5
+	•	gelir paylaşımını pilot üzerinde test et
+
+⸻
+
+İstersen ben şimdi bir sonraki adımda sana şunlardan birini hazırlayayım:
+
+Seçenek 1:
+Bu Read.ai notlarından türetilmiş, arkadaşlarla paylaşılabilecek temiz bir
+
+“Toplantı Sonrası Karar ve Aksiyon Özeti”
+
+Seçenek 2:
+Doğrudan kullanabileceğiniz
+
+“Alliance Operating Memo v0.1”
+
+Seçenek 3:
+Herkese gönderebileceğiniz doldurulabilir
+
+“Partner / Entity Business Canvas Template”
+
+Bence en doğru sıradaki çıktı: Alliance Operating Memo v0.1.
+
+Bu anlattıklarınla beraber resim daha da netleşti: sizin ihtiyacınız bir “komünite yönetimi” değil, izinli erişimle çalışan bir business operating system. Yani kim kimdir, neyi paylaşır, hangi lead kime aittir, kim ne kadar görür, conflict olursa kim karar verir, gelir nasıl bölünür — bunların hepsi baştan tanımlı olmalı. Ayrıca piyasada tek bir “endüstri standardı” yok; oranlar partnerin rolüne göre değişiyor. Örneğin HubSpot partner revenue share’i belirli şartlarla aylık net gelirin %20’si ve partner seviyesine göre 12 ay ya da 36 aya kadar sürebiliyor; ayrıca deal registration için partnerin müşteriyle kanıtlanabilir bir ilişki kurmuş olması şart koşuluyor. PartnerStack’in örneklerinde de affiliate için yaklaşık %15, reseller için %25–30+ gibi daha yüksek oranlar, partnerin satış ve müşteri yönetimine ne kadar dahil olduğuna göre değişiyor. Microsoft da 2025–2026’da kanal üzerinden satışları Marketplace, multiparty private offers ve resale-enabled motions ile özellikle büyütmeye odaklanmış durumda.  
+
+Buna göre benim sana net önerim şu:
+
+1) Yapıyı 4 katmana böl
+
+A. Core Governance Circle
+
+Bunlar sistemi yöneten kişiler.
+Burada herkes olmak zorunda değil.
+
+Bu katmanın görevi:
+	•	conflict çözmek,
+	•	lead ownership kurallarını işletmek,
+	•	kim neyi görebilir karar vermek,
+	•	yeni partner kabulü,
+	•	ortak marka/ana site kararı,
+	•	masraf ve gelir havuzu yönetimi.
+
+Ben burada seni “Founding Orchestrator / Network Steward” olarak görüyorum.
+Çünkü sen şu anda:
+	•	insanları tanıştıran,
+	•	capability bilen,
+	•	riskleri önden sezen,
+	•	reputational risk alan,
+	•	doğru kişiyi doğru işe koyan kişisin.
+
+Bu rol klasik “satışçı” rolü değil.
+Bu rolün değeri: network architecture + trust governance.
+
+B. Solution Partners
+
+Bunlar ürün veya delivery getirenler.
+
+Burada örneğin:
+	•	Yasin
+	•	Erol
+	•	Gökhan
+	•	İbrahim
+	•	gerektiğinde başka ürün sahipleri
+
+Gökhan’ı ben bu katmanda görüyorum:
+Enterprise Solution / Channel Partner.
+
+Sebebi:
+	•	SAP tarafı var,
+	•	chatbot / VAPI denemeleri var,
+	•	white-label satabileceği çözümler var,
+	•	İngilizcesi ve Avrupa ayağı var,
+	•	enterprise müşteriye açılabilecek bir overlay rolü var.
+
+Ama full-time çalıştığı için onu ilk günden core governance’e ağır bağlamamak daha doğru olur.
+
+C. External Referral / Restricted Partners
+
+Bunlar sistemin içinde “tam görünür” olmayan, kontrollü çalışan kişiler.
+
+Archie burada olmalı.
+
+Senin anlattığın sebeplerden dolayı Archie’yi çekirdek yapıya almak yerine:
+“Restricted External Opportunity / Referral-Only” statüsünde tutmak daha sağlıklı.
+
+Yani:
+	•	ortak CRM’de full visibility yok,
+	•	ana governance’te oy hakkı yok,
+	•	core müşteri havuzuna erişim yok,
+	•	uygun iş olursa referral veya project-specific collaboration olabilir,
+	•	compliance ve conflict-of-interest incelemesi olmadan ortak giriş yok.
+
+Bu çok önemli. Çünkü siz aslında burada kişisel ilişki değil, risk kontrollü ticari mimari kuruyorsunuz.
+
+D. Venture / Incubation Lane
+
+Henüz olgunlaşmamış ama umut veren ürünler burada tutulur.
+
+Örneğin:
+	•	Yasin’in bazı yan projeleri,
+	•	Erol’un bazı tool’ları,
+	•	Gökhan’ın deneysel ürünleri,
+	•	ileride çıkacak dikey PoC’ler
+
+Bunlar ana satış motoruna karışmaz; ayrı “incubation backlog” olur.
+
+⸻
+
+2) Sizin sistemin özü: “visibility control”
+
+Senin dediğin nokta en kritik nokta:
+“Müşteri, ürün, channel ve ilişki herkes tarafından aynı seviyede görünmesin.”
+
+Ben olsam CRM/portal tarafında 4 görünürlük seviyesi kurarım:
+
+Seviye 0 — Hidden
+	•	hiç görünmez
+	•	sadece sahibi görür
+
+Seviye 1 — Metadata only
+	•	müşteri adı görünmez
+	•	sadece sektör, ülke, aşama, ihtiyaç tipi görünür
+	•	örn. “Türkiye / sağlık / voice AI ihtiyacı / partner-owned”
+
+Bu, aynı alanda başka biri çalışma yapıyorsa conflict’i fark etmek için yeterlidir.
+
+Seviye 2 — Protected shared
+	•	müşteri/domain görünür
+	•	ama işlem yapmak için owner onayı gerekir
+	•	notlar ve detaylar sınırlıdır
+
+Seviye 3 — Active deal room
+	•	ortak çalışma açılmıştır
+	•	ilgili ekip teklif, demo, teknik bilgi görebilir
+
+Bu sistem olmadığı sürece iki problem çıkar:
+	1.	insanlar habersiz aynı yere gider,
+	2.	problem olunca herkes sana döner.
+
+Senin yükünü azaltmanın yolu bu.
+
+⸻
+
+3) “Bu bir komünite değil, bu bir biznes” cümlesini kurala çevir
+
+Bunu prensip olarak değil, operating rule olarak yazmak lazım.
+
+Ben şu kuralları koyarım:
+
+Lead Registration Rule
+
+Bir fırsatı sisteme ilk kaydeden kişi “source owner” olur.
+Ama bu tek başına sınırsız hak vermez.
+
+Sponsor Rule
+
+Fırsatı getiren kişi işi kendisi yapamayacaksa bir “delivery sponsor” veya “solution sponsor” atar.
+
+No Side-Dealing Rule
+
+Sistemde görülen bir lead/müşteri/partner üzerinden, owner’a haber vermeden yan iş yapılmaz.
+
+Cooling / Protection Window
+
+Bir kişi bir lead’i kaydettiyse belirli süre koruma alır.
+Mesela:
+	•	60 gün aktif çalışma koruması
+	•	aktivite varsa uzama
+	•	activity yoksa serbestleşme
+
+HubSpot’un deal registration mantığında da partnerin gerçekten o müşteriyle ilişki kurmuş ve satış takibi yapıyor olması aranıyor; sadece adı yazıp koruma almak yeterli kabul edilmiyor.  
+
+Conflict Declaration Rule
+
+Benzer ürün çıkaran herkes bunu önceden bildirir.
+Bu ayıp değil; yönetilmesi gereken durumdur.
+
+⸻
+
+4) Gelir paylaşımında genel temayül ne?
+
+Burada en kritik cevap şu:
+
+Tek bir standart oran yok.
+Piyasada oran, partnerin yaptığı işe göre değişiyor:
+	•	sadece referral mı?
+	•	lead’i ısıtıyor mu?
+	•	demo yapıyor mu?
+	•	closing’e giriyor mu?
+	•	sözleşme o mu yürütüyor?
+	•	müşteri yönetimini o mu yapıyor?
+	•	support ve onboarding o mu veriyor?
+
+PartnerStack’in örneklerinde affiliate tarafı daha düşük, reseller tarafı daha yüksek; HubSpot’ta ise partner revenue share %20’ye kadar çıkabiliyor ve süreye göre devam ediyor. Bu da sizin “intro yapan başka, kapatan başka, destek veren başka” yapınızla uyumlu.  
+
+Ben sizin ağ için şu bantları öneririm:
+
+1. Sadece tanıştırma / intro
+	•	%3 – %5
+	•	çoğu zaman tek seferlik
+	•	bazen ilk yıl gelirinden
+
+2. Lead source + qualification
+	•	%5 – %10
+	•	ihtiyacı anlamış, kapıyı açmış, toplantıyı kurmuş
+
+3. Co-sell / active pursuit
+	•	%10 – %15
+	•	demo, teklif, takip, closing desteği var
+
+4. Reseller / channel owner / account owner
+	•	%15 – %30
+	•	müşteri yönetimi, onboarding, takip, belki support veriyor
+
+5. Services / implementation / integration
+
+Bu ayrı hesaplanmalı.
+Bunu lisans komisyonunun içinden eritmeyin.
+
+Yani bence en büyük hata şu olur:
+aynı %15–20’lik komisyonu 4 kişiye bölmeye çalışmak.
+
+Bu durumda herkes mutsuz olur.
+
+⸻
+
+5) Sizin Luron / Voice AI örneğine uygulanmış hali
+
+Senin verdiğin örnek mantıklı ama biraz dikkatli kurgulanmalı.
+
+Diyelim vendor size %15–20 kanal marjı veriyor.
+Eğer bunun içinden:
+	•	sen + Muhittin master distributor/orchestrator olarak pay alacaksınız,
+	•	yerel satıcı da pay alacak,
+	•	bir de ops/firma payı çıkacak,
+
+o zaman çıplak lisans komisyonu yetmeyebilir.
+
+Ben şöyle kurardım:
+
+Saf lisans geliri varsa
+	•	Yerel kapatan partner: %8–12
+	•	Master/channel orchestration layer: toplam %4–7
+	•	Ana sistem/ops pool: %1–3
+
+Burada sen ve Muhittin o %4–7’yi kendi aranızda paylaşırsınız.
+
+Ama bu model ancak siz:
+	•	ilişki kuruyor,
+	•	enablement yapıyor,
+	•	materyal hazırlıyor,
+	•	distribütörlük ilişkisini ayakta tutuyor,
+	•	belki ülke/partner ağı yönetiyorsanız
+
+anlamlı olur.
+
+Asıl para nerede olmalı?
+
+Asıl kârı şuradan yaratın:
+	•	onboarding
+	•	setup
+	•	call flow design
+	•	integration
+	•	reporting
+	•	optimization
+	•	monthly managed service
+
+Yani lisans komisyonu “kapıyı açan gelir”,
+servis geliri ise “gerçek kârlılık” olsun.
+
+Bu, HubSpot gibi örneklerde görülen recurring revenue share mantığıyla da uyumlu; partnerler yalnızca satıştan değil, müşteriyi aktif yönetmekten de ekonomik değer yaratıyor.  
+
+⸻
+
+6) Gökhan için önerdiğim net konum
+
+Gökhan’ı şu şekilde tanımlardım:
+
+Primary role: Enterprise Solutions & European Channel Bridge
+Secondary role: White-label / reseller enabler
+Third role: SAP-adjacent technical overlay
+
+Neden?
+	•	SAP ve enterprise güveni var,
+	•	Avrupa ayağı var,
+	•	chatbot / VAPI / SAP-integrated PoC geçmişi var,
+	•	güvenli ve kurumsal müşteriye açılabilir,
+	•	başka ürünleri de taşıyabilir.
+
+Ama onun için şu çerçeveyi koyardım:
+	•	full access değil, role-based access,
+	•	hangi ürünlerde conflict var kayıt altına alınır,
+	•	kendi ürünü ile başka partnerin ürünü yan yana geldiğinde “internal competition protocol” çalışır,
+	•	aynı müşteri segmentine iki ürün gidiyorsa owner’lar birlikte karar verir.
+
+⸻
+
+7) Archie için önerdiğim net konum
+
+Archie konusunda sizin sezginiz doğru.
+
+Ben olsam onu:
+core partner değil, external commercial contact
+olarak tanımlarım.
+
+Yani:
+	•	proje bazlı çalışılabilir,
+	•	referral olabilir,
+	•	finder fee olabilir,
+	•	belli bir non-profit veya e-commerce denemesi referans olarak tutulabilir,
+	•	ama core müşteri havuzu, governance ve iç görüşmeler sınırlı olur.
+
+Bence bunun yazılı adı olmalı:
+“Restricted Associate – No automatic access, no pooled rights, no implied partnership.”
+
+Bu cümle çok iş görür.
+
+⸻
+
+8) Gönüllü emek, sanal katkı, sonradan beklenti meselesi
+
+Burada da endüstride en çok problem çıkan alanlardan birindesiniz.
+
+İki yaklaşım var:
+	•	advisory equity
+	•	equity-for-service
+
+Founder Institute’un FAST şablonu, startup-advisor ilişkileri için yaygın kullanılan standart bir çerçeve olarak sunuluyor; ayrıca 3 aylık cliff mantığıyla verimsiz ilişkiyi erken sonlandırma koruması içeriyor. Founder Institute’un EASE şablonu da “service karşılığı equity” için hazırlanmış; fakat aynı kaynak, equity-for-service ilişkisinde yanlış servis sağlayıcı seçmenin en büyük risk olduğunu ve önce küçük bir projede birlikte çalışıp kabiliyeti doğrulamayı özellikle öneriyor. Carta da advisory shares’in erken aşama şirketlerde, nakit yerine deneyim ve network karşılığı kullanılan yaygın bir araç olduğunu; milestone, vesting ve conflict yönetiminin önemli olduğunu vurguluyor.  
+
+Sizin yapıda ben şunu öneririm:
+
+Advisory katkı
+	•	küçük ve düzenli olmayan stratejik katkılar
+	•	equity değilse bile “advisor credit” mantığıyla izlenir
+
+Service contribution
+	•	site yapmak
+	•	hosting kurmak
+	•	entegrasyon yapmak
+	•	demo hazırlamak
+
+Bunlar için:
+	•	ya nakit,
+	•	ya deferred cash,
+	•	ya project-based success fee,
+	•	ya da çok seçici şekilde ayrı bir service-equity mekanizması
+
+olmalı.
+
+Ama “şimdilik gönüllü yap, sonra bakarız” modeli uzun vadede kavga çıkarır.
+
+Ben pratikte şunu kurardım:
+Shadow contribution ledger
+	•	kim kaç saat / ne çıktı / hangi risk aldı
+	•	cash equivalent değeri ne
+	•	ödeme mi, kredi mi, ileride bonus mu
+	•	cap table’e dönüşür mü, dönüşmez mi
+
+Başta her şeyi hisseye çevirmeyin.
+Önce ledger’da toplayın.
+
+⸻
+
+9) Senin rolün için ayrıca özel öneri
+
+Sen klasik co-founder gibi full-time koşamayacağın için senin rolünü yanlış tanımlamamak lazım.
+
+Bence sen:
+Executive Sponsor + Network Steward + Opportunity Architect
+gibisin.
+
+Bu şu anlama gelir:
+	•	herkesi sen koordine ediyorsun,
+	•	reputational risk sende,
+	•	kimin ne yapabileceğini sen biliyorsun,
+	•	yanlış eşleşme olursa sorun sana dönüyor.
+
+Dolayısıyla senin ekonomik hakkın sadece “satış yaparsam alırım” olmamalı.
+
+Senin için 3 ayrı hak tanımı olabilir:
+	1.	Source fee
+	2.	Orchestration fee
+	3.	Governance / platform share
+
+Yoksa sistem büyüdükçe herkes fırsat kullanır, risk yine sende kalır.
+
+⸻
+
+10) Sana önerdiğim nihai işletim modeli
+
+Adı şu olabilir:
+
+Alliance Operating Model
+
+3 ana modül:
+
+Modül 1 — Opportunity Registry
+	•	lead
+	•	channel
+	•	partner
+	•	product
+	•	visibility
+	•	owner
+	•	conflict flags
+
+Modül 2 — Rules of Engagement
+	•	no side dealing
+	•	owner approval
+	•	quiet period
+	•	source protection
+	•	conflict declaration
+	•	escalation path
+
+Modül 3 — Economics Engine
+	•	referral
+	•	reseller
+	•	services
+	•	IP royalty
+	•	ops pool
+	•	shadow sweat ledger
+
+⸻
+
+11) En kritik prensip
+
+Bunu tek cümleyle yazardım:
+
+“Bu ağdaki hiçbir müşteri, partner, lead veya ürün ilişkisi; source owner bilgisi ve role-based visibility kuralları dışında kullanılamaz.”
+
+İkinci kritik cümle:
+
+“Bu yapı bir community değil; kontrollü görünürlük, kayıtlı katkı ve yazılı ekonomik kurallarla çalışan bir business alliance’tır.”
+
+Bu cümle sizin kültürünüzü belirler.
+
+⸻
+
+12) Buradan sonraki en doğru adım
+
+Bir sonraki adımda sana şunu hazırlayayım:
+
+“Alliance Operating Framework v1”
+
+İçinde şu 5 bölüm olsun:
+	1.	partner statüleri
+	2.	visibility seviyeleri
+	3.	lead & conflict kuralları
+	4.	gelir paylaşım şablonları
+	5.	sizin isimlerinizle doldurulmuş rol matrisi
+
+İstersen bunu bir MOU / operating memo taslağı formatında yazayım. Bu sizin arkadaş grubuna gösterilecek kadar somut olur.
+
+Bu anlattığın yapı bence tek bir klasik şirket modeli değil. Daha çok şu modele benziyor:
+
+“İşbirliği ağı + ürün stüdyosu + channel/reseller yapısı + danışmanlık/entegrasyon delivery modeli.”
+
+Bu çok daha gerçekçi. Çünkü sizde şu anda:
+	•	herkesin komitment seviyesi aynı değil,
+	•	herkes aynı ülkede değil,
+	•	herkes aynı anda aynı şirkette çalışamaz,
+	•	bazı ürünler satılmaya hazır, bazıları yarı mamul,
+	•	bazı kişiler ürün sahibi, bazıları teknik kurtarıcı, bazıları satış/partnerlik tarafında güçlü.
+
+O yüzden sizi tek kalıba sokmak yerine, ana iş modelini modüler kurmak lazım.
+
+⸻
+
+1. Şu anki en doğru üst model
+
+Benim gördüğüm ana model şu:
+
+A. Merkez yapı
+
+Bir core alliance / umbrella partnership olacak.
+
+Bu illa ilk gün tek şirket olmak zorunda değil. Ama şu olmalı:
+	•	ortak çalışma prensibi,
+	•	lead paylaşım prensibi,
+	•	ürün/IP sahipliği,
+	•	gelir paylaşım mantığı,
+	•	kim hangi projede hangi rolde,
+	•	mevcut işverenlerle conflict-of-interest sınırları,
+	•	hangi fırsat ortak havuza girer, hangisi kişisel kalır.
+
+Yani önce şirketten önce bile olsa bir “iş birliği işletim modeli” lazım.
+
+B. Alt çalışma tipleri
+
+Bu yapının altında 4 ayrı gelir kolu olabilir:
+	1.	Reseller / Channel Partner işleri
+Örn: Voice AI, başka SaaS çözümleri, bölgesel satış hakları
+	2.	Implementation / Consulting / Integration işleri
+Örn: entegrasyon, AI deployment, chatbot kurulumu, DevOps rescue, custom development
+	3.	Kendi ürünleriniz / micro-SaaS ürünler
+Örn: Yasin’in chatbot ürünü, Erol’un retail portalı, scheduling/not alma tool’ları
+	4.	Venture building / product acceleration
+Yatırım arayan veya yarım kalmış ürünleri yeniden paketleyip satışa ya da yatırıma hazırlama
+
+Bu dört kol birlikte çalışırsa model sağlam olur.
+
+⸻
+
+2. Sizin en büyük probleminiz ne?
+
+Bence ana problem teknik değil.
+Portföy dağınıklığı + komitment belirsizliği + önceliklendirme eksikliği.
+
+Yani bugün herkes bir şey yapıyor ama:
+	•	hangisi hemen satılabilir?
+	•	hangisi referans üretir?
+	•	hangisi sadece demo?
+	•	hangisi yatırım ister?
+	•	hangisi servisle beraber satılır?
+	•	hangisi kim olmadan ilerleyemez?
+
+Bu netleşmeden ortak yapı yorulur.
+
+O yüzden ilk ihtiyaç:
+
+Capability + Product + Commitment Matrix
+
+Her kişi için şu tablo lazım:
+
+Kişi	Güçlü Yanı	Ürün/Asset	Müsaitlik	Gelir Potansiyeli	Risk	Rol
+Yasin	UX/UI, hızlı ürünleme	chatbot / web conversion ürünü, service marketplace	düşük-orta / proje bazlı	orta-yüksek	satış ve teknik cofounder ihtiyacı	product design + front-end + demo layer
+Erol	teknik derinlik, entegrasyon, DevOps, AI tooling	retail portal, scheduling vb.	kısıtlı ama kritik	yüksek	çalışan olduğu için komitment dalgalanabilir	CTO-type solution architect
+Muhittin	PM, Scrum, network, investor intro, consulting shell companies	Cambridge Consulting vb. yapı, channel ilişkileri	orta	yüksek	odak dağılabilir	alliances + PMO + investor/channel relations
+İbrahim	Voice AI ürünü, sektörel satış yetkisi açabilir	Voice AI solution	ürün tarafı hazır sayılır	çok yüksek	ürün olgunluğu ve support kapasitesi	product owner / regional licensing
+
+Bu tabloyu bütün ekip için çıkarmadan karar vermeyin.
+
+⸻
+
+3. Kişilere göre ilk okuma
+
+Yasin Çelenk
+
+Yasin’i ben “product design + conversion engine owner” olarak görüyorum.
+
+Değeri şu:
+	•	sizin kendi siteleriniz için iç kullanımda hemen değer yaratabilir,
+	•	müşteriye dönük hızlı PoC/demolar çıkarabilir,
+	•	UI/UX farkı yaratır,
+	•	“AI agency / product showcase” katmanını parlatır.
+
+Ama riskleri:
+	•	tek başına satış motoru olmayabilir,
+	•	cofounder/teknik ortak ihtiyacı var,
+	•	eski marketplace projesi ayrı bir yatırım konusu; onu ana modelin içine hemen koyarsanız dağınıklık yaratabilir.
+
+Yasin için önerim:
+
+Onu ikiye ayırın:
+
+Hat 1 — Hemen kullanılacak asset
+	•	chatbot / site conversion ürünü
+	•	sizin bütün ortak sitelerde kullanılabilir
+	•	white-label veya bundled satılabilir
+
+Hat 2 — Yatırım isteyen yan ürün
+	•	Türkiye’de 10 bin müşteriye ulaşmış service marketplace
+	•	bunu şimdilik “incubation backlog”a alın
+	•	ana gelir motoru yapmayın
+
+Yani Yasin’in bugün değeri:
+hemen satılacak ana ürün değil, satışları hızlandıracak ve deneyimi iyileştirecek çarpan.
+
+⸻
+
+Erol Akarsu
+
+Erol bence ekibin en kritik kişilerinden biri çünkü her ortak yapıda böyle biri lazım:
+“takılınca çözen, entegrasyonu ayağa kaldıran, teknik riskleri azaltan kişi.”
+
+Bu rol çok değerlidir ama bir risk taşır:
+	•	herkes Erol’a bağımlı olursa yapı ölçeklenmez.
+
+Erol için doğru rol:
+	•	product owner değil,
+	•	yalnızca coder da değil,
+	•	en doğrusu: Chief Solution Architect / Technical Partner
+
+Yani:
+	•	yeni gelen ürünün teknik due diligence’ını yapar,
+	•	entegrasyon mümkün mü değil mi bakar,
+	•	MVP’yi ayağa kaldırır,
+	•	müşteri önünde güven verir,
+	•	delivery’nin çökmesini engeller.
+
+Onun kendi ürünleri de var ama ben onları şimdilik:
+	•	ana vitrinde değil,
+	•	ikinci aşama portföyde tutarım.
+
+Sebep:
+Erol’un en büyük immediate value’su kendi ürünü değil, ekibin ürünlerini satılabilir ve deliver edilebilir hale getirmesi.
+
+⸻
+
+Muhittin Er
+
+Muhittin’in rolü teknikten çok:
+	•	yapı kurma,
+	•	PMO,
+	•	network,
+	•	danışmanlık çerçevesi,
+	•	yatırımcı / partner / channel açma.
+
+Bu çok önemli. Çünkü birçok grup teknik olarak güçlü ama:
+	•	pipeline yönetemez,
+	•	teklif hazırlayamaz,
+	•	follow-up yapamaz,
+	•	partner anlaşmasını kapatamaz.
+
+Muhittin için doğru rol:
+
+Alliance Manager / PMO / Channel Development Lead
+
+Özellikle şu alanlarda kullanılmalı:
+	•	reseller görüşmeleri,
+	•	SOW hazırlığı,
+	•	yatırımcı sunumu ön hazırlığı,
+	•	proje planlama,
+	•	partner onboarding,
+	•	web site / corporate shell üzerinden güven verme.
+
+Onun mevcut şirketleri aktif olmasa bile, dikkatli kullanılırsa araç olabilir.
+Ama tehlike şu: şirket çok, yön çok, odak az.
+
+O yüzden şirketleri “ana model” yapmayın;
+ana model ayrı olsun, şirketler gerektiğinde araç olsun.
+
+⸻
+
+İbrahim Abanozoğlu
+
+Burada en ticari asset şu anda en kuvvetli görünen şeylerden biri bu.
+
+Sebep:
+	•	ürün somut,
+	•	dikey kullanım var,
+	•	belli sayıda satış olmuş,
+	•	yetki devri / bölgesel hak / sektörel hak konuşulabiliyor.
+
+Bu, “0’dan ürün yapalım” işinden daha hızlı para üretebilir.
+
+İbrahim için öneri
+
+Onu şu şekilde ele alın:
+
+Model 1 — Regional reseller
+	•	ülke / bölge bazlı yetki
+
+Model 2 — Vertical reseller
+	•	restoran, sağlık, otomotiv, emlak gibi sektör bazlı hak
+
+Model 3 — Managed implementation partner
+	•	ürünü alıp sadece satmak değil,
+	•	kurulum + prompt setup + call flow + CRM bağlama + aylık destek
+
+Bence sizin için en doğrusu 3. model.
+Çünkü sadece reseller marjı küçüktür;
+ama implementation + support + optimization eklerseniz marj büyür.
+
+⸻
+
+4. Şu anki portföyü nasıl sınıflandırmak lazım?
+
+Ben olsam portföyü 3 sepete ayırırım:
+
+Sepet A — Hemen paraya dönebilecekler
+
+Bunlar ilk 90 günde zorlanacak ana alanlar:
+	1.	Voice AI çözümleri
+	•	reseller
+	•	implementation
+	•	sector package
+	2.	Website conversion / AI chatbot
+	•	Yasin’in ürünü
+	•	sizin kendi sitelerde iç kullanım
+	•	müşteriye demo / PoC
+	3.	AI integration & rescue services
+	•	Erol merkezli teknik delivery
+	•	custom workflow / API / deployment / DevOps
+	4.	Channel development consulting
+	•	Muhittin ve senin networkünüzle
+	•	Türkiye / Kanada / ABD / partnering
+
+⸻
+
+Sepet B — Orta vadede paketlenecekler
+	1.	Erol’un retail portalı
+	2.	scheduling / meeting tools
+	3.	stuck startup acceleration consulting
+	4.	mevcut danışmanlık kabukları üzerinden dikey sayfalar
+
+⸻
+
+Sepet C — Yatırım veya ayrı ekip isteyenler
+	1.	Yasin’in service marketplace işi
+	2.	tam zamanlı ekip isteyen ürünler
+	3.	ayrı coğrafyada operasyon gerektiren işler
+
+Bunları hemen core işe karıştırmayın.
+
+⸻
+
+5. Bence sizin asıl business modeliniz ne olmalı?
+
+Tek cümleyle:
+
+“AI-enabled solutions alliance”
+
+ve altında 3 satış hareketi:
+
+1. Sell others’ products
+
+Başkalarının hazır ürünlerini:
+	•	reseller
+	•	white-label
+	•	regional rep
+	•	sector rep
+olarak satmak
+
+2. Package and deliver services around them
+
+Bu ürünlerin etrafına:
+	•	setup
+	•	integration
+	•	localization
+	•	optimization
+	•	monthly support
+eklemek
+
+3. Incubate selected in-house products
+
+İçeride umut veren ürünleri:
+	•	demo
+	•	pilot
+	•	müşteri feedback
+	•	GTM
+	•	yatırım hazırlığı
+seviyesine getirmek
+
+Bu üçü birlikte olursa sürdürülebilir olur.
+
+⸻
+
+6. Gelir modeli nasıl olmalı?
+
+En temiz yapı şu:
+
+Gelir Türleri
+	•	lisans / reseller komisyonu
+	•	kurulum ücreti
+	•	entegrasyon projesi
+	•	aylık bakım / support
+	•	success fee
+	•	lead referral fee
+	•	product royalty / IP fee
+	•	danışmanlık retainers
+
+Gelir paylaşım mantığı
+
+Her işte sabit tek oran yerine, gelir 4 parçaya ayrılmalı:
+	1.	Lead sahibi payı
+	2.	Ürün / IP sahibi payı
+	3.	Delivery / implementation payı
+	4.	Ortak operasyon / company pool payı
+
+Bu çok önemli. Çünkü biri lead getirir, biri ürünü verir, biri işi teslim eder.
+Tek “eşit paylaşım” modeli genelde kavga çıkarır.
+
+Örnek mantık:
+	•	lead kimden geldi?
+	•	ürünü kim sağlıyor?
+	•	teslimatı kim yapıyor?
+	•	müşteri yönetimini kim üstleniyor?
+	•	uzun dönem support kim veriyor?
+
+Buna göre iş bazlı dağılım.
+
+⸻
+
+7. Hukuki/işletimsel olarak ilk gereken şey
+
+Şirket kurmadan önce bile aşağıdaki kısa çerçeve lazım:
+
+“Collaboration Operating Agreement”
+
+İçinde şunlar olmalı:
+	•	fırsatların ortak havuza girme kuralı
+	•	lead registration
+	•	ürün/IP sahipliği
+	•	confidentiality
+	•	non-circumvention
+	•	conflict-of-interest bildirimi
+	•	proje bazlı revenue share mantığı
+	•	farklı şirketlerin hangi koşulda kullanılacağı
+	•	ortak isim/marka kullanımı
+	•	müşteri kimin müşterisi sayılır
+	•	biri projeden çekilirse ne olur
+	•	destek/veri/erişim sorumluluğu
+	•	minimum komitment seviyesi
+	•	karar alma mekanizması
+
+Bu olmadan ilerlerseniz dostluk yıpranır.
+
+⸻
+
+8. Web sitesi / marka tarafında önerim
+
+Tek siteyle her şeyi anlatmaya çalışmayın.
+Bu çok dağınık görünür.
+
+En iyi yapı:
+
+Bir ana umbrella site
+ve altında 3 çözüm alanı:
+	1.	Voice AI & Customer Automation
+	2.	AI Chatbots & Website Conversion
+	3.	Integration, Delivery & Channel Partnership
+
+Altında “Selected Venture Products” gibi ayrı bölüm olabilir.
+
+Yani ziyaretçi ilk bakışta “bunlar ne yapıyor?” sorusuna cevap bulmalı.
+Yoksa 8 ayrı ürün gösterilirse güven azalır.
+
+⸻
+
+9. Şu an için size en mantıklı ilk ticari odak
+
+Ben olsam ilk odak olarak bunu seçerim:
+
+Faz 1
+
+Voice AI + AI chatbot + integration services
+
+Sebep:
+	•	somut demo çıkarması kolay,
+	•	satışı anlatması kolay,
+	•	recurring revenue potansiyeli var,
+	•	sektörel paket yapılabilir,
+	•	teknik ekiple teslim edilebilir.
+
+Faz 2
+
+Channel partner / regional representation
+	•	Türkiye
+	•	Kanada
+	•	belli dikeyler
+
+Faz 3
+
+İç ürünlerden 1-2 tanesini büyütmek
+	•	sadece traction varsa
+
+⸻
+
+10. Şu ana kadarki isimlerle rol dağılımı önerim
+
+İsim	Önerilen Ana Rol	İkincil Rol
+Sen	alliance founder, strategy, channel/sales orchestration	partner relations, packaging
+Yasin	UX/UI + product experience lead	chatbot/site conversion product owner
+Erol	chief solution architect	integration/devops/AI implementation
+Muhittin	PMO + alliances + investor/channel relations	consulting shell / structuring support
+İbrahim	voice AI product partner	regional/vertical licensing
+
+Bu netlik çok işe yarar.
+
+⸻
+
+11. Bence bundan sonra nasıl ilerlemeliyiz?
+
+Bence bunu 4 deliverable’a çevirelim:
+
+1. Partner Matrix
+
+Her kişi için:
+	•	yetenek
+	•	ürün
+	•	zaman
+	•	hedef
+	•	risk
+	•	gelir tipi
+	•	hangi projede rol alabilir
+
+2. Product Portfolio Map
+
+Her ürün için:
+	•	hazır mı?
+	•	demo var mı?
+	•	müşteri var mı?
+	•	recurring mi?
+	•	yatırım mı lazım?
+	•	kim sahip?
+	•	sizin ekibe neden uygun?
+
+3. Operating Model
+	•	fırsat yönetimi
+	•	gelir paylaşımı
+	•	IP
+	•	lead ownership
+	•	website/brand mantığı
+
+4. 90 günlük GTM planı
+	•	hangi 2 ürünle çıkılacak
+	•	hangi dikeye gidilecek
+	•	kim konuşacak
+	•	hangi demo hazırlanacak
+	•	hangi web sayfaları açılacak
+
+⸻
+
+İstersen şimdi sen kalan kişileri de aynı şekilde yaz. Ben bunu bir sonraki adımda sana çok net bir tablo halinde çıkarayım:
+“kişi bazlı rol matrisi + ürün bazlı öncelik matrisi + önerilen gelir paylaşım modeli + şirket/şirket dışı çalışma modeli.”
+
+

@@ -1,0 +1,98 @@
+
+erDiagram
+    USERS ||--o{ USER_ROLE_ASSIGNMENTS : has
+    ROLES ||--o{ USER_ROLE_ASSIGNMENTS : grants
+
+    USERS ||--o{ ORGANIZATIONS : owns
+    ORGANIZATIONS ||--o{ CONTACTS : contains
+    USERS ||--o{ CONTACTS : owns
+    CONTACTS ||--o{ RELATIONSHIP_LINKS : mapped_by
+    USERS ||--o{ RELATIONSHIP_LINKS : knows
+    USERS ||--o{ RELATIONSHIP_LINKS : intro_owner
+
+    USERS ||--o{ USER_CAPABILITIES : has
+    CAPABILITIES ||--o{ USER_CAPABILITIES : classifies
+
+    PARTNER_ENTITIES ||--o{ PRODUCTS : owns
+    USERS ||--o{ PRODUCTS : owns
+    PRODUCTS ||--o{ PRODUCT_CAPABILITIES : uses
+    CAPABILITIES ||--o{ PRODUCT_CAPABILITIES : defines
+    PRODUCTS ||--o{ PRODUCT_MARKETS : targets
+
+    ORGANIZATIONS ||--o{ LEADS : target_account
+    CONTACTS ||--o{ LEADS : target_contact
+    USERS ||--o{ LEADS : source_owner
+    USERS ||--o{ LEADS : sponsor
+    LEADS ||--o{ LEAD_ASSIGNMENTS : assigned
+    USERS ||--o{ LEAD_ASSIGNMENTS : assignee
+
+    LEADS ||--o{ OPPORTUNITIES : converts_to
+    ORGANIZATIONS ||--o{ OPPORTUNITIES : account
+    USERS ||--o{ OPPORTUNITIES : deal_owner
+    USERS ||--o{ OPPORTUNITIES : source_owner
+    USERS ||--o{ OPPORTUNITIES : sponsor
+    PARTNER_ENTITIES ||--o{ OPPORTUNITIES : billing_entity
+    PIPELINES ||--o{ STAGES : contains
+    PIPELINES ||--o{ OPPORTUNITIES : classifies
+    STAGES ||--o{ OPPORTUNITIES : current_stage
+
+    OPPORTUNITIES ||--o{ OPPORTUNITY_PRODUCTS : includes
+    PRODUCTS ||--o{ OPPORTUNITY_PRODUCTS : offered_in
+
+    DEAL_PATHS ||--o{ OPPORTUNITY_PATHS : defines
+    OPPORTUNITIES ||--o{ OPPORTUNITY_PATHS : follows
+
+    OPPORTUNITIES ||--o{ PROPOSALS : has
+    OPPORTUNITIES ||--o{ OPPORTUNITY_REVENUE_SHARES : splits
+    USERS ||--o{ OPPORTUNITY_REVENUE_SHARES : beneficiary
+    PARTNER_ENTITIES ||--o{ OPPORTUNITY_REVENUE_SHARES : beneficiary
+
+    OPPORTUNITIES ||--o{ PROJECTS : becomes
+    USERS ||--o{ PROJECTS : owns
+    USERS ||--o{ PROJECTS : manages
+    USERS ||--o{ PROJECTS : leads
+    PROJECTS ||--o{ PROJECT_MILESTONES : contains
+    USERS ||--o{ PROJECT_MILESTONES : owns
+
+    USERS ||--o{ RISKS : owns
+    USERS ||--o{ COMPLIANCE_REVIEWS : reviews
+    USERS ||--o{ ACTIVITIES : logs
+    USERS ||--o{ NOTES : authors
+    USERS ||--o{ ATTACHMENTS : uploads
+    USERS ||--o{ KPI_CONTRIBUTIONS : records
+    USERS ||--o{ AUDIT_LOGS : creates
+
+    LEADS ||--o{ RISKS : may_have
+    OPPORTUNITIES ||--o{ RISKS : may_have
+    PROJECTS ||--o{ RISKS : may_have
+    PRODUCTS ||--o{ RISKS : may_have
+
+    PRODUCTS ||--o{ COMPLIANCE_REVIEWS : may_have
+    OPPORTUNITIES ||--o{ COMPLIANCE_REVIEWS : may_have
+    PROJECTS ||--o{ COMPLIANCE_REVIEWS : may_have
+
+    ORGANIZATIONS ||--o{ AGREEMENTS : may_have
+    PRODUCTS ||--o{ AGREEMENTS : may_have
+    OPPORTUNITIES ||--o{ AGREEMENTS : may_have
+    PROJECTS ||--o{ AGREEMENTS : may_have
+
+    CONTACTS ||--o{ ACTIVITIES : may_have
+    ORGANIZATIONS ||--o{ ACTIVITIES : may_have
+    LEADS ||--o{ ACTIVITIES : may_have
+    OPPORTUNITIES ||--o{ ACTIVITIES : may_have
+    PROJECTS ||--o{ ACTIVITIES : may_have
+
+    CONTACTS ||--o{ NOTES : may_have
+    ORGANIZATIONS ||--o{ NOTES : may_have
+    LEADS ||--o{ NOTES : may_have
+    OPPORTUNITIES ||--o{ NOTES : may_have
+    PROJECTS ||--o{ NOTES : may_have
+    PRODUCTS ||--o{ NOTES : may_have
+
+    OPPORTUNITIES ||--o{ ATTACHMENTS : may_have
+    PROJECTS ||--o{ ATTACHMENTS : may_have
+    AGREEMENTS ||--o{ ATTACHMENTS : may_have
+
+    LEADS ||--o{ KPI_CONTRIBUTIONS : may_have
+    OPPORTUNITIES ||--o{ KPI_CONTRIBUTIONS : may_have
+    PROJECTS ||--o{ KPI_CONTRIBUTIONS : may_have
