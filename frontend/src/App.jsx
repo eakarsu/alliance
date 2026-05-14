@@ -17,6 +17,7 @@ import Risks from './pages/Risks'
 import Proposals from './pages/Proposals'
 import KPI from './pages/KPI'
 import AIAssistant from './pages/AIAssistant'
+import AIInsights from './pages/AIInsights'
 import ConflictQueue from './pages/ConflictQueue'
 import VisibilityApprovals from './pages/VisibilityApprovals'
 import MyReferrals from './pages/MyReferrals'
@@ -31,6 +32,27 @@ import AdvisoryRequests from './pages/AdvisoryRequests'
 import MeetingNotes from './pages/MeetingNotes'
 import ResourceView from './pages/ResourceView'
 import GovernanceDashboard from './pages/GovernanceDashboard'
+
+// // === Batch 09 Gaps & Frontend Mounts ===
+const PredictiveDealClosureWithProbabilityModelingCfs = React.lazy(() => import('./pages/Batch09/PredictiveDealClosureWithProbabilityModelingCfs'));
+const PartnerRiskAssessmentFromFinancialPerformanceDataCfs = React.lazy(() => import('./pages/Batch09/PartnerRiskAssessmentFromFinancialPerformanceDataCfs'));
+const ConflictDetectionInPartnerNetworksCfs = React.lazy(() => import('./pages/Batch09/ConflictDetectionInPartnerNetworksCfs'));
+const AutomatedPayoutCalculationsAndReconciliationCfs = React.lazy(() => import('./pages/Batch09/AutomatedPayoutCalculationsAndReconciliationCfs'));
+const GovernanceComplianceAutomationAuditApprovalsCfs = React.lazy(() => import('./pages/Batch09/GovernanceComplianceAutomationAuditApprovalsCfs'));
+const FinancialSystemIntegrationForRevenueTrackingCfs = React.lazy(() => import('./pages/Batch09/FinancialSystemIntegrationForRevenueTrackingCfs'));
+const StrategicPartnerRecommendationEngineCfs = React.lazy(() => import('./pages/Batch09/StrategicPartnerRecommendationEngineCfs'));
+const LegalclmSystemIntegrationCfs = React.lazy(() => import('./pages/Batch09/LegalclmSystemIntegrationCfs'));
+const AiOpportunityScoringAndStagePredictionGapAi = React.lazy(() => import('./pages/Batch09/AiOpportunityScoringAndStagePredictionGapAi'));
+const PartnerPerformancePredictionGapAi = React.lazy(() => import('./pages/Batch09/PartnerPerformancePredictionGapAi'));
+const DealStageForecastingGapAi = React.lazy(() => import('./pages/Batch09/DealStageForecastingGapAi'));
+const ConflictResolutionRecommendationGapAi = React.lazy(() => import('./pages/Batch09/ConflictResolutionRecommendationGapAi'));
+const GovernanceComplianceAutoChecksGapAi = React.lazy(() => import('./pages/Batch09/GovernanceComplianceAutoChecksGapAi'));
+const PayoutrevenueShareManagementGapNon = React.lazy(() => import('./pages/Batch09/PayoutrevenueShareManagementGapNon'));
+const FinancialReportingAndReconciliationGapNon = React.lazy(() => import('./pages/Batch09/FinancialReportingAndReconciliationGapNon'));
+const ContractLifecycleManagementModuleGapNon = React.lazy(() => import('./pages/Batch09/ContractLifecycleManagementModuleGapNon'));
+const NegotiationPlaybookTemplateLibraryGapNon = React.lazy(() => import('./pages/Batch09/NegotiationPlaybookTemplateLibraryGapNon'));
+const MobilePartnerPortalUiGapNon = React.lazy(() => import('./pages/Batch09/MobilePartnerPortalUiGapNon'));
+const ESignatureIntegrationGapNon = React.lazy(() => import('./pages/Batch09/ESignatureIntegrationGapNon'));
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
@@ -110,8 +132,31 @@ export default function App() {
         <Route path="/activities" element={<RoleRoute page="activities"><Activities /></RoleRoute>} />
         <Route path="/kpi" element={<RoleRoute page="kpi"><KPI /></RoleRoute>} />
         <Route path="/ai" element={<RoleRoute page="ai"><AIAssistant /></RoleRoute>} />
+        <Route path="/ai-insights" element={<RoleRoute page="ai"><AIInsights /></RoleRoute>} />
       </Route>
       <Route path="*" element={<Navigate to={user ? '/dashboard' : '/login'} replace />} />
-    </Routes>
+    
+      {/* // === Batch 09 Gaps & Frontend Mounts === */}
+        <Route path="/batch09/cfs/predictive-deal-closure-with-probability-modeling" element={<React.Suspense fallback={<div>Loading...</div>}><PredictiveDealClosureWithProbabilityModelingCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/partner-risk-assessment-from-financial-performance-data" element={<React.Suspense fallback={<div>Loading...</div>}><PartnerRiskAssessmentFromFinancialPerformanceDataCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/conflict-detection-in-partner-networks" element={<React.Suspense fallback={<div>Loading...</div>}><ConflictDetectionInPartnerNetworksCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/automated-payout-calculations-and-reconciliation" element={<React.Suspense fallback={<div>Loading...</div>}><AutomatedPayoutCalculationsAndReconciliationCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/governance-compliance-automation-audit-approvals" element={<React.Suspense fallback={<div>Loading...</div>}><GovernanceComplianceAutomationAuditApprovalsCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/financial-system-integration-for-revenue-tracking" element={<React.Suspense fallback={<div>Loading...</div>}><FinancialSystemIntegrationForRevenueTrackingCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/strategic-partner-recommendation-engine" element={<React.Suspense fallback={<div>Loading...</div>}><StrategicPartnerRecommendationEngineCfs /></React.Suspense>} />
+        <Route path="/batch09/cfs/legalclm-system-integration" element={<React.Suspense fallback={<div>Loading...</div>}><LegalclmSystemIntegrationCfs /></React.Suspense>} />
+        <Route path="/batch09/gap-ai/ai-opportunity-scoring-and-stage-prediction" element={<React.Suspense fallback={<div>Loading...</div>}><AiOpportunityScoringAndStagePredictionGapAi /></React.Suspense>} />
+        <Route path="/batch09/gap-ai/partner-performance-prediction" element={<React.Suspense fallback={<div>Loading...</div>}><PartnerPerformancePredictionGapAi /></React.Suspense>} />
+        <Route path="/batch09/gap-ai/deal-stage-forecasting" element={<React.Suspense fallback={<div>Loading...</div>}><DealStageForecastingGapAi /></React.Suspense>} />
+        <Route path="/batch09/gap-ai/conflict-resolution-recommendation" element={<React.Suspense fallback={<div>Loading...</div>}><ConflictResolutionRecommendationGapAi /></React.Suspense>} />
+        <Route path="/batch09/gap-ai/governance-compliance-auto-checks" element={<React.Suspense fallback={<div>Loading...</div>}><GovernanceComplianceAutoChecksGapAi /></React.Suspense>} />
+        <Route path="/batch09/gap-nonai/payoutrevenue-share-management" element={<React.Suspense fallback={<div>Loading...</div>}><PayoutrevenueShareManagementGapNon /></React.Suspense>} />
+        <Route path="/batch09/gap-nonai/financial-reporting-and-reconciliation" element={<React.Suspense fallback={<div>Loading...</div>}><FinancialReportingAndReconciliationGapNon /></React.Suspense>} />
+        <Route path="/batch09/gap-nonai/contract-lifecycle-management-module" element={<React.Suspense fallback={<div>Loading...</div>}><ContractLifecycleManagementModuleGapNon /></React.Suspense>} />
+        <Route path="/batch09/gap-nonai/negotiation-playbook-template-library" element={<React.Suspense fallback={<div>Loading...</div>}><NegotiationPlaybookTemplateLibraryGapNon /></React.Suspense>} />
+        <Route path="/batch09/gap-nonai/mobile-partner-portal-ui" element={<React.Suspense fallback={<div>Loading...</div>}><MobilePartnerPortalUiGapNon /></React.Suspense>} />
+        <Route path="/batch09/gap-nonai/e-signature-integration" element={<React.Suspense fallback={<div>Loading...</div>}><ESignatureIntegrationGapNon /></React.Suspense>} />
+
+      </Routes>
   )
 }
