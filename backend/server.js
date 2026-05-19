@@ -63,6 +63,10 @@ app.use('/api/opportunity-roles', auth, require('./routes/opportunityRoles'));
 // Documents
 app.use('/api/documents', auth, require('./routes/documents'));
 
+// Integrations + advanced AI (apply pass 5)
+app.use('/api/integrations', require('./routes/integrations'));
+app.use('/api/custom', auth, require('./routes/customFeatures'));
+
 // User list for pickers (auth only, returns minimal user info)
 app.get('/api/users/list', auth, async (req, res) => {
   try {
@@ -73,6 +77,9 @@ app.get('/api/users/list', auth, async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+// === Custom Views (Alliance Views) ===
+app.use('/api/custom-views', require('./routes/customViews'));
 
 // 404 handler
 app.use((req, res) => {
@@ -85,8 +92,14 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error', message: err.message });
 });
 
+// // === Batch 09 Gaps & Frontend Mounts ===
+app.use('/api/gap-ai-alliance', require('./routes/batch09GapAi')); // // === Batch 09 Gaps & Frontend Mounts ===
+app.use('/api/gap-nonai-alliance', require('./routes/batch09GapNonai')); // // === Batch 09 Gaps & Frontend Mounts ===
+
 app.listen(PORT, () => {
   console.log(`Alliance CRM Backend running on port ${PORT}`);
 });
 
 module.exports = app;
+
+

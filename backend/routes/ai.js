@@ -397,4 +397,190 @@ router.post('/suggest', auth, async (req, res) => {
   }
 });
 
+// POST /api/ai/score-opportunity
+// Returns a 0-100 win-probability score with rationale for an opportunity.
+// Mechanical addition based on audit recommendation: "Opportunity scoring".
+router.post('/score-opportunity', auth, async (req, res) => {
+  try {
+    const { opportunity_id } = req.body;
+    if (!opportunity_id) {
+      return res.status(400).json({ error: 'opportunity_id is required' });
+    }
+
+    if (isRestricted(req.user.role)) {
+      return res.status(403).json({ error: 'Your role does not have access to opportunity scoring' });
+    }
+
+    const hasAccess = await canAccessRecord(
+      pool, 'opportunities', 'op', opportunityFilter, opportunity_id, req.user.role, req.user.id
+    );
+    if (!hasAccess) {
+      return res.status(403).json({ error: 'Access denied to this opportunity' });
+    }
+
+    const result = await pool.query(
+      `SELECT o.*, org.org_name, s.stage_name, p.pipeline_name, u.full_name AS deal_owner_name
+       FROM opportunities o
+       LEFT JOIN organizations org ON o.account_org_id = org.id
+       LEFT JOIN stages s ON o.stage_id = s.id
+       LEFT JOIN pipelines p ON o.pipeline_id = p.id
+       LEFT JOIN users u ON o.deal_owner_user_id = u.id
+       WHERE o.id = $1`,
+      [opportunity_id]
+    );
+    const opp = result.rows[0];
+    if (!opp) {
+      return res.status(404).json({ error: 'Opportunity not found' });
+    }
+
+    const messages = [
+      { role: 'system', content: SYSTEM_PROMPT + '\n\nYou are scoring an opportunity. Respond with strict JSON: {"score": <0-100 integer>, "confidence": "low|medium|high", "key_factors": [<strings>], "next_actions": [<strings>]}. No prose outside JSON.' },
+      { role: 'user', content: `Score this opportunity for win-probability:\n${JSON.stringify(opp, null, 2)}` },
+    ];
+
+    const aiResponse = await callOpenRouter(messages);
+    let parsed = null;
+    try {
+      const match = aiResponse.match(/\{[\s\S]*\}/);
+      parsed = match ? JSON.parse(match[0]) : null;
+    } catch (_) {
+      parsed = null;
+    }
+
+    res.json({
+      opportunity_id,
+      score: parsed && typeof parsed.score === 'number' ? parsed.score : null,
+      analysis: parsed || { raw: aiResponse },
+      model: OPENROUTER_MODEL,
+    });
+  } catch (err) {
+    console.error('AI score-opportunity error:', err);
+    res.status(500).json({ error: 'AI opportunity scoring failed', message: err.message });
+  }
+});
+
+// POST /api/ai/forecast-stage
+// Forecasts likely next stage and time-to-close for an opportunity.
+// Mechanical addition based on audit recommendation: "deal stage forecasting".
+router.post('/forecast-stage', auth, async (req, res) => {
+  try {
+    const { opportunity_id } = req.body;
+    if (!opportunity_id) {
+      return res.status(400).json({ error: 'opportunity_id is required' });
+    }
+
+    if (isRestricted(req.user.role)) {
+      return res.status(403).json({ error: 'Your role does not have access to deal forecasting' });
+    }
+
+    const hasAccess = await canAccessRecord(
+      pool, 'opportunities', 'op', opportunityFilter, opportunity_id, req.user.role, req.user.id
+    );
+    if (!hasAccess) {
+      return res.status(403).json({ error: 'Access denied to this opportunity' });
+    }
+
+    const oppResult = await pool.query(
+      `SELECT o.*, s.stage_name, p.pipeline_name
+       FROM opportunities o
+       LEFT JOIN stages s ON o.stage_id = s.id
+       LEFT JOIN pipelines p ON o.pipeline_id = p.id
+       WHERE o.id = $1`,
+      [opportunity_id]
+    );
+    const opp = oppResult.rows[0];
+    if (!opp) {
+      return res.status(404).json({ error: 'Opportunity not found' });
+    }
+
+    const messages = [
+      { role: 'system', content: SYSTEM_PROMPT + '\n\nForecast the likely next stage and time-to-close. Respond with strict JSON: {"likely_next_stage": <string>, "time_to_close_days": <integer>, "rationale": <string>, "blockers": [<strings>]}. No prose outside JSON.' },
+      { role: 'user', content: `Forecast progression for this opportunity:\n${JSON.stringify(opp, null, 2)}` },
+    ];
+
+    const aiResponse = await callOpenRouter(messages);
+    let parsed = null;
+    try {
+      const match = aiResponse.match(/\{[\s\S]*\}/);
+      parsed = match ? JSON.parse(match[0]) : null;
+    } catch (_) {
+      parsed = null;
+    }
+
+    res.json({
+      opportunity_id,
+      forecast: parsed || { raw: aiResponse },
+      model: OPENROUTER_MODEL,
+    });
+  } catch (err) {
+    console.error('AI forecast-stage error:', err);
+    res.status(500).json({ error: 'AI stage forecasting failed', message: err.message });
+  }
+});
+
+// POST /api/ai/governance-check
+// Reviews a governance-relevant action against policy and returns compliance findings.
+// Mechanical addition based on audit recommendation: "governance policy compliance checking".
+router.post('/governance-check', auth, async (req, res) => {
+  try {
+    const { entity_type, entity_id, action_description } = req.body;
+    if (!action_description) {
+      return res.status(400).json({ error: 'action_description is required' });
+    }
+
+    if (isRestricted(req.user.role)) {
+      return res.status(403).json({ error: 'Your role does not have access to governance review' });
+    }
+
+    let entityData = null;
+    if (entity_type && entity_id) {
+      const accessChecks = {
+        opportunity: { table: 'opportunities', alias: 'op', filterFn: opportunityFilter },
+        lead: { table: 'leads', alias: 'l', filterFn: leadFilter },
+        project: { table: 'projects', alias: 'pj', filterFn: projectFilter },
+        risk: { table: 'risks', alias: 'r', filterFn: riskFilter },
+      };
+      if (accessChecks[entity_type]) {
+        const check = accessChecks[entity_type];
+        const hasAccess = await canAccessRecord(
+          pool, check.table, check.alias, check.filterFn, entity_id, req.user.role, req.user.id
+        );
+        if (!hasAccess) {
+          return res.status(403).json({ error: `Access denied to this ${entity_type}` });
+        }
+        try {
+          const r = await pool.query(`SELECT * FROM ${check.table} WHERE id = $1`, [entity_id]);
+          entityData = r.rows[0] || null;
+        } catch (_) {
+          entityData = null;
+        }
+      }
+    }
+
+    const messages = [
+      { role: 'system', content: SYSTEM_PROMPT + '\n\nYou are reviewing a proposed action against Alliance governance policy (NDAs, MSAs, DPAs, partner protection periods, conflict-of-interest, consent management). Respond with strict JSON: {"verdict": "approve|approve_with_conditions|escalate|block", "findings": [<strings>], "required_approvals": [<strings>], "policy_refs": [<strings>]}. No prose outside JSON.' },
+      { role: 'user', content: `Action: ${action_description}\n\nEntity context:\n${entityData ? JSON.stringify(entityData, null, 2) : 'none'}` },
+    ];
+
+    const aiResponse = await callOpenRouter(messages);
+    let parsed = null;
+    try {
+      const match = aiResponse.match(/\{[\s\S]*\}/);
+      parsed = match ? JSON.parse(match[0]) : null;
+    } catch (_) {
+      parsed = null;
+    }
+
+    res.json({
+      entity_type: entity_type || null,
+      entity_id: entity_id || null,
+      review: parsed || { raw: aiResponse },
+      model: OPENROUTER_MODEL,
+    });
+  } catch (err) {
+    console.error('AI governance-check error:', err);
+    res.status(500).json({ error: 'AI governance check failed', message: err.message });
+  }
+});
+
 module.exports = router;
