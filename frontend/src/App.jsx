@@ -1,3 +1,4 @@
+import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAuth } from './context/AuthContext'
 import { hasPageAccess } from './config/rolePermissions'
@@ -32,6 +33,7 @@ import AdvisoryRequests from './pages/AdvisoryRequests'
 import MeetingNotes from './pages/MeetingNotes'
 import ResourceView from './pages/ResourceView'
 import GovernanceDashboard from './pages/GovernanceDashboard'
+import CustomViewsPage from './pages/CustomViewsPage'
 
 // // === Batch 09 Gaps & Frontend Mounts ===
 const PredictiveDealClosureWithProbabilityModelingCfs = React.lazy(() => import('./pages/Batch09/PredictiveDealClosureWithProbabilityModelingCfs'));
@@ -133,6 +135,8 @@ export default function App() {
         <Route path="/kpi" element={<RoleRoute page="kpi"><KPI /></RoleRoute>} />
         <Route path="/ai" element={<RoleRoute page="ai"><AIAssistant /></RoleRoute>} />
         <Route path="/ai-insights" element={<RoleRoute page="ai"><AIInsights /></RoleRoute>} />
+        {/* Custom Views (Alliance Views) */}
+        <Route path="/custom-views" element={<CustomViewsPage />} />
       </Route>
       <Route path="*" element={<Navigate to={user ? '/dashboard' : '/login'} replace />} />
     

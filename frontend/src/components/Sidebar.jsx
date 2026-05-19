@@ -81,17 +81,23 @@ const navSections = [
       { to: '/ai-insights', label: 'AI Insights', icon: Sparkles, page: 'ai' },
     ]
   },
+  {
+    label: 'Alliance Views',
+    items: [
+      { to: '/custom-views', label: 'Alliance Views', icon: Sparkles, page: '__open__' },
+    ]
+  },
 ]
 
 export default function Sidebar() {
   const { user, logout } = useAuth()
   const userRole = user?.role || ''
 
-  // Filter sections and items by role
+  // Filter sections and items by role ('__open__' = no role gate)
   const visibleSections = navSections
     .map((section) => ({
       ...section,
-      items: section.items.filter((item) => hasPageAccess(userRole, item.page)),
+      items: section.items.filter((item) => item.page === '__open__' || hasPageAccess(userRole, item.page)),
     }))
     .filter((section) => section.items.length > 0)
 

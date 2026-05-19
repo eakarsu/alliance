@@ -78,6 +78,9 @@ app.get('/api/users/list', auth, async (req, res) => {
   }
 });
 
+// === Custom Views (Alliance Views) ===
+app.use('/api/custom-views', require('./routes/customViews'));
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });
