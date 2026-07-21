@@ -6,9 +6,10 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "db:schema": "psql $DATABASE_URL -f db/schema.sql",
-    "db:seed": "psql $DATABASE_URL -f db/seed.sql",
-    "db:reset": "psql $DATABASE_URL -f db/schema.sql && psql $DATABASE_URL -f db/seed.sql"
+    "migrate": "node scripts/migrate.js",
+    "create-admin": "node scripts/create-admin.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check server.js && node --check routes/authoritativeAlliance.js && node --test test/*.test.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
