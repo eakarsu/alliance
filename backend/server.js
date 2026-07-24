@@ -17,6 +17,7 @@ app.get('/api/health/ready', async (_req, res) => {
   catch (_error) { res.status(503).json({ status: 'not_ready' }); }
 });
 app.use('/api/auth', require('./routes/allianceAuth'));
+app.use('/api/runtime-ai', require('./routes/runtimeAi'));
 app.use('/api/v1/alliance', require('./routes/authoritativeAlliance'));
 
 // Legacy demo CRUD, generic-model, custom-view, integration, and generated gap
