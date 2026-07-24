@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { LogIn, Crown, ClipboardList, Cpu, Building2, Palette, Package, Globe, Lock } from 'lucide-react'
 
+const demoPassword = import.meta.env.VITE_ENABLE_DEMO_CREDENTIAL_AUTOFILL === 'true'
+  ? import.meta.env.VITE_DEMO_PASSWORD || ''
+  : ''
+
 const quickUsers = [
   { name: 'Fetih', email: 'fetih@alliance.com', role: 'Founding Orchestrator', subtitle: 'Core Governance', icon: Crown, color: 'from-amber-500 to-amber-600' },
   { name: 'Muhittin', email: 'muhittin@alliance.com', role: 'PMO Coordinator', subtitle: 'Alliance Coordination', icon: ClipboardList, color: 'from-indigo-500 to-indigo-600' },
@@ -38,11 +42,11 @@ export default function Login() {
 
   const handleQuickLogin = async (user) => {
     setEmail(user.email)
-    setPassword('alliance123')
+    setPassword(demoPassword)
     setError('')
     setLoading(true)
     try {
-      await login(user.email, 'alliance123')
+      await login(user.email, demoPassword)
       navigate('/dashboard')
     } catch (err) {
       setError(err.response?.data?.error || 'Login failed.')
@@ -118,7 +122,7 @@ export default function Login() {
                 <button
                   key={u.email}
                   onClick={() => handleQuickLogin(u)}
-                  disabled={loading}
+                  disabled={loading || !demoPassword}
                   className={`group flex items-center gap-2 rounded-xl bg-gradient-to-r ${u.color} p-3 text-left text-white shadow-md transition-all hover:scale-[1.02] hover:shadow-lg disabled:opacity-50`}
                 >
                   <div className="rounded-lg bg-white/20 p-1.5">

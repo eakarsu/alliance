@@ -8,6 +8,7 @@
     "dev": "nodemon server.js",
     "migrate": "node scripts/migrate.js",
     "create-admin": "node scripts/create-admin.js",
+    "provision-demo-users": "node scripts/provision-demo-users.js",
     "test": "node --test test/*.test.js",
     "check": "node --check server.js && node --check routes/authoritativeAlliance.js && node --test test/*.test.js"
   },

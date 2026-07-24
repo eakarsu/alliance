@@ -1,17 +1,17 @@
 -- Alliance CRM Seed Data
--- Password "alliance123" hashed with bcryptjs
+-- Login passwords are provisioned from the ignored local environment after this seed runs.
 -- ============================================================
 -- USERS (Real alliance team)
 -- ============================================================
 INSERT INTO users (full_name, email, password_hash, role, timezone, status) VALUES
-('Fetih', 'fetih@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'founding_orchestrator', 'Europe/Istanbul', 'active'),
-('Muhittin', 'muhittin@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'pmo_coordinator', 'Europe/Istanbul', 'active'),
-('Erol', 'erol@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'solution_architect', 'Europe/Istanbul', 'active'),
-('Gökhan', 'gokhan@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'enterprise_partner', 'Europe/Istanbul', 'active'),
-('Yasin', 'yasin@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'product_experience_lead', 'Europe/Istanbul', 'active'),
-('İbrahim', 'ibrahim@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'product_partner', 'Europe/Istanbul', 'active'),
-('Michael', 'michael@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'us_market_bridge', 'US/Eastern', 'active'),
-('Archie', 'archie@alliance.com', '$2a$10$MuioIFnrgWwzpJFnV/V68OD8BSzMvrBa2YBeFizSHb38rNrBzwYR.', 'restricted_external', 'US/Eastern', 'active');
+('Fetih', 'fetih@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'founding_orchestrator', 'Europe/Istanbul', 'active'),
+('Muhittin', 'muhittin@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'pmo_coordinator', 'Europe/Istanbul', 'active'),
+('Erol', 'erol@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'solution_architect', 'Europe/Istanbul', 'active'),
+('Gökhan', 'gokhan@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'enterprise_partner', 'Europe/Istanbul', 'active'),
+('Yasin', 'yasin@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'product_experience_lead', 'Europe/Istanbul', 'active'),
+('İbrahim', 'ibrahim@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'product_partner', 'Europe/Istanbul', 'active'),
+('Michael', 'michael@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'us_market_bridge', 'US/Eastern', 'active'),
+('Archie', 'archie@alliance.com', 'DISABLED_UNTIL_LOCAL_PROVISIONING', 'restricted_external', 'US/Eastern', 'active');
 
 -- ============================================================
 -- ROLES
