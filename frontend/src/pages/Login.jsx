@@ -6,6 +6,9 @@ import { LogIn, Crown, ClipboardList, Cpu, Building2, Palette, Package, Globe, L
 const demoPassword = import.meta.env.VITE_ENABLE_DEMO_CREDENTIAL_AUTOFILL === 'true'
   ? import.meta.env.VITE_DEMO_PASSWORD || ''
   : ''
+const demoEmail = import.meta.env.VITE_ENABLE_DEMO_CREDENTIAL_AUTOFILL === 'true'
+  ? import.meta.env.VITE_DEMO_EMAIL || ''
+  : ''
 
 const quickUsers = [
   { name: 'Fetih', email: 'fetih@alliance.com', role: 'Founding Orchestrator', subtitle: 'Core Governance', icon: Crown, color: 'from-amber-500 to-amber-600' },
@@ -40,19 +43,10 @@ export default function Login() {
     }
   }
 
-  const handleQuickLogin = async (user) => {
+  const handleQuickLogin = (user) => {
     setEmail(user.email)
     setPassword(demoPassword)
     setError('')
-    setLoading(true)
-    try {
-      await login(user.email, demoPassword)
-      navigate('/dashboard')
-    } catch (err) {
-      setError(err.response?.data?.error || 'Login failed.')
-    } finally {
-      setLoading(false)
-    }
   }
 
   return (
@@ -117,6 +111,14 @@ export default function Login() {
 
           <div className="mt-6">
             <p className="mb-3 text-center text-sm font-medium text-slate-400">Quick Login</p>
+            <button
+              type="button"
+              onClick={() => handleQuickLogin({ email: demoEmail })}
+              disabled={loading || !demoEmail || !demoPassword}
+              className="mb-2 w-full rounded-xl bg-slate-700 p-3 text-sm font-semibold text-white disabled:opacity-50"
+            >
+              Auto Fill Demo Credentials
+            </button>
             <div className="grid grid-cols-2 gap-2">
               {quickUsers.map((u) => (
                 <button
