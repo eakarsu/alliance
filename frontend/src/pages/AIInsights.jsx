@@ -1,3 +1,5 @@
+
+import FullAIExamples, { useFullAIExamples } from "../components/FullAIExamples.jsx";
 import { useState } from 'react'
 import { Sparkles, Target, TrendingUp, ShieldCheck } from 'lucide-react'
 import api from '../api/axios'
@@ -9,13 +11,9 @@ const tabs = [
   { value: 'governance', label: 'Governance Check', icon: ShieldCheck, endpoint: '/ai/governance-check' },
 ]
 
-function formatResult(data) {
-  if (!data) return ''
-  if (typeof data === 'string') return data
-  return data.analysis || data.result || data.response || JSON.stringify(data, null, 2)
-}
-
 export default function AIInsights() {
+  const fullAIExamples = useFullAIExamples();
+
   const [tab, setTab] = useState('score')
   const [opportunityId, setOpportunityId] = useState('')
   const [actionDescription, setActionDescription] = useState('')
@@ -112,8 +110,8 @@ export default function AIInsights() {
       <div className="grid gap-6 lg:grid-cols-2">
         <form
           onSubmit={handleSubmit}
-          className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm space-y-4"
-        >
+          className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm space-y-4" data-full-ai-workspace="AIInsights"
+        ><FullAIExamples controller={fullAIExamples} disabled={Boolean(loading)} />
           {(tab === 'score' || tab === 'forecast') && (
             <div>
               <label className="mb-1 block text-sm font-medium text-gray-700">
@@ -125,7 +123,7 @@ export default function AIInsights() {
                 onChange={(e) => setOpportunityId(e.target.value)}
                 placeholder="e.g. 42 or opp-123"
                 className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                disabled={loading}
+                disabled={loading} data-full-ai-field={fullAIExamples.bind({ current: opportunityId, change: (e) => setOpportunityId(e.target.value), label: "opportunityId", manual: false, reference: true, json: false, sample: '' }, "p1-4162", undefined)}
               />
               <p className="mt-1 text-xs text-gray-500">
                 {tab === 'score'
@@ -147,7 +145,7 @@ export default function AIInsights() {
                   rows={4}
                   placeholder="Describe the action to evaluate (e.g. share roadmap with channel partner X)"
                   className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                  disabled={loading}
+                  disabled={loading} data-full-ai-field={fullAIExamples.bind({ current: actionDescription, change: (e) => setActionDescription(e.target.value), label: "actionDescription", manual: false, json: false, sample: '' }, "p1-5126", undefined)}
                 />
               </div>
               <div className="grid grid-cols-2 gap-3">
@@ -161,7 +159,7 @@ export default function AIInsights() {
                     onChange={(e) => setEntityType(e.target.value)}
                     placeholder="e.g. opportunity"
                     className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    disabled={loading}
+                    disabled={loading} data-full-ai-field={fullAIExamples.bind({ current: entityType, change: (e) => setEntityType(e.target.value), label: "entityType", manual: false, json: false, sample: 'opportunity' }, "p1-5885", undefined)}
                   />
                 </div>
                 <div>
@@ -174,7 +172,7 @@ export default function AIInsights() {
                     onChange={(e) => setEntityId(e.target.value)}
                     placeholder="e.g. 42"
                     className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    disabled={loading}
+                    disabled={loading} data-full-ai-field={fullAIExamples.bind({ current: entityId, change: (e) => setEntityId(e.target.value), label: "entityId", manual: false, reference: true, json: false, sample: '' }, "p1-6530", undefined)}
                   />
                 </div>
               </div>
@@ -220,7 +218,7 @@ export default function AIInsights() {
             </p>
           )}
           {!loading && result && (
-            <AIResponseDisplay response={formatResult(result)} />
+            <AIResponseDisplay response={result} />
           )}
         </div>
       </div>

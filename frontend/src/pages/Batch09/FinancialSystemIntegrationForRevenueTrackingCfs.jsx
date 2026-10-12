@@ -1,5 +1,6 @@
 // // === Batch 09 Gaps & Frontend Mounts ===
 import React, { useState } from 'react';
+import AIReport from '../../components/AIReport';
 
 export default function FinancialSystemIntegrationForRevenueTrackingPage() {
   const [input, setInput] = useState('');
@@ -27,6 +28,13 @@ export default function FinancialSystemIntegrationForRevenueTrackingPage() {
     <div style={{ padding: 24, maxWidth: 900, margin: '0 auto' }}>
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Financial-system integration for revenue tracking</h1>
       <p style={{ color: '#666', marginBottom: 16 }}>Generated gap feature for alliance.</p>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
+        {[
+          ['Operational review', 'Review a fictional operational scenario for Financial-system integration for revenue tracking. A small delivery team has a 14-day deadline, two available specialists, and one unresolved dependency. Identify assumptions, risks, owners, and next steps.'],
+          ['Planning scenario', 'Prepare a planning report for Financial-system integration for revenue tracking. Compare a conservative option with a faster option for an illustrative $2,400 budget. Include required evidence, dependencies, and a practical decision timeline.'],
+          ['Executive brief', 'Draft an executive brief for Financial-system integration for revenue tracking using illustrative inputs only. Summarize three priorities, tradeoffs, missing information, and recommended decisions for a leadership review.'],
+        ].map(([label, example]) => <button key={label} type="button" disabled={loading} onClick={() => setInput(example)} style={{ padding: '8px 12px', border: '1px solid #93c5fd', borderRadius: 6, background: '#fff', color: '#1e3a8a' }}>Fill · {label}</button>)}
+      </div>
       <textarea
         value={input}
         onChange={e => setInput(e.target.value)}
@@ -42,11 +50,7 @@ export default function FinancialSystemIntegrationForRevenueTrackingPage() {
         {loading ? 'Running...' : 'Run AI'}
       </button>
       {error && <div style={{ color: 'red', marginTop: 12 }}>{error}</div>}
-      {result && (
-        <pre style={{ marginTop: 16, padding: 12, background: '#f4f4f4', borderRadius: 6, overflow: 'auto', maxHeight: 500 }}>
-{JSON.stringify(result, null, 2)}
-        </pre>
-      )}
+      {result !== null && <AIReport response={result} title="Financial-system integration for revenue tracking" />}
     </div>
   );
 }

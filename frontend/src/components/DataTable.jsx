@@ -74,7 +74,7 @@ export default function DataTable({ columns, data, onRowClick, onEdit, onDelete,
   const activeFilterCount = Object.keys(columnFilters).length
 
   const processedData = useMemo(() => {
-    if (!data || data.length === 0) return []
+    if (!Array.isArray(data) || data.length === 0) return []
 
     let result = [...data]
 
@@ -140,7 +140,7 @@ export default function DataTable({ columns, data, onRowClick, onEdit, onDelete,
     return result
   }, [data, sortKey, sortDir, columnFilters, columns])
 
-  if (!data || data.length === 0) {
+  if (!Array.isArray(data) || data.length === 0) {
     return (
       <div className="rounded-lg border border-gray-200 bg-white p-12 text-center">
         <p className="text-gray-500">{emptyMessage}</p>

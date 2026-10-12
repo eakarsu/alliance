@@ -33,7 +33,8 @@ export default function DealPaths() {
   const fetchPaths = async () => {
     try {
       const res = await api.get('/deal-paths')
-      setPaths(res.data.data || [])
+      const items = res.data?.data
+      setPaths(Array.isArray(items) ? items : [])
     } catch { setError('Failed to load deal paths') } finally { setLoading(false) }
   }
 
@@ -43,7 +44,8 @@ export default function DealPaths() {
     setOppsLoading(true)
     try {
       const res = await api.get(`/deal-paths/${path.id}/opportunities`)
-      setOpportunities(res.data.data || [])
+      const items = res.data?.data
+      setOpportunities(Array.isArray(items) ? items : [])
     } catch { setOpportunities([]) } finally { setOppsLoading(false) }
   }
 

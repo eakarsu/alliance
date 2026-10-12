@@ -1,0 +1,79 @@
+[
+  {
+    "name": "AiOpportunityScoringAndStagePredictionPage",
+    "id": "gap-ai-alliance/ai-opportunity-scoring-and-stage-prediction",
+    "title": "AI opportunity scoring and stage prediction",
+    "description": "Prepare a professional advisory report for ai opportunity scoring and stage prediction using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "ConflictResolutionRecommendationPage",
+    "id": "gap-ai-alliance/conflict-resolution-recommendation",
+    "title": "Conflict resolution recommendation",
+    "description": "Prepare a professional advisory report for conflict resolution recommendation using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "ContractLifecycleManagementModulePage",
+    "id": "gap-nonai-alliance/contract-lifecycle-management-module",
+    "title": "Contract lifecycle management module",
+    "description": "Prepare a professional advisory report for contract lifecycle management module using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "DealStageForecastingPage",
+    "id": "gap-ai-alliance/deal-stage-forecasting",
+    "title": "Deal-stage forecasting",
+    "description": "Prepare a professional advisory report for deal-stage forecasting using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "ESignatureIntegrationPage",
+    "id": "gap-nonai-alliance/e-signature-integration",
+    "title": "E-signature integration",
+    "description": "Prepare a professional advisory report for e-signature integration using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "FinancialReportingAndReconciliationPage",
+    "id": "gap-nonai-alliance/financial-reporting-and-reconciliation",
+    "title": "Financial reporting and reconciliation",
+    "description": "Prepare a professional advisory report for financial reporting and reconciliation using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "GovernanceComplianceAutoChecksPage",
+    "id": "gap-ai-alliance/governance-compliance-auto-checks",
+    "title": "Governance compliance auto-checks",
+    "description": "Prepare a professional advisory report for governance compliance auto-checks using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "MobilePartnerPortalUiPage",
+    "id": "gap-nonai-alliance/mobile-partner-portal-ui",
+    "title": "Mobile partner-portal UI",
+    "description": "Prepare a professional advisory report for mobile partner-portal ui using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "NegotiationPlaybookTemplateLibraryPage",
+    "id": "gap-nonai-alliance/negotiation-playbook-template-library",
+    "title": "Negotiation playbook / template library",
+    "description": "Prepare a professional advisory report for negotiation playbook / template library using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "PartnerPerformancePredictionPage",
+    "id": "gap-ai-alliance/partner-performance-prediction",
+    "title": "Partner performance prediction",
+    "description": "Prepare a professional advisory report for partner performance prediction using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  },
+  {
+    "name": "PayoutrevenueShareManagementPage",
+    "id": "gap-nonai-alliance/payoutrevenue-share-management",
+    "title": "Payout/revenue share management",
+    "description": "Prepare a professional advisory report for payout/revenue share management using the brief and evidence you provide. Review the findings, assumptions, and action plan before applying changes.",
+    "samples": []
+  }
+]

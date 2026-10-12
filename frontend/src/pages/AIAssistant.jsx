@@ -1,3 +1,5 @@
+
+import FullAIExamples, { useFullAIExamples } from "../components/FullAIExamples.jsx";
 import { useState, useRef, useEffect } from 'react'
 import { Send, Bot, User, Sparkles } from 'lucide-react'
 import api from '../api/axios'
@@ -145,6 +147,8 @@ const featureQuestions = {
 }
 
 export default function AIAssistant() {
+  const fullAIExamples = useFullAIExamples();
+
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [feature, setFeature] = useState('general')
@@ -170,7 +174,7 @@ export default function AIAssistant() {
         prompt: messageText,
       })
 
-      const aiContent = res.data.analysis || res.data.response || res.data.result || res.data.message || (typeof res.data === 'string' ? res.data : JSON.stringify(res.data, null, 2))
+      const aiContent = res.data.analysis ?? res.data.response ?? res.data.result ?? res.data.message ?? res.data
 
       setMessages(prev => [...prev, {
         role: 'assistant',
@@ -199,7 +203,7 @@ export default function AIAssistant() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-120px)] flex-col animate-fade-in">
+    <div className="flex h-[calc(100vh-120px)] flex-col animate-fade-in" data-full-ai-workspace="AIAssistant"><FullAIExamples controller={fullAIExamples} disabled={Boolean(loading)} />
       <div className="mb-4 flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">AI Assistant</h1>
@@ -210,7 +214,7 @@ export default function AIAssistant() {
           <select
             value={feature}
             onChange={(e) => setFeature(e.target.value)}
-            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" data-full-ai-field={fullAIExamples.bind({ current: feature, change: (e) => setFeature(e.target.value), label: "feature", manual: false, reference: true, json: false, sample: 'general' }, "p1-9472", undefined)}
           >
             {features.map(f => (
               <option key={f.value} value={f.value}>{f.label}</option>
@@ -317,7 +321,7 @@ export default function AIAssistant() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask the AI assistant about your CRM data..."
           className="flex-1 rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm text-gray-700 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-          disabled={loading}
+          disabled={loading} data-full-ai-field={fullAIExamples.bind({ current: input, change: (e) => setInput(e.target.value), label: "input", manual: false, json: false, sample: '' }, "p1-14782", undefined)}
         />
         <button
           type="submit"

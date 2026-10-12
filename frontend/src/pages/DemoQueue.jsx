@@ -26,7 +26,8 @@ export default function DemoQueue() {
   const fetchProducts = async () => {
     try {
       const res = await api.get('/products', { params: { limit: 100 } })
-      const items = (res.data.data || []).filter(p => p.demo_available)
+      const records = res.data?.data
+      const items = (Array.isArray(records) ? records : []).filter(p => p.demo_available)
       setProducts(items)
     } catch { setError('Failed to load demo queue') } finally { setLoading(false) }
   }

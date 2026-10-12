@@ -23,6 +23,14 @@ app.use('/api/v1/alliance', require('./routes/authoritativeAlliance'));
 // Legacy demo CRUD, generic-model, custom-view, integration, and generated gap
 // routes were not tenant-safe or authoritative. They remain as source material
 // but are not a supported runtime fallback.
+
+// Advisory AI reports only; native execution and approval routes stay unchanged.
+const aiWorkspaceSupport = require("./aiWorkspaceAdapters.cjs");
+const aiWorkspaceDatabase = require("./db/connection.js");
+app.use('/api/report-workspace', require("./aiWorkspace.cjs").createAIWorkspaceRouter({
+  pool: aiWorkspaceDatabase, authenticateToken: require("./middleware/auth.js"),
+  aiRateLimiter: aiWorkspaceSupport.createWorkspaceLimiter(), features: require("./aiWorkspaceFeatures.json"),
+}));
 app.use('/api', (_req, res) => res.status(410).json({ error: 'Legacy/generated route retired; use /api/v1/alliance' }));
 
 app.use((error, _req, res, _next) => {

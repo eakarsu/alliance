@@ -36,8 +36,8 @@ export default function IntegrationMap() {
       api.get('/partners', { params: { limit: 100 } }),
       api.get('/products', { params: { limit: 100 } }),
     ]).then(([partnerRes, productRes]) => {
-      setPartners(partnerRes.data.data || [])
-      setProducts(productRes.data.data || [])
+      setPartners(Array.isArray(partnerRes.data?.data) ? partnerRes.data.data : [])
+      setProducts(Array.isArray(productRes.data?.data) ? productRes.data.data : [])
     }).catch(() => setError('Failed to load integration map')).finally(() => setLoading(false))
   }, [])
 

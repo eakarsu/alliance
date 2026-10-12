@@ -43,6 +43,20 @@ export default function Login() {
     }
   }
 
+  const handleDemoLogin = async () => {
+    if (!demoEmail || !demoPassword || loading) return
+    setError('')
+    setLoading(true)
+    try {
+      await login(demoEmail, demoPassword)
+      navigate('/dashboard')
+    } catch (err) {
+      setError(err.response?.data?.error || 'Demo login failed. Please check the configured account.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
   const handleQuickLogin = (user) => {
     setEmail(user.email)
     setPassword(demoPassword)
@@ -113,12 +127,13 @@ export default function Login() {
             <p className="mb-3 text-center text-sm font-medium text-slate-400">Quick Login</p>
             <button
               type="button"
-              onClick={() => handleQuickLogin({ email: demoEmail })}
+              onClick={handleDemoLogin}
               disabled={loading || !demoEmail || !demoPassword}
               className="mb-2 w-full rounded-xl bg-slate-700 p-3 text-sm font-semibold text-white disabled:opacity-50"
             >
-              Auto Fill Demo Credentials
+              Log In as Demo
             </button>
+            {(!demoEmail || !demoPassword) && <p className="mb-3 text-center text-xs text-slate-400">Demo login is unavailable until demo credentials are configured.</p>}
             <div className="grid grid-cols-2 gap-2">
               {quickUsers.map((u) => (
                 <button

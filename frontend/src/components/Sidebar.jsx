@@ -1,3 +1,4 @@
+import AIReportLibrary from "./AIReportLibrary";
 import { NavLink } from 'react-router-dom'
 import {
   LayoutDashboard, Users, Building2, Target, TrendingUp, Package,
@@ -160,6 +161,6 @@ export default function Sidebar() {
           </button>
         </div>
       </div>
-    </aside>
+    <AIReportLibrary /></aside>
   )
 }
