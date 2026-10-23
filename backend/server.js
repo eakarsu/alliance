@@ -11,6 +11,7 @@ const origins = (process.env.CORS_ORIGINS || 'http://localhost:5173').split(',')
 app.use(cors({ origin: origins, credentials: true }));
 app.use(express.json({ limit: '1mb' }));
 
+app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
 app.get('/api/health/live', (_req, res) => res.json({ status: 'ok' }));
 app.get('/api/health/ready', async (_req, res) => {
   try { await pool.query('SELECT 1 FROM alliance_cases LIMIT 1'); res.json({ status: 'ready', authoritativeSurface: '/api/v1/alliance' }); }

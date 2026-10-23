@@ -37,6 +37,9 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
 
+    if (!JWT_SECRET || JWT_SECRET.length < 32) {
+      return res.status(503).json({ error: 'Authentication is not configured' });
+    }
     const token = jwt.sign(
       { id: user.id, email: user.email, role: user.role, full_name: user.full_name },
       JWT_SECRET,
